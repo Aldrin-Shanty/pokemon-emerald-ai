@@ -120,7 +120,26 @@ class Battle:
                     print(f'{pokemon_switchable.species_name}(lv:{pokemon_switchable.level})',end='   ')
                 print(f'Items')
 class Trainer:
+    """A class to represent a Pokémon trainer and their actions in a battle.
+
+    Attributes:
+        trainer_name (str): The name of the trainer.
+        pokemon_list (list): List of Pokémon owned by the trainer.
+        usable_items (dict): Dictionary of items the trainer can use, with quantities.
+        field (dict): Dictionary tracking field effects like spikes, reflect, etc.
+        switching_out (list): List indicating if Pokémon in active positions are switching out.
+        using_item (list): List indicating items being used for each active Pokémon position.
+        attacking (list): List of moves being used by Pokémon in active positions.
+        attacking_who (int): Indicates target of attack (0 for none, 1 for first enemy, 2 for second enemy).
+    """
     def __init__(self,trainer_name,usable_items,pokemon_list):
+        """Initialize a new Trainer instance.
+
+        Args:
+            trainer_name (str): The name of the trainer.
+            usable_items (dict): Dictionary of usable items with their quantities.
+            pokemon_list (list): List of Pokémon objects owned by the trainer.
+        """
         self.trainer_name=trainer_name
         self.pokemon_list = pokemon_list
         self.usable_items=usable_items
@@ -132,28 +151,64 @@ class Trainer:
 
     @property
     def is_defeated(self):
+        """Check if the trainer is defeated based on Pokémon fainting.
+
+        Returns:
+            bool: True if all Pokémon in pokemon_list have fainted, False otherwise.
+        """
         no_of_defeated=0
         for pokemon in self.pokemon_list:
             if pokemon.fainted:
                 no_of_defeated+=1
         return True if no_of_defeated==6 else False
+
     @property
     def active_pokemon(self):
+        """Get the list of currently active Pokémon.
+
+        Returns:
+            list: List of Pokémon objects that are currently active in battle.
+        """
         return [pokemon for pokemon in self.pokemon_list if pokemon.active[0]]+[pokemon for pokemon in self.pokemon_list if pokemon.active[1]]
 
     def switch_pokemon(self,pokemon_index,switch_pos=1):
+        """Switch an active Pokémon with another from the trainer's Pokémon list.
+
+        Args:
+            pokemon_index (int): Index of the Pokémon in pokemon_list to switch in.
+            switch_pos (int, optional): Position (1 or 2) of the active Pokémon to replace. Defaults to 1.
+        """
         # switch pos :-  switching pokemon in position 1 -> 1 , switching pokemon in position 2 -> 2
         self.active_pokemon[switch_pos-1]= self.pokemon_list[pokemon_index]
         self.switching_out[switch_pos-1]=True
         self.active_pokemon[switch_pos-1].status['bdpsn']=1
 
     def attack(self,move_slot,user_pos=1,enemy_pos=1):
+        """Execute an attack using a move from an active Pokémon.
+
+        Args:
+            move_slot (int): Index of the move in the Pokémon's move_list to use.
+            user_pos (int, optional): Position (1 or 2) of the attacking Pokémon. Defaults to 1.
+            enemy_pos (int, optional): Position (1 or 2) of the target enemy Pokémon. Defaults to 1.
+
+        Returns:
+            object: The move object used in the attack.
+        """
         move_used=self.active_pokemon[user_pos-1].move_list[move_slot]
         self.attacking_who=enemy_pos
         self.attacking[user_pos]= move_used
         return move_used
 
     def use_item(self,item_key,use_pos=1):
+        """Use an item on a specified Pokémon.
+
+        Args:
+            item_key: Key identifying the item in usable_items dictionary.
+            use_pos (int, optional): Index in pokemon_list of the Pokémon to apply the item to. Defaults to 1.
+
+        Note:
+            This method is incomplete and requires further development.
+        """
         #use_pos refers to index in pokemon_list not in active_pokemon
         item=self.usable_items[item_key]
         pokemon=self.pokemon_list[use_pos]
@@ -161,8 +216,8 @@ class Trainer:
         self.usable_items[item]-=1
         #not completed need to develop idea more
 
-class Pokemon():
-    def __init__(self,species_name,type1,type2,level,effort_values,individual_values,base_stats,stats,nature,ability,held_item,move_list):
+class Pokemon:
+    def __init__(self,species_name,type1,type2,level,effort_values,individual_values,base_stats,nature,ability,held_item,move_list):
         self.species_name=species_name
         self.active = [False,False]
         self.type=[type1,type2]
@@ -170,39 +225,45 @@ class Pokemon():
         self.effort_values=effort_values
         self.individual_values=individual_values
         self.base_stats=base_stats
-        self.stats=stats
+        self.stats = {
+        "hp": ((2 * base_stats["hp"] + individual_values["hp"] + effort_values["hp"] // 4) * level) // 100 + level + 10,
+        "atk": ((2 * base_stats["atk"] + individual_values["atk"] + effort_values["atk"] // 4) * level) // 100 + 5,
+        "def": ((2 * base_stats["def"] + individual_values["def"] + effort_values["def"] // 4) * level) // 100 + 5,
+        "spatk": ((2 * base_stats["spatk"] + individual_values["spatk"] + effort_values["spatk"] // 4) * level) // 100 + 5,
+        "spdef": ((2 * base_stats["spdef"] + individual_values["spdef"] + effort_values["spdef"] // 4) * level) // 100 + 5,
+        "spd": ((2 * base_stats["spd"] + individual_values["spd"] + effort_values["spd"] // 4) * level) // 100 + 5
+        }
         self.nature = nature
         self.ability = ability
         self.held_item = held_item
         self.status={'psn':False,'brn':False,'prlz':False,'slp':0,'frz':0,'bdpsn':0}
-        self.secondary_status=0
-        # 0  - None
-        # 1  - Flinch
-        # 2  - Confused
-        # 3  - Attracted
-        # 4  - Leech Seeded
-        # 5  - Nightmare
-        # 6  - Trapped
-        # 7  - Partially Trapped
-        # 8  - Taunted
-        # 9  - Tormented
-        # 10 - Encore
-        # 11 - Disabled
-        # 12 - Yawn (Drowsy)
-        # 13 - Ingrained
-        # 14 - Charging Turn
-        # 15 - Recharging Turn
-        # 16 - Bide
-        # 17 - Focus Energy
-        # 18 - Rage Lock
-        # 19 - Destiny Bond
-        # 20 - Grudge
-        # 21 - Perish Song
-        # 22 - Identified
-        # 23 - Minimized
-        # 24 - Substitute
+        self.secondary_status={
+        "Flinch": False,
+        "Confused": 0,
+        "Attracted": False,
+        "Leech Seeded": False,
+        "Nightmare": False,
+        "Trapped": False,
+        "Partially Trapped": 0,
+        "Taunted": False,
+        "Tormented": False,
+        "Encore": False,
+        "Disabled": 0,
+        "Yawn": False,
+        "Ingrained": False,
+        "Charging Turn": False,
+        "Recharging Turn": False,
+        "Bide": 0,
+        "Focus Energy": False,
+        "Rage Lock": 0,
+        "Destiny Bond": False,
+        "Grudge": False,
+        "Perish Song": 0,
+        "Identified": False,
+        "Minimized": False,
+        "Substitute": False
+        }
         self.current_hp=self.stats['hp']
-        self.max_hp=self.stats['hp']
         self.move_list=move_list
     @property
     def fainted(self):
