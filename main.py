@@ -1,4 +1,4 @@
-# import random
+import random
 
 class Battle:
     """A class to manage a Pokémon battle between two trainers.
@@ -41,13 +41,13 @@ class Battle:
         for i,trainer in enumerate(pokemons):
             for j,pokemon in enumerate(trainer):
                 if pokemon.selected_move is not None:
-                    priority[i][j]+=pokemon.selected_move.priority
+                    priority[i][j] += self.trainer_of_pokemon(pokemon).attacking[self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)].priority
                 priority[i][j]+= pokemons_temp.index(pokemon)/(len(pokemons_temp)-1)
         order=dict(zip([pokemon for trainer in pokemons for pokemon in trainer], [active_prio for trainer in priority for active_prio in trainer ]))
         order = sorted(order, key=order.get, reverse=True)
         return order
 
-    def dmg_calc(self):
+    def dmg_calc(self,trainer,user_slot,enemy_slot,move):
         """Calculate damage for moves used in the battle.
 
         Note:
@@ -55,25 +55,89 @@ class Battle:
         """
         pass
 
+    def trainer_of_pokemon(self,pokemon):
+        owner=None
+        for trainer in self.trainers:
+            if pokemon in trainer.active_pokemon:
+                owner=trainer
+        return owner
+
     def turn_effects(self):
         """Apply turn-based effects such as weather, status conditions, and field effects.
 
         Updates the state of weather, trainer fields, and Pokémon statuses.
         """
-        order=self.turn_order
+        order = self.turn_order
         for weather,turns in self.weather:
-            turns-=1 if turns>0 else 0
+            if turns>1:
+                if weather=='sunny':
+                    print('The sunlight is strong')
+                elif weather=='rainy':
+                    print('It is raining')
+                elif weather=='hail':
+                    print('Hail continues to fall')
+                    for pokemon in order:
+                        if pokemon.type[0] in ['Ice'] or pokemon.type[1] in ['Ice']:
+                            pokemon.current_hp-=(pokemon.stats['hp']//16 if pokemon.stats['hp']//16 >1 else 1) if pokemon.current_hp < pokemon.stats['hp']//16 else pokemon.current_hp
+                            print(f"{self.trainer_of_pokemon(pokemon).trainer_name}'s {pokemon.species_name} was buffeted by hail")
+                elif weather=='sandstorm':
+                    print('The sandstorm is raging')
+                    for pokemon in order:
+                        if pokemon.type[0] in ['Rock','Ground','Steel'] or pokemon.type[1] in ['Rock','Ground','Steel']:
+                            pokemon.current_hp-=(pokemon.stats['hp']//16 if pokemon.stats['hp']//16 >1 else 1) if pokemon.current_hp < pokemon.stats['hp']//16 else pokemon.current_hp
+                            print(f"{self.trainer_of_pokemon(pokemon).trainer_name}'s {pokemon.species_name} was buffeted by sandstorm")
+                turns -= 1
+            elif turns==1:
+                if weather=='sunny':
+                    print('The sunlight faded')
+                elif weather=='rainy':
+                    print('The rain stopped')
+                elif weather=='hail':
+                    print('The hail subsided')
+                elif weather=='sandstorm':
+                    print('The sandstorm subsided')
+                turns -= 1
+        for pokemon in order:
+            pokemon.current_hp-=((pokemon.stats['hp']//16 if pokemon.stats['hp']//16 >1 else 1) if pokemon.current_hp < pokemon.stats['hp']//16 else pokemon.current_hp) if (pokemon.status['psn'] or pokemon.status['brn']) else pokemon.current_hp
+            pokemon.current_hp-=((pokemon.stats['hp']*(pokemon.status['bdpsn']+1)//16 if pokemon.stats['hp']*(pokemon.status['bdpsn']+1)//16>1 else 1) if pokemon.current_hp < pokemon.stats['hp']*(pokemon.status['bdpsn']+1)//16 else pokemon.current_hp) if (pokemon.status['bdpsn']) else pokemon.current_hp
+            pokemon.status['bdpsn']+=1
+            if pokemon.status['brn']:
+                print(f"{self.trainer_of_pokemon(pokemon).trainer_name}'s {pokemon.species_name} was hurt by burn")
+            if pokemon.status['psn'] or pokemon.status['bdpsn']:
+                print(f"{self.trainer_of_pokemon(pokemon).trainer_name}'s {pokemon.species_name} was hurt by poison")
+            pokemon.status['slp']-=1 if pokemon.status['slp'] else 0
+            pokemon.status['frz'] -= 1 if pokemon.status['frz'] else 0
+        for pokemon in order:
+            if pokemon.secondary_status['Leech Seeded'][0]:
+                self.trainers[-(self.trainers.index(self.trainer_of_pokemon(pokemon))+1)].active_pokemon[pokemon.secondary_status['Leech Seeded'][1]].currenth_hp+= (pokemon.stats['hp']//8 if pokemon.stats['hp']//8 >1 else 1) if pokemon.current_hp < pokemon.stats['hp']//8 else pokemon.current_hp
+                pokemon.current_hp-= (pokemon.stats['hp']//8 if pokemon.stats['hp']//8 >1 else 1) if pokemon.current_hp < pokemon.stats['hp']//8 else pokemon.current_hp
+                print(f"{self.trainer_of_pokemon(pokemon).trainer_name}'s {pokemon.species_name} health is sapped by {self.trainers[-(self.trainers.index(self.trainer_of_pokemon(pokemon))+1)].trainer_name}'s {self.trainers[-(self.trainers.index(self.trainer_of_pokemon(pokemon))+1)].active_pokemon[pokemon.secondary_status['Leech Seeded'][1]].species_name}")
+            if pokemon.secondary_status['Perish Song']>1:
+                print(f"{self.trainer_of_pokemon(pokemon).trainer_name}'s {pokemon.species_name} perish count has fallen to {pokemon.secondary_status['Perish Song']-1}")
+                pokemon.secondary_status['Perish Song']-=1
+            elif pokemon.secondary_status['Perish Song']==1:
+                pokemon.current_hp=0
+                pokemon.secondary_status['Perish Song']-=1
+            if pokemon.secondary_status['Yawn'] >1:
+                pokemon.secondary_status['Yawn']-=1
+            elif pokemon.secondary_status['Yawn']==1:
+                pokemon.status['slp']= random.randint(1,4)
+                pokemon.secondary_status['Yawn']-=1
+            if pokemon.secondary_status['Partially Trapped']>1:
+                pokemon.current_hp-=(pokemon.stats['hp']//16 if pokemon.stats['hp']//16 >1 else 1) if pokemon.current_hp < pokemon.stats['hp']//16 else pokemon.current_hp
+                print(f"{self.trainer_of_pokemon(pokemon).trainer_name}'s {pokemon.species_name} is hurt by the traps")
+                pokemon.secondary_status['Partially Trapped']-=1
+            elif pokemon.secondary_status['Partially Trapped']==1:
+                print(f"{self.trainer_of_pokemon(pokemon).trainer_name}'s {pokemon.species_name} was freed from the traps")
+                pokemon.secondary_status['Partially Trapped']-=1
         for trainer in self.trainers:
             trainer.switching_out=[False,False]
             trainer.field['reflect']-=1 if trainer.field['reflect'] else 0
             trainer.field['lightscreen']-=1 if trainer.field['lightscreen'] else 0
             trainer.field['trap_turns']-=1 if trainer.field['trap_turns'] else 0
-        for pokemon in order:
-            pokemon.current_hp-=(pokemon.status['hp']/16 if pokemon.current_hp > 0 else 0) if (pokemon.status['psn'] or pokemon.status['brn']) else pokemon.current_hp
-            pokemon.current_hp-=(pokemon.status['hp']*(pokemon.status['bdpsn']+1)/16 if pokemon.current_hp > 0 else 0) if (pokemon.status['bdpsn']) else pokemon.current_hp
-            pokemon.status['bdpsn']+=1
-            pokemon.status['slp']-=1 if pokemon.status['slp'] else 0
-            pokemon.status['frz'] -= 1 if pokemon.status['frz'] else 0
+
+    def safe_switch(self,fainted_pokemon,switch_pokemon):
+        self.trainer_of_pokemon(fainted_pokemon).active_pokemon[self.trainer_of_pokemon(fainted_pokemon).active_pokemon.index(fainted_pokemon)]=switch_pokemon
 
     def battle(self):
         """Manage the main battle loop, handling turn progression and player choices.
@@ -143,7 +207,7 @@ class Trainer:
         self.trainer_name=trainer_name
         self.pokemon_list = pokemon_list
         self.usable_items=usable_items
-        self.field={'spikes':0,'reflect':0,'lightscreen':0,'trap_turns':0}
+        self.field={'spikes':0,'reflect':0,'lightscreen':0}
         self.switching_out=[False,False]
         self.using_item=[None,None]
         self.attacking=[None,None]
@@ -196,6 +260,7 @@ class Trainer:
         move_used=self.active_pokemon[user_pos-1].move_list[move_slot]
         self.attacking_who=enemy_pos
         self.attacking[user_pos]= move_used
+        self.active_pokemon[user_pos-1].selected_move=move_used
         return move_used
 
     def use_item(self,item_key,use_pos=1):
@@ -273,15 +338,14 @@ class Pokemon:
         "Flinch": False,
         "Confused": 0,
         "Attracted": False,
-        "Leech Seeded": False,
-        "Nightmare": False,
+        "Leech Seeded": [False,0], # Integer refers to which side of enemy gets the health regenf
         "Trapped": False,
         "Partially Trapped": 0,
         "Taunted": False,
         "Tormented": False,
-        "Encore": False,
+        "Encore": 0,
         "Disabled": 0,
-        "Yawn": False,
+        "Yawn": 0,
         "Ingrained": False,
         "Charging Turn": False,
         "Recharging Turn": False,
@@ -297,6 +361,7 @@ class Pokemon:
         }
         self.current_hp=self.stats['hp']
         self.move_list=move_list
+        self.selected_move=None
 
     @property
     def fainted(self):
