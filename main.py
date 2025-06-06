@@ -25,6 +25,7 @@ class Battle:
                     priority[i][j]+=pokemon.selected_move.priority
                 priority[i][j]+= pokemons_temp.index(pokemon)/(len(pokemons_temp)-1)
         order=dict(zip([pokemon for trainer in pokemons for pokemon in trainer], [active_prio for trainer in priority for active_prio in trainer ]))
+        order = sorted(order, key=order.get, reverse=True)
         return order
 
     def dmg_calc(self):
@@ -32,7 +33,6 @@ class Battle:
 
     def turn_effects(self):
         order=self.turn_order
-        order=sorted(order,key=order.get,reverse=True)
         for weather,turns in self.weather:
             turns-=1 if turns>0 else 0
         for trainer in self.trainers:
@@ -48,25 +48,32 @@ class Battle:
             pokemon.status['frz'] -= 1 if pokemon.status['frz'] else 0
 
     def battle(self):
-        print(f'{self.trainers[0].name} vs {self.trainers[1].name} begins...')
+        print(f'{self.trainers[0].trainer_name} vs {self.trainers[1].name} begins...')
         for trainer in self.trainers:
             trainer.active_pokemon[0]=trainer.pokemon_list[0]
             if self.battle_mode==2:
                 trainer.active_pokemon[1]=trainer.pokemon_list[1]
-                print(f'{trainer.name} sents out {trainer.active_pokemon[0]} and {trainer.active_pokemon[1]}!')
+                print(f'{trainer.trainer_name} sents out {trainer.active_pokemon[0]} and {trainer.active_pokemon[1]}!')
             else:
-                print(f'{trainer.name} sents out {trainer.active_pokemon[0]}!')
-        order=self.turn_order
+                print(f'{trainer.trainer_name} sents out {trainer.active_pokemon[0]}!')
+        while not self.trainers[0].is_defeated or not self.trainers[1].is_defeated:
+            if self.weather['sunny']:
+                print('The sunlight is strong')
+            elif self.weather['rainy']:
+                print('It is raining')
+            elif self.weather['hail']:
+                print('Hail continues to fall')
+            elif self.weather['sandstorm']:
+                print('The sandstorm is raging')
 
 
-        self.battle_turn += 1
-        print('Battle Turn: ',self.battle_turn)
+
         # this function going to do all the wierd cases for each ability moves later...
         pass
 
 class Trainer:
     def __init__(self,trainer_name,usable_items,pokemon_list):
-        self.name=trainer_name
+        self.trainer_name=trainer_name
         self.pokemon_list = pokemon_list
         self.usable_items=usable_items
         self.field={'spikes':0,'reflect':0,'lightscreen':0,'trap_turns':0}
@@ -75,6 +82,13 @@ class Trainer:
         self.attacking=[None,None] # None implies not attack,else move object placed
         self.attacking_who=0 # 0 implies no one, 1 - first active pokemon, 2 - second active pokemon
 
+    @property
+    def is_defeated(self):
+        no_of_defeated=0
+        for pokemon in self.pokemon_list:
+            if pokemon.fainted:
+                no_of_defeated+=1
+        return True if no_of_defeated==6 else False
     @property
     def active_pokemon(self):
         return [pokemon for pokemon in self.pokemon_list if pokemon.active[0]]+[pokemon for pokemon in self.pokemon_list if pokemon.active[1]]
@@ -99,7 +113,7 @@ class Trainer:
         self.usable_items[item]-=1
         #not completed need to develop idea more
 
-class Pokemon:
+class Pokemon():
     def __init__(self,species_id,type1,type2,level,effort_values,individual_values,base_stats,stats,nature,ability,held_item,move_list):
         self.species_id=species_id
         self.active = [False,False]
