@@ -1,6 +1,5 @@
 [
   {
-    "pokedex_number": 252,
     "name": "Treecko",
     "types": ["Grass"],
     "abilities": ["Overgrow"],
@@ -14,7 +13,6 @@
     }
   },
   {
-    "pokedex_number": 253,
     "name": "Grovyle",
     "types": ["Grass"],
     "abilities": ["Overgrow"],
@@ -28,7 +26,6 @@
     }
   },
   {
-    "pokedex_number": 254,
     "name": "Sceptile",
     "types": ["Grass"],
     "abilities": ["Overgrow"],
@@ -42,7 +39,6 @@
     }
   },
   {
-    "pokedex_number": 255,
     "name": "Torchic",
     "types": ["Fire"],
     "abilities": ["Blaze"],
@@ -56,7 +52,6 @@
     }
   },
   {
-    "pokedex_number": 256,
     "name": "Combusken",
     "types": ["Fire", "Fighting"],
     "abilities": ["Blaze"],
@@ -70,7 +65,6 @@
     }
   },
   {
-    "pokedex_number": 257,
     "name": "Blaziken",
     "types": ["Fire", "Fighting"],
     "abilities": ["Blaze"],
@@ -84,7 +78,6 @@
     }
   },
   {
-    "pokedex_number": 258,
     "name": "Mudkip",
     "types": ["Water"],
     "abilities": ["Torrent"],
@@ -98,7 +91,6 @@
     }
   },
   {
-    "pokedex_number": 259,
     "name": "Marshtomp",
     "types": ["Water", "Ground"],
     "abilities": ["Torrent"],
@@ -112,7 +104,6 @@
     }
   },
   {
-    "pokedex_number": 260,
     "name": "Swampert",
     "types": ["Water", "Ground"],
     "abilities": ["Torrent"],
@@ -126,7 +117,6 @@
     }
   },
   {
-    "pokedex_number": 261,
     "name": "Poochyena",
     "types": ["Dark"],
     "abilities": ["Run Away"],
@@ -140,7 +130,6 @@
     }
   },
   {
-    "pokedex_number": 262,
     "name": "Mightyena",
     "types": ["Dark"],
     "abilities": ["Intimidate"],
@@ -154,7 +143,6 @@
     }
   },
   {
-    "pokedex_number": 263,
     "name": "Zigzagoon",
     "types": ["Normal"],
     "abilities": ["Pickup"],
@@ -168,7 +156,6 @@
     }
   },
   {
-    "pokedex_number": 264,
     "name": "Linoone",
     "types": ["Normal"],
     "abilities": ["Pickup"],
@@ -182,7 +169,6 @@
     }
   },
   {
-    "pokedex_number": 265,
     "name": "Wurmple",
     "types": ["Bug"],
     "abilities": ["Shield Dust"],
@@ -196,7 +182,6 @@
     }
   },
   {
-    "pokedex_number": 266,
     "name": "Silcoon",
     "types": ["Bug"],
     "abilities": ["Shed Skin"],
@@ -210,7 +195,6 @@
     }
   },
   {
-    "pokedex_number": 267,
     "name": "Beautifly",
     "types": ["Bug", "Flying"],
     "abilities": ["Swarm"],
@@ -218,13 +202,12 @@
       "HP": 60,
       "Attack": 70,
       "Defense": 50,
-      "Special Attack": 100,
+      "Special Attack": 90,
       "Special Defense": 50,
       "Speed": 65
     }
   },
   {
-    "pokedex_number": 268,
     "name": "Cascoon",
     "types": ["Bug"],
     "abilities": ["Shed Skin"],
@@ -238,7 +221,6 @@
     }
   },
   {
-    "pokedex_number": 269,
     "name": "Dustox",
     "types": ["Bug", "Poison"],
     "abilities": ["Shield Dust"],
@@ -252,7 +234,6 @@
     }
   },
   {
-    "pokedex_number": 270,
     "name": "Lotad",
     "types": ["Water", "Grass"],
     "abilities": ["Swift Swim", "Rain Dish"],
@@ -266,7 +247,6 @@
     }
   },
   {
-    "pokedex_number": 271,
     "name": "Lombre",
     "types": ["Water", "Grass"],
     "abilities": ["Swift Swim", "Rain Dish"],
@@ -280,7 +260,6 @@
     }
   },
   {
-    "pokedex_number": 272,
     "name": "Ludicolo",
     "types": ["Water", "Grass"],
     "abilities": ["Swift Swim", "Rain Dish"],
@@ -294,7 +273,6 @@
     }
   },
   {
-    "pokedex_number": 273,
     "name": "Seedot",
     "types": ["Grass"],
     "abilities": ["Chlorophyll", "Early Bird"],
@@ -308,7 +286,6 @@
     }
   },
   {
-    "pokedex_number": 274,
     "name": "Nuzleaf",
     "types": ["Grass", "Dark"],
     "abilities": ["Chlorophyll", "Early Bird"],
@@ -322,7 +299,6 @@
     }
   },
   {
-    "pokedex_number": 275,
     "name": "Shiftry",
     "types": ["Grass", "Dark"],
     "abilities": ["Chlorophyll", "Early Bird"],
@@ -336,7 +312,6 @@
     }
   },
   {
-    "pokedex_number": 276,
     "name": "Taillow",
     "types": ["Normal", "Flying"],
     "abilities": ["Guts"],
@@ -350,7 +325,6 @@
     }
   },
   {
-    "pokedex_number": 277,
     "name": "Swellow",
     "types": ["Normal", "Flying"],
     "abilities": ["Guts"],
@@ -358,13 +332,12 @@
       "HP": 60,
       "Attack": 85,
       "Defense": 60,
-      "Special Attack": 75,
+      "Special Attack": 50,
       "Special Defense": 50,
       "Speed": 125
     }
   },
   {
-    "pokedex_number": 278,
     "name": "Wingull",
     "types": ["Water", "Flying"],
     "abilities": ["Keen Eye"],
@@ -378,7 +351,6 @@
     }
   },
   {
-    "pokedex_number": 279,
     "name": "Pelipper",
     "types": ["Water", "Flying"],
     "abilities": ["Keen Eye"],
@@ -392,10 +364,9 @@
     }
   },
   {
-    "pokedex_number": 280,
     "name": "Ralts",
-    "types": ["Psychic", "Fairy"],
-    "abilities": ["Synchronize", "Trace"],
+    "types": ["Psychic"],
+    "abilities": ["Trace"],
     "base_stats": {
       "HP": 28,
       "Attack": 25,
@@ -406,10 +377,9 @@
     }
   },
   {
-    "pokedex_number": 281,
     "name": "Kirlia",
-    "types": ["Psychic", "Fairy"],
-    "abilities": ["Synchronize", "Trace"],
+    "types": ["Psychic"],
+    "abilities": ["Trace"],
     "base_stats": {
       "HP": 38,
       "Attack": 35,
@@ -420,10 +390,9 @@
     }
   },
   {
-    "pokedex_number": 282,
     "name": "Gardevoir",
-    "types": ["Psychic", "Fairy"],
-    "abilities": ["Synchronize", "Trace"],
+    "types": ["Psychic"],
+    "abilities": ["Trace"],
     "base_stats": {
       "HP": 68,
       "Attack": 65,
@@ -434,7 +403,6 @@
     }
   },
   {
-    "pokedex_number": 283,
     "name": "Surskit",
     "types": ["Bug", "Water"],
     "abilities": ["Swift Swim"],
@@ -448,7 +416,6 @@
     }
   },
   {
-    "pokedex_number": 284,
     "name": "Masquerain",
     "types": ["Bug", "Flying"],
     "abilities": ["Intimidate"],
@@ -456,16 +423,15 @@
       "HP": 70,
       "Attack": 60,
       "Defense": 62,
-      "Special Attack": 100,
+      "Special Attack": 80,
       "Special Defense": 82,
-      "Speed": 80
+      "Speed": 60
     }
   },
   {
-    "pokedex_number": 285,
     "name": "Shroomish",
     "types": ["Grass"],
-    "abilities": ["Effect Spore", "Poison Heal"],
+    "abilities": ["Effect Spore"],
     "base_stats": {
       "HP": 60,
       "Attack": 40,
@@ -476,10 +442,9 @@
     }
   },
   {
-    "pokedex_number": 286,
     "name": "Breloom",
     "types": ["Grass", "Fighting"],
-    "abilities": ["Effect Spore", "Poison Heal"],
+    "abilities": ["Effect Spore"],
     "base_stats": {
       "HP": 60,
       "Attack": 130,
@@ -490,7 +455,6 @@
     }
   },
   {
-    "pokedex_number": 287,
     "name": "Slakoth",
     "types": ["Normal"],
     "abilities": ["Truant"],
@@ -504,7 +468,6 @@
     }
   },
   {
-    "pokedex_number": 288,
     "name": "Vigoroth",
     "types": ["Normal"],
     "abilities": ["Vital Spirit"],
@@ -518,7 +481,6 @@
     }
   },
   {
-    "pokedex_number": 289,
     "name": "Slaking",
     "types": ["Normal"],
     "abilities": ["Truant"],
@@ -532,7 +494,6 @@
     }
   },
   {
-    "pokedex_number": 290,
     "name": "Nincada",
     "types": ["Bug", "Ground"],
     "abilities": ["Compound Eyes"],
@@ -546,7 +507,6 @@
     }
   },
   {
-    "pokedex_number": 291,
     "name": "Ninjask",
     "types": ["Bug", "Flying"],
     "abilities": ["Speed Boost"],
@@ -560,7 +520,6 @@
     }
   },
   {
-    "pokedex_number": 292,
     "name": "Shedinja",
     "types": ["Bug", "Ghost"],
     "abilities": ["Wonder Guard"],
@@ -574,7 +533,6 @@
     }
   },
   {
-    "pokedex_number": 293,
     "name": "Whismur",
     "types": ["Normal"],
     "abilities": ["Soundproof"],
@@ -588,7 +546,6 @@
     }
   },
   {
-    "pokedex_number": 294,
     "name": "Loudred",
     "types": ["Normal"],
     "abilities": ["Soundproof"],
@@ -602,7 +559,6 @@
     }
   },
   {
-    "pokedex_number": 295,
     "name": "Exploud",
     "types": ["Normal"],
     "abilities": ["Soundproof"],
@@ -611,12 +567,11 @@
       "Attack": 91,
       "Defense": 63,
       "Special Attack": 91,
-      "Special Defense": 73,
+      "Special Defense": 63,
       "Speed": 68
     }
   },
   {
-    "pokedex_number": 296,
     "name": "Makuhita",
     "types": ["Fighting"],
     "abilities": ["Thick Fat", "Guts"],
@@ -630,7 +585,6 @@
     }
   },
   {
-    "pokedex_number": 297,
     "name": "Hariyama",
     "types": ["Fighting"],
     "abilities": ["Thick Fat", "Guts"],
@@ -644,1395 +598,6 @@
     }
   },
   {
-    "pokedex_number": 298,
-    "name": "Azurill",
-    "types": ["Normal", "Fairy"],
-    "abilities": ["Thick Fat", "Huge Power"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 20,
-      "Defense": 40,
-      "Special Attack": 20,
-      "Special Defense": 40,
-      "Speed": 20
-    }
-  },
-  {
-    "pokedex_number": 299,
-    "name": "Nosepass",
-    "types": ["Rock"],
-    "abilities": ["Sturdy", "Magnet Pull"],
-    "base_stats": {
-      "HP": 30,
-      "Attack": 45,
-      "Defense": 135,
-      "Special Attack": 45,
-      "Special Defense": 90,
-      "Speed": 30
-    }
-  },
-  {
-    "pokedex_number": 300,
-    "name": "Skitty",
-    "types": ["Normal"],
-    "abilities": ["Cute Charm", "Normalize"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 45,
-      "Defense": 45,
-      "Special Attack": 35,
-      "Special Defense": 35,
-      "Speed": 50
-    }
-  },
-  {
-    "pokedex_number": 301,
-    "name": "Delcatty",
-    "types": ["Normal"],
-    "abilities": ["Cute Charm", "Normalize"],
-    "base_stats": {
-      "HP": 70,
-      "Attack": 65,
-      "Defense": 65,
-      "Special Attack": 55,
-      "Special Defense": 55,
-      "Speed": 90
-    }
-  },
-  {
-    "pokedex_number": 302,
-    "name": "Sableye",
-    "types": ["Dark", "Ghost"],
-    "abilities": ["Keen Eye", "Stall"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 75,
-      "Defense": 75,
-      "Special Attack": 65,
-      "Special Defense": 65,
-      "Speed": 50
-    }
-  },
-  {
-    "pokedex_number": 303,
-    "name": "Mawile",
-    "types": ["Steel", "Fairy"],
-    "abilities": ["Hyper Cutter", "Intimidate"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 85,
-      "Defense": 85,
-      "Special Attack": 55,
-      "Special Defense": 55,
-      "Speed": 50
-    }
-  },
-  {
-    "pokedex_number": 304,
-    "name": "Aron",
-    "types": ["Steel", "Rock"],
-    "abilities": ["Sturdy", "Rock Head"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 70,
-      "Defense": 100,
-      "Special Attack": 40,
-      "Special Defense": 40,
-      "Speed": 30
-    }
-  },
-  {
-    "pokedex_number": 305,
-    "name": "Lairon",
-    "types": ["Steel", "Rock"],
-    "abilities": ["Sturdy", "Rock Head"],
-    "base_stats": {
-      "HP": 60,
-      "Attack": 90,
-      "Defense": 140,
-      "Special Attack": 50,
-      "Special Defense": 50,
-      "Speed": 40
-    }
-  },
-  {
-    "pokedex_number": 306,
-    "name": "Aggron",
-    "types": ["Steel", "Rock"],
-    "abilities": ["Sturdy", "Rock Head"],
-    "base_stats": {
-      "HP": 70,
-      "Attack": 110,
-      "Defense": 180,
-      "Special Attack": 60,
-      "Special Defense": 60,
-      "Speed": 50
-    }
-  },
-  {
-    "pokedex_number": 307,
-    "name": "Meditite",
-    "types": ["Fighting", "Psychic"],
-    "abilities": ["Pure Power"],
-    "base_stats": {
-      "HP": 30,
-      "Attack": 40,
-      "Defense": 55,
-      "Special Attack": 40,
-      "Special Defense": 55,
-      "Speed": 60
-    }
-  },
-  {
-    "pokedex_number": 308,
-    "name": "Medicham",
-    "types": ["Fighting", "Psychic"],
-    "abilities": ["Pure Power"],
-    "base_stats": {
-      "HP": 60,
-      "Attack": 60,
-      "Defense": 75,
-      "Special Attack": 60,
-      "Special Defense": 75,
-      "Speed": 80
-    }
-  },
-  {
-    "pokedex_number": 309,
-    "name": "Electrike",
-    "types": ["Electric"],
-    "abilities": ["Static", "Lightning Rod"],
-    "base_stats": {
-      "HP": 40,
-      "Attack": 45,
-      "Defense": 40,
-      "Special Attack": 65,
-      "Special Defense": 40,
-      "Speed": 65
-    }
-  },
-  {
-    "pokedex_number": 310,
-    "name": "Manectric",
-    "types": ["Electric"],
-    "abilities": ["Static", "Lightning Rod"],
-    "base_stats": {
-      "HP": 70,
-      "Attack": 75,
-      "Defense": 60,
-      "Special Attack": 105,
-      "Special Defense": 60,
-      "Speed": 105
-    }
-  },
-  {
-    "pokedex_number": 311,
-    "name": "Plusle",
-    "types": ["Electric"],
-    "abilities": ["Plus"],
-    "base_stats": {
-      "HP": 60,
-      "Attack": 50,
-      "Defense": 40,
-      "Special Attack": 85,
-      "Special Defense": 75,
-      "Speed": 95
-    }
-  },
-  {
-    "pokedex_number": 312,
-    "name": "Minun",
-    "types": ["Electric"],
-    "abilities": ["Minus"],
-    "base_stats": {
-      "HP": 60,
-      "Attack": 40,
-      "Defense": 50,
-      "Special Attack": 75,
-      "Special Defense": 85,
-      "Speed": 95
-    }
-  },
-  {
-    "pokedex_number": 313,
-    "name": "Volbeat",
-    "types": ["Bug"],
-    "abilities": ["Illuminate", "Swarm"],
-    "base_stats": {
-      "HP": 65,
-      "Attack": 73,
-      "Defense": 75,
-      "Special Attack": 47,
-      "Special Defense": 85,
-      "Speed": 85
-    }
-  },
-  {
-    "pokedex_number": 314,
-    "name": "Illumise",
-    "types": ["Bug"],
-    "abilities": ["Oblivious", "Tinted Lens"],
-    "base_stats": {
-      "HP": 65,
-      "Attack": 47,
-      "Defense": 75,
-      "Special Attack": 73,
-      "Special Defense": 85,
-      "Speed": 85
-    }
-  },
-  {
-    "pokedex_number": 315,
-    "name": "Roselia",
-    "types": ["Grass", "Poison"],
-    "abilities": ["Natural Cure", "Poison Point"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 60,
-      "Defense": 45,
-      "Special Attack": 100,
-      "Special Defense": 80,
-      "Speed": 65
-    }
-  },
-  {
-    "pokedex_number": 316,
-    "name": "Gulpin",
-    "types": ["Poison"],
-    "abilities": ["Liquid Ooze", "Sticky Hold"],
-    "base_stats": {
-      "HP": 70,
-      "Attack": 43,
-      "Defense": 53,
-      "Special Attack": 43,
-      "Special Defense": 53,
-      "Speed": 40
-    }
-  },
-  {
-    "pokedex_number": 317,
-    "name": "Swalot",
-    "types": ["Poison"],
-    "abilities": ["Liquid Ooze", "Sticky Hold"],
-    "base_stats": {
-      "HP": 100,
-      "Attack": 73,
-      "Defense": 83,
-      "Special Attack": 73,
-      "Special Defense": 83,
-      "Speed": 55
-    }
-  },
-  {
-    "pokedex_number": 318,
-    "name": "Carvanha",
-    "types": ["Water", "Dark"],
-    "abilities": ["Rough Skin"],
-    "base_stats": {
-      "HP": 45,
-      "Attack": 90,
-      "Defense": 20,
-      "Special Attack": 65,
-      "Special Defense": 20,
-      "Speed": 65
-    }
-  },
-  {
-    "pokedex_number": 319,
-    "name": "Sharpedo",
-    "types": ["Water", "Dark"],
-    "abilities": ["Rough Skin"],
-    "base_stats": {
-      "HP": 70,
-      "Attack": 120,
-      "Defense": 40,
-      "Special Attack": 95,
-      "Special Defense": 40,
-      "Speed": 95
-    }
-  },
-  {
-    "pokedex_number": 320,
-    "name": "Wailmer",
-    "types": ["Water"],
-    "abilities": ["Water Veil", "Oblivious"],
-    "base_stats": {
-      "HP": 130,
-      "Attack": 70,
-      "Defense": 35,
-      "Special Attack": 70,
-      "Special Defense": 35,
-      "Speed": 60
-    }
-  },
-  {
-    "pokedex_number": 321,
-    "name": "Wailord",
-    "types": ["Water"],
-    "abilities": ["Water Veil", "Oblivious"],
-    "base_stats": {
-      "HP": 170,
-      "Attack": 90,
-      "Defense": 45,
-      "Special Attack": 90,
-      "Special Defense": 45,
-      "Speed": 60
-    }
-  },
-  {
-    "pokedex_number": 322,
-    "name": "Numel",
-    "types": ["Fire", "Ground"],
-    "abilities": ["Oblivious", "Simple"],
-    "base_stats": {
-      "HP": 60,
-      "Attack": 60,
-      "Defense": 40,
-      "Special Attack": 65,
-      "Special Defense": 45,
-      "Speed": 35
-    }
-  },
-  {
-    "pokedex_number": 323,
-    "name": "Camerupt",
-    "types": ["Fire", "Ground"],
-    "abilities": ["Magma Armor", "Solid Rock"],
-    "base_stats": {
-      "HP": 70,
-      "Attack": 100,
-      "Defense": 70,
-      "Special Attack": 105,
-      "Special Defense": 75,
-      "Speed": 40
-    }
-  },
-  {
-    "pokedex_number": 324,
-    "name": "Torkoal",
-    "types": ["Fire"],
-    "abilities": ["White Smoke", "Drought"],
-    "base_stats": {
-      "HP": 70,
-      "Attack": 85,
-      "Defense": 140,
-      "Special Attack": 85,
-      "Special Defense": 70,
-      "Speed": 20
-    }
-  },
-  {
-    "pokedex_number": 325,
-    "name": "Spoink",
-    "types": ["Psychic"],
-    "abilities": ["Thick Fat", "Own Tempo"],
-    "base_stats": {
-      "HP": 60,
-      "Attack": 25,
-      "Defense": 35,
-      "Special Attack": 70,
-      "Special Defense": 80,
-      "Speed": 60
-    }
-  },
-  {
-    "pokedex_number": 326,
-    "name": "Grumpig",
-    "types": ["Psychic"],
-    "abilities": ["Thick Fat", "Own Tempo"],
-    "base_stats": {
-      "HP": 80,
-      "Attack": 45,
-      "Defense": 65,
-      "Special Attack": 90,
-      "Special Defense": 110,
-      "Speed": 80
-    }
-  },
-  {
-    "pokedex_number": 327,
-    "name": "Spinda",
-    "types": ["Normal"],
-    "abilities": ["Own Tempo", "Tangled Feet"],
-    "base_stats": {
-      "HP": 60,
-      "Attack": 60,
-      "Defense": 60,
-      "Special Attack": 60,
-      "Special Defense": 60,
-      "Speed": 60
-    }
-  },
-  {
-    "pokedex_number": 328,
-    "name": "Trapinch",
-    "types": ["Ground"],
-    "abilities": ["Hyper Cutter", "Arena Trap"],
-    "base_stats": {
-      "HP": 45,
-      "Attack": 100,
-      "Defense": 45,
-      "Special Attack": 45,
-      "Special Defense": 45,
-      "Speed": 10
-    }
-  },
-  {
-    "pokedex_number": 329,
-    "name": "Vibrava",
-    "types": ["Ground", "Dragon"],
-    "abilities": ["Levitate"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 70,
-      "Defense": 50,
-      "Special Attack": 50,
-      "Special Defense": 50,
-      "Speed": 70
-    }
-  },
-  {
-    "pokedex_number": 330,
-    "name": "Flygon",
-    "types": ["Ground", "Dragon"],
-    "abilities": ["Levitate"],
-    "base_stats": {
-      "HP": 80,
-      "Attack": 100,
-      "Defense": 80,
-      "Special Attack": 80,
-      "Special Defense": 80,
-      "Speed": 100
-    }
-  },
-  {
-    "pokedex_number": 331,
-    "name": "Cacnea",
-    "types": ["Grass"],
-    "abilities": ["Sand Veil"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 85,
-      "Defense": 40,
-      "Special Attack": 85,
-      "Special Defense": 40,
-      "Speed": 35
-    }
-  },
-  {
-    "pokedex_number": 332,
-    "name": "Cacturne",
-    "types": ["Grass", "Dark"],
-    "abilities": ["Sand Veil"],
-    "base_stats": {
-      "HP": 70,
-      "Attack": 115,
-      "Defense": 60,
-      "Special Attack": 115,
-      "Special Defense": 60,
-      "Speed": 55
-    }
-  },
-  {
-    "pokedex_number": 333,
-    "name": "Swablu",
-    "types": ["Normal", "Flying"],
-    "abilities": ["Natural Cure"],
-    "base_stats": {
-      "HP": 45,
-      "Attack": 40,
-      "Defense": 60,
-      "Special Attack": 40,
-      "Special Defense": 75,
-      "Speed": 50
-    }
-  },
-  {
-    "pokedex_number": 334,
-    "name": "Altaria",
-    "types": ["Dragon", "Flying"],
-    "abilities": ["Natural Cure"],
-    "base_stats": {
-      "HP": 75,
-      "Attack": 70,
-      "Defense": 90,
-      "Special Attack": 70,
-      "Special Defense": 105,
-      "Speed": 80
-    }
-  },
-  {
-    "pokedex_number": 335,
-    "name": "Zangoose",
-    "types": ["Normal"],
-    "abilities": ["Immunity"],
-    "base_stats": {
-      "HP": 73,
-      "Attack": 115,
-      "Defense": 60,
-      "Special Attack": 60,
-      "Special Defense": 60,
-      "Speed": 90
-    }
-  },
-  {
-    "pokedex_number": 336,
-    "name": "Seviper",
-    "types": ["Poison"],
-    "abilities": ["Shed Skin"],
-    "base_stats": {
-      "HP": 73,
-      "Attack": 100,
-      "Defense": 60,
-      "Special Attack": 100,
-      "Special Defense": 60,
-      "Speed": 65
-    }
-  },
-  {
-    "pokedex_number": 337,
-    "name": "Lunatone",
-    "types": ["Rock", "Psychic"],
-    "abilities": ["Levitate"],
-    "base_stats": {
-      "HP": 90,
-      "Attack": 55,
-      "Defense": 65,
-      "Special Attack": 95,
-      "Special Defense": 85,
-      "Speed": 70
-    }
-  },
-  {
-    "pokedex_number": 338,
-    "name": "Solrock",
-    "types": ["Rock", "Psychic"],
-    "abilities": ["Levitate"],
-    "base_stats": {
-      "HP": 90,
-      "Attack": 95,
-      "Defense": 85,
-      "Special Attack": 55,
-      "Special Defense": 65,
-      "Speed": 70
-    }
-  },
-  {
-    "pokedex_number": 339,
-    "name": "Barboach",
-    "types": ["Water", "Ground"],
-    "abilities": ["Oblivious", "Anticipation"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 48,
-      "Defense": 43,
-      "Special Attack": 46,
-      "Special Defense": 41,
-      "Speed": 60
-    }
-  },
-  {
-    "pokedex_number": 340,
-    "name": "Whiscash",
-    "types": ["Water", "Ground"],
-    "abilities": ["Oblivious", "Anticipation"],
-    "base_stats": {
-      "HP": 110,
-      "Attack": 78,
-      "Defense": 73,
-      "Special Attack": 76,
-      "Special Defense": 71,
-      "Speed": 60
-    }
-  },
-  {
-    "pokedex_number": 341,
-    "name": "Corphish",
-    "types": ["Water"],
-    "abilities": ["Hyper Cutter", "Shell Armor"],
-    "base_stats": {
-      "HP": 43,
-      "Attack": 80,
-      "Defense": 65,
-      "Special Attack": 50,
-      "Special Defense": 35,
-      "Speed": 35
-    }
-  },
-  {
-    "pokedex_number": 342,
-    "name": "Crawdaunt",
-    "types": ["Water", "Dark"],
-    "abilities": ["Hyper Cutter", "Shell Armor"],
-    "base_stats": {
-      "HP": 63,
-      "Attack": 120,
-      "Defense": 85,
-      "Special Attack": 90,
-      "Special Defense": 55,
-      "Speed": 55
-    }
-  },
-  {
-    "pokedex_number": 343,
-    "name": "Baltoy",
-    "types": ["Ground", "Psychic"],
-    "abilities": ["Levitate"],
-    "base_stats": {
-      "HP": 40,
-      "Attack": 40,
-      "Defense": 55,
-      "Special Attack": 40,
-      "Special Defense": 70,
-      "Speed": 55
-    }
-  },
-  {
-    "pokedex_number": 344,
-    "name": "Claydol",
-    "types": ["Ground", "Psychic"],
-    "abilities": ["Levitate"],
-    "base_stats": {
-      "HP": 60,
-      "Attack": 70,
-      "Defense": 105,
-      "Special Attack": 70,
-      "Special Defense": 120,
-      "Speed": 75
-    }
-  },
-  {
-    "pokedex_number": 345,
-    "name": "Lileep",
-    "types": ["Rock", "Grass"],
-    "abilities": ["Suction Cups"],
-    "base_stats": {
-      "HP": 66,
-      "Attack": 41,
-      "Defense": 77,
-      "Special Attack": 61,
-      "Special Defense": 87,
-      "Speed": 23
-    }
-  },
-  {
-    "pokedex_number": 346,
-    "name": "Cradily",
-    "types": ["Rock", "Grass"],
-    "abilities": ["Suction Cups"],
-    "base_stats": {
-      "HP": 86,
-      "Attack": 81,
-      "Defense": 97,
-      "Special Attack": 81,
-      "Special Defense": 107,
-      "Speed": 43
-    }
-  },
-  {
-    "pokedex_number": 347,
-    "name": "Anorith",
-    "types": ["Rock", "Bug"],
-    "abilities": ["Battle Armor"],
-    "base_stats": {
-      "HP": 45,
-      "Attack": 95,
-      "Defense": 50,
-      "Special Attack": 40,
-      "Special Defense": 50,
-      "Speed": 75
-    }
-  },
-  {
-    "pokedex_number": 348,
-    "name": "Armaldo",
-    "types": ["Rock", "Bug"],
-    "abilities": ["Battle Armor"],
-    "base_stats": {
-      "HP": 75,
-      "Attack": 125,
-      "Defense": 100,
-      "Special Attack": 70,
-      "Special Defense": 80,
-      "Speed": 45
-    }
-  },
-  {
-    "pokedex_number": 349,
-    "name": "Feebas",
-    "types": ["Water"],
-    "abilities": ["Swift Swim", "Oblivious"],
-    "base_stats": {
-      "HP": 20,
-      "Attack": 15,
-      "Defense": 20,
-      "Special Attack": 10,
-      "Special Defense": 55,
-      "Speed": 80
-    }
-  },
-  {
-    "pokedex_number": 350,
-    "name": "Milotic",
-    "types": ["Water"],
-    "abilities": ["Marvel Scale", "Competitive"],
-    "base_stats": {
-      "HP": 95,
-      "Attack": 60,
-      "Defense": 79,
-      "Special Attack": 100,
-      "Special Defense": 125,
-      "Speed": 81
-    }
-  },
-  {
-    "pokedex_number": 351,
-    "name": "Castform",
-    "types": ["Normal"],
-    "abilities": ["Forecast"],
-    "base_stats": {
-      "HP": 70,
-      "Attack": 70,
-      "Defense": 70,
-      "Special Attack": 70,
-      "Special Defense": 70,
-      "Speed": 70
-    },
-    "note": "Stats for Normal Form; other formes (Sunny, Rainy, Snowy) have same stats but different types"
-  },
-  {
-    "pokedex_number": 352,
-    "name": "Kecleon",
-    "types": ["Normal"],
-    "abilities": ["Color Change"],
-    "base_stats": {
-      "HP": 60,
-      "Attack": 90,
-      "Defense": 70,
-      "Special Attack": 60,
-      "Special Defense": 120,
-      "Speed": 40
-    }
-  },
-  {
-    "pokedex_number": 353,
-    "name": "Shuppet",
-    "types": ["Ghost"],
-    "abilities": ["Insomnia", "Frisk"],
-    "base_stats": {
-      "HP": 44,
-      "Attack": 75,
-      "Defense": 35,
-      "Special Attack": 63,
-      "Special Defense": 33,
-      "Speed": 45
-    }
-  },
-  {
-    "pokedex_number": 354,
-    "name": "Banette",
-    "types": ["Ghost"],
-    "abilities": ["Insomnia", "Frisk"],
-    "base_stats": {
-      "HP": 64,
-      "Attack": 115,
-      "Defense": 65,
-      "Special Attack": 83,
-      "Special Defense": 63,
-      "Speed": 65
-    }
-  },
-  {
-    "pokedex_number": 355,
-    "name": "Duskull",
-    "types": ["Ghost"],
-    "abilities": ["Levitate"],
-    "base_stats": {
-      "HP": 20,
-      "Attack": 40,
-      "Defense": 90,
-      "Special Attack": 30,
-      "Special Defense": 90,
-      "Speed": 25
-    }
-  },
-  {
-    "pokedex_number": 356,
-    "name": "Dusclops",
-    "types": ["Ghost"],
-    "abilities": ["Pressure"],
-    "base_stats": {
-      "HP": 40,
-      "Attack": 70,
-      "Defense": 130,
-      "Special Attack": 60,
-      "Special Defense": 130,
-      "Speed": 25
-    }
-  },
-  {
-    "pokedex_number": 357,
-    "name": "Tropius",
-    "types": ["Grass", "Flying"],
-    "abilities": ["Chlorophyll", "Solar Power"],
-    "base_stats": {
-      "HP": 99,
-      "Attack": 68,
-      "Defense": 83,
-      "Special Attack": 72,
-      "Special Defense": 87,
-      "Speed": 51
-    }
-  },
-  {
-    "pokedex_number": 358,
-    "name": "Chimecho",
-    "types": ["Psychic"],
-    "abilities": ["Levitate"],
-    "base_stats": {
-      "HP": 75,
-      "Attack": 50,
-      "Defense": 80,
-      "Special Attack": 95,
-      "Special Defense": 90,
-      "Speed": 65
-    }
-  },
-  {
-    "pokedex_number": 359,
-    "name": "Absol",
-    "types": ["Dark"],
-    "abilities": ["Pressure", "Super Luck"],
-    "base_stats": {
-      "HP": 65,
-      "Attack": 130,
-      "Defense": 60,
-      "Special Attack": 75,
-      "Special Defense": 60,
-      "Speed": 75
-    }
-  },
-  {
-    "pokedex_number": 360,
-    "name": "Wynaut",
-    "types": ["Psychic"],
-    "abilities": ["Shadow Tag"],
-    "base_stats": {
-      "HP": 95,
-      "Attack": 23,
-      "Defense": 48,
-      "Special Attack": 23,
-      "Special Defense": 48,
-      "Speed": 23
-    }
-  },
-  {
-    "pokedex_number": 361,
-    "name": "Snorunt",
-    "types": ["Ice"],
-    "abilities": ["Inner Focus", "Ice Body"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 50,
-      "Defense": 50,
-      "Special Attack": 50,
-      "Special Defense": 50,
-      "Speed": 50
-    }
-  },
-  {
-    "pokedex_number": 362,
-    "name": "Glalie",
-    "types": ["Ice"],
-    "abilities": ["Inner Focus", "Ice Body"],
-    "base_stats": {
-      "HP": 80,
-      "Attack": 80,
-      "Defense": 80,
-      "Special Attack": 80,
-      "Special Defense": 80,
-      "Speed": 80
-    }
-  },
-  {
-    "pokedex_number": 363,
-    "name": "Spheal",
-    "types": ["Ice", "Water"],
-    "abilities": ["Thick Fat", "Ice Body"],
-    "base_stats": {
-      "HP": 70,
-      "Attack": 40,
-      "Defense": 50,
-      "Special Attack": 55,
-      "Special Defense": 50,
-      "Speed": 25
-    }
-  },
-  {
-    "pokedex_number": 364,
-    "name": "Sealeo",
-    "types": ["Ice", "Water"],
-    "abilities": ["Thick Fat", "Ice Body"],
-    "base_stats": {
-      "HP": 90,
-      "Attack": 60,
-      "Defense": 70,
-      "Special Attack": 75,
-      "Special Defense": 70,
-      "Speed": 45
-    }
-  },
-  {
-    "pokedex_number": 365,
-    "name": "Walrein",
-    "types": ["Ice", "Water"],
-    "abilities": ["Thick Fat", "Ice Body"],
-    "base_stats": {
-      "HP": 110,
-      "Attack": 80,
-      "Defense": 90,
-      "Special Attack": 95,
-      "Special Defense": 90,
-      "Speed": 65
-    }
-  },
-  {
-    "pokedex_number": 366,
-    "name": "Clamperl",
-    "types": ["Water"],
-    "abilities": ["Shell Armor"],
-    "base_stats": {
-      "HP": 35,
-      "Attack": 64,
-      "Defense": 85,
-      "Special Attack": 74,
-      "Special Defense": 55,
-      "Speed": 32
-    }
-  },
-  {
-    "pokedex_number": 367,
-    "name": "Huntail",
-    "types": ["Water"],
-    "abilities": ["Swift Swim"],
-    "base_stats": {
-      "HP": 55,
-      "Attack": 104,
-      "Defense": 105,
-      "Special Attack": 94,
-      "Special Defense": 75,
-      "Speed": 52
-    }
-  },
-  {
-    "pokedex_number": 368,
-    "name": "Gorebyss",
-    "types": ["Water"],
-    "abilities": ["Swift Swim"],
-    "base_stats": {
-      "HP": 55,
-      "Attack": 84,
-      "Defense": 105,
-      "Special Attack": 114,
-      "Special Defense": 75,
-      "Speed": 52
-    }
-  },
-  {
-    "pokedex_number": 369,
-    "name": "Relicanth",
-    "types": ["Water", "Rock"],
-    "abilities": ["Swift Swim", "Rock Head"],
-    "base_stats": {
-      "HP": 100,
-      "Attack": 90,
-      "Defense": 130,
-      "Special Attack": 45,
-      "Special Defense": 65,
-      "Speed": 55
-    }
-  },
-  {
-    "pokedex_number": 370,
-    "name": "Luvdisc",
-    "types": ["Water"],
-    "abilities": ["Swift Swim"],
-    "base_stats": {
-      "HP": 43,
-      "Attack": 30,
-      "Defense": 55,
-      "Special Attack": 40,
-      "Special Defense": 65,
-      "Speed": 97
-    }
-  },
-  {
-    "pokedex_number": 371,
-    "name": "Bagon",
-    "types": ["Dragon"],
-    "abilities": ["Rock Head"],
-    "base_stats": {
-      "HP": 45,
-      "Attack": 75,
-      "Defense": 60,
-      "Special Attack": 40,
-      "Special Defense": 30,
-      "Speed": 50
-    }
-  },
-  {
-    "pokedex_number": 372,
-    "name": "Shelgon",
-    "types": ["Dragon"],
-    "abilities": ["Rock Head"],
-    "base_stats": {
-      "HP": 65,
-      "Attack": 95,
-      "Defense": 100,
-      "Special Attack": 60,
-      "Special Defense": 50,
-      "Speed": 50
-    }
-  },
-  {
-    "pokedex_number": 373,
-    "name": "Salamence",
-    "types": ["Dragon", "Flying"],
-    "abilities": ["Intimidate"],
-    "base_stats": {
-      "HP": 95,
-      "Attack": 135,
-      "Defense": 80,
-      "Special Attack": 110,
-      "Special Defense": 80,
-      "Speed": 100
-    }
-  },
-  {
-    "pokedex_number": 374,
-    "name": "Beldum",
-    "types": ["Steel", "Psychic"],
-    "abilities": ["Clear Body"],
-    "base_stats": {
-      "HP": 40,
-      "Attack": 55,
-      "Defense": 80,
-      "Special Attack": 35,
-      "Special Defense": 60,
-      "Speed": 30
-    }
-  },
-  {
-    "pokedex_number": 375,
-    "name": "Metang",
-    "types": ["Steel", "Psychic"],
-    "abilities": ["Clear Body"],
-    "base_stats": {
-      "HP": 60,
-      "Attack": 75,
-      "Defense": 100,
-      "Special Attack": 55,
-      "Special Defense": 80,
-      "Speed": 50
-    }
-  },
-  {
-    "pokedex_number": 376,
-    "name": "Metagross",
-    "types": ["Steel", "Psychic"],
-    "abilities": ["Clear Body"],
-    "base_stats": {
-      "HP": 80,
-      "Attack": 135,
-      "Defense": 130,
-      "Special Attack": 95,
-      "Special Defense": 90,
-      "Speed": 70
-    }
-  },
-  {
-    "pokedex_number": 377,
-    "name": "Regirock",
-    "types": ["Rock"],
-    "abilities": ["Clear Body"],
-    "base_stats": {
-      "HP": 80,
-      "Attack": 100,
-      "Defense": 200,
-      "Special Attack": 50,
-      "Special Defense": 100,
-      "Speed": 50
-    }
-  },
-  {
-    "pokedex_number": 378,
-    "name": "Regice",
-    "types": ["Ice"],
-    "abilities": ["Clear Body"],
-    "base_stats": {
-      "HP": 80,
-      "Attack": 50,
-      "Defense": 100,
-      "Special Attack": 100,
-      "Special Defense": 200,
-      "Speed": 50
-    }
-  },
-  {
-    "pokedex_number": 379,
-    "name": "Registeel",
-    "types": ["Steel"],
-    "abilities": ["Clear Body"],
-    "base_stats": {
-      "HP": 80,
-      "Attack": 75,
-      "Defense": 150,
-      "Special Attack": 75,
-      "Special Defense": 150,
-      "Speed": 50
-    }
-  },
-  {
-    "pokedex_number": 380,
-    "name": "Latias",
-    "types": ["Dragon", "Psychic"],
-    "abilities": ["Levitate"],
-    "base_stats": {
-      "HP": 80,
-      "Attack": 80,
-      "Defense": 90,
-      "Special Attack": 110,
-      "Special Defense": 130,
-      "Speed": 110
-    }
-  },
-  {
-    "pokedex_number": 381,
-    "name": "Latios",
-    "types": ["Dragon", "Psychic"],
-    "abilities": ["Levitate"],
-    "base_stats": {
-      "HP": 80,
-      "Attack": 90,
-      "Defense": 80,
-      "Special Attack": 130,
-      "Special Defense": 110,
-      "Speed": 110
-    }
-  },
-  {
-    "pokedex_number": 382,
-    "name": "Kyogre",
-    "types": ["Water"],
-    "abilities": ["Drizzle"],
-    "base_stats": {
-      "HP": 100,
-      "Attack": 100,
-      "Defense": 90,
-      "Special Attack": 150,
-      "Special Defense": 140,
-      "Speed": 90
-    }
-  },
-  {
-    "pokedex_number": 383,
-    "name": "Groudon",
-    "types": ["Ground"],
-    "abilities": ["Drought"],
-    "base_stats": {
-      "HP": 100,
-      "Attack": 150,
-      "Defense": 140,
-      "Special Attack": 100,
-      "Special Defense": 90,
-      "Speed": 90
-    }
-  },
-  {
-    "pokedex_number": 384,
-    "name": "Rayquaza",
-    "types": ["Dragon", "Flying"],
-    "abilities": ["Air Lock"],
-    "base_stats": {
-      "HP": 105,
-      "Attack": 150,
-      "Defense": 90,
-      "Special Attack": 150,
-      "Special Defense": 90,
-      "Speed": 95
-    }
-  },
-  {
-    "pokedex_number": 385,
-    "name": "Jirachi",
-    "types": ["Steel", "Psychic"],
-    "abilities": ["Serene Grace"],
-    "base_stats": {
-      "HP": 100,
-      "Attack": 100,
-      "Defense": 100,
-      "Special Attack": 100,
-      "Special Defense": 100,
-      "Speed": 100
-    }
-  },
-  {
-    "pokedex_number": 386,
-    "name": "Deoxys",
-    "types": ["Psychic"],
-    "abilities": ["Pressure"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 150,
-      "Defense": 50,
-      "Special Attack": 150,
-      "Special Defense": 50,
-      "Speed": 150
-    },
-    "note": "Stats for Normal Forme"
-  },
-  {
-    "pokedex_number": 386,
-    "name": "Deoxys (Attack Forme)",
-    "types": ["Psychic"],
-    "abilities": ["Pressure"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 180,
-      "Defense": 20,
-      "Special Attack": 180,
-      "Special Defense": 20,
-      "Speed": 150
-    }
-  },
-  {
-    "pokedex_number": 386,
-    "name": "Deoxys (Defense Forme)",
-    "types": ["Psychic"],
-    "abilities": ["Pressure"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 70,
-      "Defense": 160,
-      "Special Attack": 70,
-      "Special Defense": 160,
-      "Speed": 90
-    }
-  },
-  {
-    "pokedex_number": 386,
-    "name": "Deoxys (Speed Forme)",
-    "types": ["Psychic"],
-    "abilities": ["Pressure"],
-    "base_stats": {
-      "HP": 50,
-      "Attack": 95,
-      "Defense": 90,
-      "Special Attack": 95,
-      "Special Defense": 90,
-      "Speed": 180
-    }
-  },
-  {
-    "pokedex_number": 63,
-    "name": "Abra",
-    "types": ["Psychic"],
-    "abilities": ["Synchronize", "Inner Focus"],
-    "base_stats": {
-      "HP": 25,
-      "Attack": 20,
-      "Defense": 15,
-      "Special Attack": 105,
-      "Special Defense": 55,
-      "Speed": 90
-    }
-  },
-  {
-    "pokedex_number": 64,
-    "name": "Kadabra",
-    "types": ["Psychic"],
-    "abilities": ["Synchronize", "Inner Focus"],
-    "base_stats": {
-      "HP": 40,
-      "Attack": 35,
-      "Defense": 30,
-      "Special Attack": 120,
-      "Special Defense": 70,
-      "Speed": 105
-    }
-  },
-  {
-    "pokedex_number": 65,
-    "name": "Alakazam",
-    "types": ["Psychic"],
-    "abilities": ["Synchronize", "Inner Focus"],
-    "base_stats": {
-      "HP": 55,
-      "Attack": 50,
-      "Defense": 45,
-      "Special Attack": 135,
-      "Special Defense": 85,
-      "Speed": 120
-    }
-  },
-  {
-    "pokedex_number": 118,
-    "name": "Goldeen",
-    "types": ["Water"],
-    "abilities": ["Swift Swim", "Water Veil"],
-    "base_stats": {
-      "HP": 45,
-      "Attack": 67,
-      "Defense": 60,
-      "Special Attack": 35,
-      "Special Defense": 50,
-      "Speed": 63
-    }
-  },
-  {
-    "pokedex_number": 119,
-    "name": "Seaking",
-    "types": ["Water"],
-    "abilities": ["Swift Swim", "Water Veil"],
-    "base_stats": {
-      "HP": 80,
-      "Attack": 92,
-      "Defense": 65,
-      "Special Attack": 65,
-      "Special Defense": 80,
-      "Speed": 68
-    }
-  },
-  {
-    "pokedex_number": 129,
-    "name": "Magikarp",
-    "types": ["Water"],
-    "abilities": ["Swift Swim"],
-    "base_stats": {
-      "HP": 20,
-      "Attack": 10,
-      "Defense": 55,
-      "Special Attack": 15,
-      "Special Defense": 20,
-      "Speed": 80
-    }
-  },
-  {
-    "pokedex_number": 130,
-    "name": "Gyarados",
-    "types": ["Water", "Flying"],
-    "abilities": ["Intimidate"],
-    "base_stats": {
-      "HP": 95,
-      "Attack": 125,
-      "Defense": 79,
-      "Special Attack": 60,
-      "Special Defense": 100,
-      "Speed": 81
-    }
-  },
-  {
-    "pokedex_number": 298,
     "name": "Azurill",
     "types": ["Normal"],
     "abilities": ["Thick Fat", "Huge Power"],
@@ -2046,7 +611,6 @@
     }
   },
   {
-    "pokedex_number": 183,
     "name": "Marill",
     "types": ["Water"],
     "abilities": ["Thick Fat", "Huge Power"],
@@ -2060,7 +624,6 @@
     }
   },
   {
-    "pokedex_number": 184,
     "name": "Azumarill",
     "types": ["Water"],
     "abilities": ["Thick Fat", "Huge Power"],
@@ -2074,7 +637,1319 @@
     }
   },
   {
-    "pokedex_number": 74,
+    "name": "Nosepass",
+    "types": ["Rock"],
+    "abilities": ["Sturdy", "Magnet Pull"],
+    "base_stats": {
+      "HP": 30,
+      "Attack": 45,
+      "Defense": 135,
+      "Special Attack": 45,
+      "Special Defense": 90,
+      "Speed": 30
+    }
+  },
+  {
+    "name": "Skitty",
+    "types": ["Normal"],
+    "abilities": ["Cute Charm"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 45,
+      "Defense": 45,
+      "Special Attack": 35,
+      "Special Defense": 35,
+      "Speed": 50
+    }
+  },
+  {
+    "name": "Delcatty",
+    "types": ["Normal"],
+    "abilities": ["Cute Charm"],
+    "base_stats": {
+      "HP": 70,
+      "Attack": 65,
+      "Defense": 65,
+      "Special Attack": 55,
+      "Special Defense": 55,
+      "Speed": 90
+    }
+  },
+  {
+    "name": "Sableye",
+    "types": ["Dark", "Ghost"],
+    "abilities": ["Keen Eye"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 75,
+      "Defense": 75,
+      "Special Attack": 65,
+      "Special Defense": 65,
+      "Speed": 50
+    }
+  },
+  {
+    "name": "Mawile",
+    "types": ["Steel"],
+    "abilities": ["Hyper Cutter", "Intimidate"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 85,
+      "Defense": 85,
+      "Special Attack": 55,
+      "Special Defense": 55,
+      "Speed": 50
+    }
+  },
+  {
+    "name": "Aron",
+    "types": ["Steel", "Rock"],
+    "abilities": ["Sturdy", "Rock Head"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 70,
+      "Defense": 100,
+      "Special Attack": 40,
+      "Special Defense": 40,
+      "Speed": 30
+    }
+  },
+  {
+    "name": "Lairon",
+    "types": ["Steel", "Rock"],
+    "abilities": ["Sturdy", "Rock Head"],
+    "base_stats": {
+      "HP": 60,
+      "Attack": 90,
+      "Defense": 140,
+      "Special Attack": 50,
+      "Special Defense": 50,
+      "Speed": 40
+    }
+  },
+  {
+    "name": "Aggron",
+    "types": ["Steel", "Rock"],
+    "abilities": ["Sturdy", "Rock Head"],
+    "base_stats": {
+      "HP": 70,
+      "Attack": 110,
+      "Defense": 180,
+      "Special Attack": 60,
+      "Special Defense": 60,
+      "Speed": 50
+    }
+  },
+  {
+    "name": "Meditite",
+    "types": ["Fighting", "Psychic"],
+    "abilities": ["Pure Power"],
+    "base_stats": {
+      "HP": 30,
+      "Attack": 40,
+      "Defense": 55,
+      "Special Attack": 40,
+      "Special Defense": 55,
+      "Speed": 60
+    }
+  },
+  {
+    "name": "Medicham",
+    "types": ["Fighting", "Psychic"],
+    "abilities": ["Pure Power"],
+    "base_stats": {
+      "HP": 60,
+      "Attack": 60,
+      "Defense": 75,
+      "Special Attack": 60,
+      "Special Defense": 75,
+      "Speed": 80
+    }
+  },
+  {
+    "name": "Electrike",
+    "types": ["Electric"],
+    "abilities": ["Static", "Lightning Rod"],
+    "base_stats": {
+      "HP": 40,
+      "Attack": 45,
+      "Defense": 40,
+      "Special Attack": 65,
+      "Special Defense": 40,
+      "Speed": 65
+    }
+  },
+  {
+    "name": "Manectric",
+    "types": ["Electric"],
+    "abilities": ["Static", "Lightning Rod"],
+    "base_stats": {
+      "HP": 70,
+      "Attack": 75,
+      "Defense": 60,
+      "Special Attack": 105,
+      "Special Defense": 60,
+      "Speed": 105
+    }
+  },
+  {
+    "name": "Plusle",
+    "types": ["Electric"],
+    "abilities": ["Plus"],
+    "base_stats": {
+      "HP": 60,
+      "Attack": 50,
+      "Defense": 40,
+      "Special Attack": 85,
+      "Special Defense": 75,
+      "Speed": 95
+    }
+  },
+  {
+    "name": "Minun",
+    "types": ["Electric"],
+    "abilities": ["Minus"],
+    "base_stats": {
+      "HP": 60,
+      "Attack": 40,
+      "Defense": 50,
+      "Special Attack": 75,
+      "Special Defense": 85,
+      "Speed": 95
+    }
+  },
+  {
+    "name": "Volbeat",
+    "types": ["Bug"],
+    "abilities": ["Illuminate", "Swarm"],
+    "base_stats": {
+      "HP": 65,
+      "Attack": 73,
+      "Defense": 55,
+      "Special Attack": 47,
+      "Special Defense": 75,
+      "Speed": 85
+    }
+  },
+  {
+    "name": "Illumise",
+    "types": ["Bug"],
+    "abilities": ["Oblivious"],
+    "base_stats": {
+      "HP": 65,
+      "Attack": 47,
+      "Defense": 55,
+      "Special Attack": 73,
+      "Special Defense": 75,
+      "Speed": 85
+    }
+  },
+  {
+    "name": "Roselia",
+    "types": ["Grass", "Poison"],
+    "abilities": ["Natural Cure", "Poison Point"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 60,
+      "Defense": 45,
+      "Special Attack": 100,
+      "Special Defense": 80,
+      "Speed": 65
+    }
+  },
+  {
+    "name": "Gulpin",
+    "types": ["Poison"],
+    "abilities": ["Liquid Ooze", "Sticky Hold"],
+    "base_stats": {
+      "HP": 70,
+      "Attack": 43,
+      "Defense": 53,
+      "Special Attack": 43,
+      "Special Defense": 53,
+      "Speed": 40
+    }
+  },
+  {
+    "name": "Swalot",
+    "types": ["Poison"],
+    "abilities": ["Liquid Ooze", "Sticky Hold"],
+    "base_stats": {
+      "HP": 100,
+      "Attack": 73,
+      "Defense": 83,
+      "Special Attack": 73,
+      "Special Defense": 83,
+      "Speed": 55
+    }
+  },
+  {
+    "name": "Carvanha",
+    "types": ["Water", "Dark"],
+    "abilities": ["Rough Skin"],
+    "base_stats": {
+      "HP": 45,
+      "Attack": 90,
+      "Defense": 20,
+      "Special Attack": 65,
+      "Special Defense": 20,
+      "Speed": 65
+    }
+  },
+  {
+    "name": "Sharpedo",
+    "types": ["Water", "Dark"],
+    "abilities": ["Rough Skin"],
+    "base_stats": {
+      "HP": 70,
+      "Attack": 120,
+      "Defense": 40,
+      "Special Attack": 95,
+      "Special Defense": 40,
+      "Speed": 95
+    }
+  },
+  {
+    "name": "Wailmer",
+    "types": ["Water"],
+    "abilities": ["Water Veil", "Oblivious"],
+    "base_stats": {
+      "HP": 130,
+      "Attack": 70,
+      "Defense": 35,
+      "Special Attack": 70,
+      "Special Defense": 35,
+      "Speed": 60
+    }
+  },
+  {
+    "name": "Wailord",
+    "types": ["Water"],
+    "abilities": ["Water Veil", "Oblivious"],
+    "base_stats": {
+      "HP": 170,
+      "Attack": 90,
+      "Defense": 45,
+      "Special Attack": 90,
+      "Special Defense": 45,
+      "Speed": 60
+    }
+  },
+  {
+    "name": "Numel",
+    "types": ["Fire", "Ground"],
+    "abilities": ["Oblivious"],
+    "base_stats": {
+      "HP": 60,
+      "Attack": 60,
+      "Defense": 40,
+      "Special Attack": 65,
+      "Special Defense": 45,
+      "Speed": 35
+    }
+  },
+  {
+    "name": "Camerupt",
+    "types": ["Fire", "Ground"],
+    "abilities": ["Magma Armor"],
+    "base_stats": {
+      "HP": 70,
+      "Attack": 100,
+      "Defense": 70,
+      "Special Attack": 105,
+      "Special Defense": 75,
+      "Speed": 40
+    }
+  },
+  {
+    "name": "Torkoal",
+    "types": ["Fire"],
+    "abilities": ["White Smoke"],
+    "base_stats": {
+      "HP": 70,
+      "Attack": 85,
+      "Defense": 140,
+      "Special Attack": 85,
+      "Special Defense": 70,
+      "Speed": 20
+    }
+  },
+  {
+    "name": "Spoink",
+    "types": ["Psychic"],
+    "abilities": ["Thick Fat", "Own Tempo"],
+    "base_stats": {
+      "HP": 60,
+      "Attack": 25,
+      "Defense": 35,
+      "Special Attack": 70,
+      "Special Defense": 80,
+      "Speed": 60
+    }
+  },
+  {
+    "name": "Grumpig",
+    "types": ["Psychic"],
+    "abilities": ["Thick Fat", "Own Tempo"],
+    "base_stats": {
+      "HP": 80,
+      "Attack": 45,
+      "Defense": 65,
+      "Special Attack": 90,
+      "Special Defense": 110,
+      "Speed": 80
+    }
+  },
+  {
+    "name": "Spinda",
+    "types": ["Normal"],
+    "abilities": ["Own Tempo"],
+    "base_stats": {
+      "HP": 60,
+      "Attack": 60,
+      "Defense": 60,
+      "Special Attack": 60,
+      "Special Defense": 60,
+      "Speed": 60
+    }
+  },
+  {
+    "name": "Trapinch",
+    "types": ["Ground"],
+    "abilities": ["Hyper Cutter", "Arena Trap"],
+    "base_stats": {
+      "HP": 45,
+      "Attack": 100,
+      "Defense": 45,
+      "Special Attack": 45,
+      "Special Defense": 45,
+      "Speed": 10
+    }
+  },
+  {
+    "name": "Vibrava",
+    "types": ["Ground", "Dragon"],
+    "abilities": ["Levitate"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 70,
+      "Defense": 50,
+      "Special Attack": 50,
+      "Special Defense": 50,
+      "Speed": 70
+    }
+  },
+  {
+    "name": "Flygon",
+    "types": ["Ground", "Dragon"],
+    "abilities": ["Levitate"],
+    "base_stats": {
+      "HP": 80,
+      "Attack": 100,
+      "Defense": 80,
+      "Special Attack": 80,
+      "Special Defense": 80,
+      "Speed": 100
+    }
+  },
+  {
+    "name": "Cacnea",
+    "types": ["Grass"],
+    "abilities": ["Sand Veil"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 85,
+      "Defense": 40,
+      "Special Attack": 85,
+      "Special Defense": 40,
+      "Speed": 35
+    }
+  },
+  {
+    "name": "Cacturne",
+    "types": ["Grass", "Dark"],
+    "abilities": ["Sand Veil"],
+    "base_stats": {
+      "HP": 70,
+      "Attack": 115,
+      "Defense": 60,
+      "Special Attack": 115,
+      "Special Defense": 60,
+      "Speed": 55
+    }
+  },
+  {
+    "name": "Swablu",
+    "types": ["Normal", "Flying"],
+    "abilities": ["Natural Cure"],
+    "base_stats": {
+      "HP": 45,
+      "Attack": 40,
+      "Defense": 60,
+      "Special Attack": 40,
+      "Special Defense": 75,
+      "Speed": 50
+    }
+  },
+  {
+    "name": "Altaria",
+    "types": ["Dragon", "Flying"],
+    "abilities": ["Natural Cure"],
+    "base_stats": {
+      "HP": 75,
+      "Attack": 70,
+      "Defense": 90,
+      "Special Attack": 70,
+      "Special Defense": 105,
+      "Speed": 80
+    }
+  },
+  {
+    "name": "Zangoose",
+    "types": ["Normal"],
+    "abilities": ["Immunity"],
+    "base_stats": {
+      "HP": 73,
+      "Attack": 115,
+      "Defense": 60,
+      "Special Attack": 60,
+      "Special Defense": 60,
+      "Speed": 90
+    }
+  },
+  {
+    "name": "Seviper",
+    "types": ["Poison"],
+    "abilities": ["Shed Skin"],
+    "base_stats": {
+      "HP": 73,
+      "Attack": 100,
+      "Defense": 60,
+      "Special Attack": 100,
+      "Special Defense": 60,
+      "Speed": 65
+    }
+  },
+  {
+    "name": "Lunatone",
+    "types": ["Rock", "Psychic"],
+    "abilities": ["Levitate"],
+    "base_stats": {
+      "HP": 70,
+      "Attack": 55,
+      "Defense": 65,
+      "Special Attack": 95,
+      "Special Defense": 85,
+      "Speed": 70
+    }
+  },
+  {
+    "name": "Solrock",
+    "types": ["Rock", "Psychic"],
+    "abilities": ["Levitate"],
+    "base_stats": {
+      "HP": 70,
+      "Attack": 95,
+      "Defense": 85,
+      "Special Attack": 55,
+      "Special Defense": 65,
+      "Speed": 70
+    }
+  },
+  {
+    "name": "Barboach",
+    "types": ["Water", "Ground"],
+    "abilities": ["Oblivious"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 48,
+      "Defense": 43,
+      "Special Attack": 46,
+      "Special Defense": 41,
+      "Speed": 60
+    }
+  },
+  {
+    "name": "Whiscash",
+    "types": ["Water", "Ground"],
+    "abilities": ["Oblivious"],
+    "base_stats": {
+      "HP": 110,
+      "Attack": 78,
+      "Defense": 73,
+      "Special Attack": 76,
+      "Special Defense": 71,
+      "Speed": 60
+    }
+  },
+  {
+    "name": "Corphish",
+    "types": ["Water"],
+    "abilities": ["Hyper Cutter", "Shell Armor"],
+    "base_stats": {
+      "HP": 43,
+      "Attack": 80,
+      "Defense": 65,
+      "Special Attack": 50,
+      "Special Defense": 35,
+      "Speed": 35
+    }
+  },
+  {
+    "name": "Crawdaunt",
+    "types": ["Water", "Dark"],
+    "abilities": ["Hyper Cutter", "Shell Armor"],
+    "base_stats": {
+      "HP": 63,
+      "Attack": 120,
+      "Defense": 85,
+      "Special Attack": 90,
+      "Special Defense": 55,
+      "Speed": 55
+    }
+  },
+  {
+    "name": "Baltoy",
+    "types": ["Ground", "Psychic"],
+    "abilities": ["Levitate"],
+    "base_stats": {
+      "HP": 40,
+      "Attack": 40,
+      "Defense": 55,
+      "Special Attack": 40,
+      "Special Defense": 70,
+      "Speed": 55
+    }
+  },
+  {
+    "name": "Claydol",
+    "types": ["Ground", "Psychic"],
+    "abilities": ["Levitate"],
+    "base_stats": {
+      "HP": 60,
+      "Attack": 70,
+      "Defense": 105,
+      "Special Attack": 70,
+      "Special Defense": 120,
+      "Speed": 75
+    }
+  },
+  {
+    "name": "Lileep",
+    "types": ["Rock", "Grass"],
+    "abilities": ["Suction Cups"],
+    "base_stats": {
+      "HP": 66,
+      "Attack": 41,
+      "Defense": 77,
+      "Special Attack": 61,
+      "Special Defense": 87,
+      "Speed": 23
+    }
+  },
+  {
+    "name": "Cradily",
+    "types": ["Rock", "Grass"],
+    "abilities": ["Suction Cups"],
+    "base_stats": {
+      "HP": 86,
+      "Attack": 81,
+      "Defense": 97,
+      "Special Attack": 81,
+      "Special Defense": 107,
+      "Speed": 43
+    }
+  },
+  {
+    "name": "Anorith",
+    "types": ["Rock", "Bug"],
+    "abilities": ["Battle Armor"],
+    "base_stats": {
+      "HP": 45,
+      "Attack": 95,
+      "Defense": 50,
+      "Special Attack": 40,
+      "Special Defense": 50,
+      "Speed": 75
+    }
+  },
+  {
+    "name": "Armaldo",
+    "types": ["Rock", "Bug"],
+    "abilities": ["Battle Armor"],
+    "base_stats": {
+      "HP": 75,
+      "Attack": 125,
+      "Defense": 100,
+      "Special Attack": 70,
+      "Special Defense": 80,
+      "Speed": 45
+    }
+  },
+  {
+    "name": "Feebas",
+    "types": ["Water"],
+    "abilities": ["Swift Swim"],
+    "base_stats": {
+      "HP": 20,
+      "Attack": 15,
+      "Defense": 20,
+      "Special Attack": 10,
+      "Special Defense": 55,
+      "Speed": 80
+    }
+  },
+  {
+    "name": "Milotic",
+    "types": ["Water"],
+    "abilities": ["Marvel Scale"],
+    "base_stats": {
+      "HP": 95,
+      "Attack": 60,
+      "Defense": 79,
+      "Special Attack": 100,
+      "Special Defense": 125,
+      "Speed": 81
+    }
+  },
+  {
+    "name": "Castform",
+    "types": ["Normal"],
+    "abilities": ["Forecast"],
+    "base_stats": {
+      "HP": 70,
+      "Attack": 70,
+      "Defense": 70,
+      "Special Attack": 70,
+      "Special Defense": 70,
+      "Speed": 70
+    }
+  },
+  {
+    "name": "Kecleon",
+    "types": ["Normal"],
+    "abilities": ["Color Change"],
+    "base_stats": {
+      "HP": 60,
+      "Attack": 90,
+      "Defense": 70,
+      "Special Attack": 60,
+      "Special Defense": 120,
+      "Speed": 40
+    }
+  },
+  {
+    "name": "Shuppet",
+    "types": ["Ghost"],
+    "abilities": ["Insomnia"],
+    "base_stats": {
+      "HP": 44,
+      "Attack": 75,
+      "Defense": 35,
+      "Special Attack": 63,
+      "Special Defense": 33,
+      "Speed": 45
+    }
+  },
+  {
+    "name": "Banette",
+    "types": ["Ghost"],
+    "abilities": ["Insomnia"],
+    "base_stats": {
+      "HP": 64,
+      "Attack": 115,
+      "Defense": 65,
+      "Special Attack": 83,
+      "Special Defense": 63,
+      "Speed": 65
+    }
+  },
+  {
+    "name": "Duskull",
+    "types": ["Ghost"],
+    "abilities": ["Levitate"],
+    "base_stats": {
+      "HP": 20,
+      "Attack": 40,
+      "Defense": 90,
+      "Special Attack": 30,
+      "Special Defense": 90,
+      "Speed": 25
+    }
+  },
+  {
+    "name": "Dusclops",
+    "types": ["Ghost"],
+    "abilities": ["Pressure"],
+    "base_stats": {
+      "HP": 40,
+      "Attack": 70,
+      "Defense": 130,
+      "Special Attack": 60,
+      "Special Defense": 130,
+      "Speed": 25
+    }
+  },
+  {
+    "name": "Tropius",
+    "types": ["Grass", "Flying"],
+    "abilities": ["Chlorophyll"],
+    "base_stats": {
+      "HP": 99,
+      "Attack": 68,
+      "Defense": 83,
+      "Special Attack": 72,
+      "Special Defense": 87,
+      "Speed": 51
+    }
+  },
+  {
+    "name": "Chimecho",
+    "types": ["Psychic"],
+    "abilities": ["Levitate"],
+    "base_stats": {
+      "HP": 65,
+      "Attack": 50,
+      "Defense": 70,
+      "Special Attack": 95,
+      "Special Defense": 80,
+      "Speed": 65
+    }
+  },
+  {
+    "name": "Absol",
+    "types": ["Dark"],
+    "abilities": ["Pressure"],
+    "base_stats": {
+      "HP": 65,
+      "Attack": 130,
+      "Defense": 60,
+      "Special Attack": 75,
+      "Special Defense": 60,
+      "Speed": 75
+    }
+  },
+  {
+    "name": "Wynaut",
+    "types": ["Psychic"],
+    "abilities": ["Shadow Tag"],
+    "base_stats": {
+      "HP": 95,
+      "Attack": 23,
+      "Defense": 48,
+      "Special Attack": 23,
+      "Special Defense": 48,
+      "Speed": 23
+    }
+  },
+  {
+    "name": "Snorunt",
+    "types": ["Ice"],
+    "abilities": ["Inner Focus"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 50,
+      "Defense": 50,
+      "Special Attack": 50,
+      "Special Defense": 50,
+      "Speed": 50
+    }
+  },
+  {
+    "name": "Glalie",
+    "types": ["Ice"],
+    "abilities": ["Inner Focus"],
+    "base_stats": {
+      "HP": 80,
+      "Attack": 80,
+      "Defense": 80,
+      "Special Attack": 80,
+      "Special Defense": 80,
+      "Speed": 80
+    }
+  },
+  {
+    "name": "Spheal",
+    "types": ["Ice", "Water"],
+    "abilities": ["Thick Fat"],
+    "base_stats": {
+      "HP": 70,
+      "Attack": 40,
+      "Defense": 50,
+      "Special Attack": 55,
+      "Special Defense": 50,
+      "Speed": 25
+    }
+  },
+  {
+    "name": "Sealeo",
+    "types": ["Ice", "Water"],
+    "abilities": ["Thick Fat"],
+    "base_stats": {
+      "HP": 90,
+      "Attack": 60,
+      "Defense": 70,
+      "Special Attack": 75,
+      "Special Defense": 70,
+      "Speed": 45
+    }
+  },
+  {
+    "name": "Walrein",
+    "types": ["Ice", "Water"],
+    "abilities": ["Thick Fat"],
+    "base_stats": {
+      "HP": 110,
+      "Attack": 80,
+      "Defense": 90,
+      "Special Attack": 95,
+      "Special Defense": 90,
+      "Speed": 65
+    }
+  },
+  {
+    "name": "Clamperl",
+    "types": ["Water"],
+    "abilities": ["Shell Armor"],
+    "base_stats": {
+      "HP": 35,
+      "Attack": 64,
+      "Defense": 85,
+      "Special Attack": 74,
+      "Special Defense": 55,
+      "Speed": 32
+    }
+  },
+  {
+    "name": "Huntail",
+    "types": ["Water"],
+    "abilities": ["Swift Swim"],
+    "base_stats": {
+      "HP": 55,
+      "Attack": 104,
+      "Defense": 105,
+      "Special Attack": 94,
+      "Special Defense": 75,
+      "Speed": 52
+    }
+  },
+  {
+    "name": "Gorebyss",
+    "types": ["Water"],
+    "abilities": ["Swift Swim"],
+    "base_stats": {
+      "HP": 55,
+      "Attack": 84,
+      "Defense": 105,
+      "Special Attack": 114,
+      "Special Defense": 75,
+      "Speed": 52
+    }
+  },
+  {
+    "name": "Relicanth",
+    "types": ["Water", "Rock"],
+    "abilities": ["Swift Swim", "Rock Head"],
+    "base_stats": {
+      "HP": 100,
+      "Attack": 90,
+      "Defense": 130,
+      "Special Attack": 45,
+      "Special Defense": 65,
+      "Speed": 55
+    }
+  },
+  {
+    "name": "Luvdisc",
+    "types": ["Water"],
+    "abilities": ["Swift Swim"],
+    "base_stats": {
+      "HP": 43,
+      "Attack": 30,
+      "Defense": 55,
+      "Special Attack": 40,
+      "Special Defense": 65,
+      "Speed": 97
+    }
+  },
+  {
+    "name": "Bagon",
+    "types": ["Dragon"],
+    "abilities": ["Rock Head"],
+    "base_stats": {
+      "HP": 45,
+      "Attack": 75,
+      "Defense": 60,
+      "Special Attack": 40,
+      "Special Defense": 30,
+      "Speed": 50
+    }
+  },
+  {
+    "name": "Shelgon",
+    "types": ["Dragon"],
+    "abilities": ["Rock Head"],
+    "base_stats": {
+      "HP": 65,
+      "Attack": 95,
+      "Defense": 100,
+      "Special Attack": 60,
+      "Special Defense": 50,
+      "Speed": 50
+    }
+  },
+  {
+    "name": "Salamence",
+    "types": ["Dragon", "Flying"],
+    "abilities": ["Intimidate"],
+    "base_stats": {
+      "HP": 95,
+      "Attack": 135,
+      "Defense": 80,
+      "Special Attack": 110,
+      "Special Defense": 80,
+      "Speed": 100
+    }
+  },
+  {
+    "name": "Beldum",
+    "types": ["Steel", "Psychic"],
+    "abilities": ["Clear Body"],
+    "base_stats": {
+      "HP": 40,
+      "Attack": 55,
+      "Defense": 80,
+      "Special Attack": 35,
+      "Special Defense": 60,
+      "Speed": 30
+    }
+  },
+  {
+    "name": "Metang",
+    "types": ["Steel", "Psychic"],
+    "abilities": ["Clear Body"],
+    "base_stats": {
+      "HP": 60,
+      "Attack": 75,
+      "Defense": 100,
+      "Special Attack": 55,
+      "Special Defense": 80,
+      "Speed": 50
+    }
+  },
+  {
+    "name": "Metagross",
+    "types": ["Steel", "Psychic"],
+    "abilities": ["Clear Body"],
+    "base_stats": {
+      "HP": 80,
+      "Attack": 135,
+      "Defense": 130,
+      "Special Attack": 95,
+      "Special Defense": 90,
+      "Speed": 70
+    }
+  },
+  {
+    "name": "Regirock",
+    "types": ["Rock"],
+    "abilities": ["Clear Body"],
+    "base_stats": {
+      "HP": 80,
+      "Attack": 100,
+      "Defense": 200,
+      "Special Attack": 50,
+      "Special Defense": 100,
+      "Speed": 50
+    }
+  },
+  {
+    "name": "Regice",
+    "types": ["Ice"],
+    "abilities": ["Clear Body"],
+    "base_stats": {
+      "HP": 80,
+      "Attack": 50,
+      "Defense": 100,
+      "Special Attack": 100,
+      "Special Defense": 200,
+      "Speed": 50
+    }
+  },
+  {
+    "name": "Registeel",
+    "types": ["Steel"],
+    "abilities": ["Clear Body"],
+    "base_stats": {
+      "HP": 80,
+      "Attack": 75,
+      "Defense": 150,
+      "Special Attack": 75,
+      "Special Defense": 150,
+      "Speed": 50
+    }
+  },
+  {
+    "name": "Latias",
+    "types": ["Dragon", "Psychic"],
+    "abilities": ["Levitate"],
+    "base_stats": {
+      "HP": 80,
+      "Attack": 80,
+      "Defense": 90,
+      "Special Attack": 110,
+      "Special Defense": 130,
+      "Speed": 110
+    }
+  },
+  {
+    "name": "Latios",
+    "types": ["Dragon", "Psychic"],
+    "abilities": ["Levitate"],
+    "base_stats": {
+      "HP": 80,
+      "Attack": 90,
+      "Defense": 80,
+      "Special Attack": 130,
+      "Special Defense": 110,
+      "Speed": 110
+    }
+  },
+  {
+    "name": "Kyogre",
+    "types": ["Water"],
+    "abilities": ["Drizzle"],
+    "base_stats": {
+      "HP": 100,
+      "Attack": 100,
+      "Defense": 90,
+      "Special Attack": 150,
+      "Special Defense": 140,
+      "Speed": 90
+    }
+  },
+  {
+    "name": "Groudon",
+    "types": ["Ground"],
+    "abilities": ["Drought"],
+    "base_stats": {
+      "HP": 100,
+      "Attack": 150,
+      "Defense": 140,
+      "Special Attack": 100,
+      "Special Defense": 90,
+      "Speed": 90
+    }
+  },
+  {
+    "name": "Rayquaza",
+    "types": ["Dragon", "Flying"],
+    "abilities": ["Air Lock"],
+    "base_stats": {
+      "HP": 105,
+      "Attack": 150,
+      "Defense": 90,
+      "Special Attack": 150,
+      "Special Defense": 90,
+      "Speed": 95
+    }
+  },
+  {
+    "name": "Jirachi",
+    "types": ["Steel", "Psychic"],
+    "abilities": ["Serene Grace"],
+    "base_stats": {
+      "HP": 100,
+      "Attack": 100,
+      "Defense": 100,
+      "Special Attack": 100,
+      "Special Defense": 100,
+      "Speed": 100
+    }
+  },
+  {
+    "name": "Deoxys",
+    "types": ["Psychic"],
+    "abilities": ["Pressure"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 150,
+      "Defense": 50,
+      "Special Attack": 150,
+      "Special Defense": 50,
+      "Speed": 150
+    }
+  },
+  {
+    "name": "Deoxys (Attack Forme)",
+    "types": ["Psychic"],
+    "abilities": ["Pressure"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 180,
+      "Defense": 20,
+      "Special Attack": 180,
+      "Special Defense": 20,
+      "Speed": 150
+    }
+  },
+  {
+    "name": "Deoxys (Defense Forme)",
+    "types": ["Psychic"],
+    "abilities": ["Pressure"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 70,
+      "Defense": 160,
+      "Special Attack": 70,
+      "Special Defense": 160,
+      "Speed": 90
+    }
+  },
+  {
+    "name": "Deoxys (Speed Forme)",
+    "types": ["Psychic"],
+    "abilities": ["Pressure"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 95,
+      "Defense": 90,
+      "Special Attack": 95,
+      "Special Defense": 90,
+      "Speed": 180
+    }
+  },
+  {
+    "name": "Abra",
+    "types": ["Psychic"],
+    "abilities": ["Inner Focus"],
+    "base_stats": {
+      "HP": 25,
+      "Attack": 20,
+      "Defense": 15,
+      "Special Attack": 105,
+      "Special Defense": 55,
+      "Speed": 90
+    }
+  },
+  {
+    "name": "Kadabra",
+    "types": ["Psychic"],
+    "abilities": ["Inner Focus"],
+    "base_stats": {
+      "HP": 40,
+      "Attack": 35,
+      "Defense": 30,
+      "Special Attack": 120,
+      "Special Defense": 70,
+      "Speed": 105
+    }
+  },
+  {
+    "name": "Alakazam",
+    "types": ["Psychic"],
+    "abilities": ["Inner Focus"],
+    "base_stats": {
+      "HP": 55,
+      "Attack": 50,
+      "Defense": 45,
+      "Special Attack": 135,
+      "Special Defense": 85,
+      "Speed": 120
+    }
+  },
+  {
+    "name": "Goldeen",
+    "types": ["Water"],
+    "abilities": ["Swift Swim", "Water Veil"],
+    "base_stats": {
+      "HP": 45,
+      "Attack": 67,
+      "Defense": 60,
+      "Special Attack": 35,
+      "Special Defense": 50,
+      "Speed": 63
+    }
+  },
+  {
+    "name": "Seaking",
+    "types": ["Water"],
+    "abilities": ["Swift Swim", "Water Veil"],
+    "base_stats": {
+      "HP": 80,
+      "Attack": 92,
+      "Defense": 65,
+      "Special Attack": 65,
+      "Special Defense": 80,
+      "Speed": 68
+    }
+  },
+  {
+    "name": "Magikarp",
+    "types": ["Water"],
+    "abilities": ["Swift Swim"],
+    "base_stats": {
+      "HP": 20,
+      "Attack": 10,
+      "Defense": 55,
+      "Special Attack": 15,
+      "Special Defense": 20,
+      "Speed": 80
+    }
+  },
+  {
+    "name": "Gyarados",
+    "types": ["Water", "Flying"],
+    "abilities": ["Intimidate"],
+    "base_stats": {
+      "HP": 95,
+      "Attack": 125,
+      "Defense": 79,
+      "Special Attack": 60,
+      "Special Defense": 100,
+      "Speed": 81
+    }
+  },
+  {
+    "name": "Azurill",
+    "types": ["Normal"],
+    "abilities": ["Thick Fat", "Huge Power"],
+    "base_stats": {
+      "HP": 50,
+      "Attack": 20,
+      "Defense": 40,
+      "Special Attack": 20,
+      "Special Defense": 40,
+      "Speed": 20
+    }
+  },
+  {
+    "name": "Marill",
+    "types": ["Water"],
+    "abilities": ["Thick Fat", "Huge Power"],
+    "base_stats": {
+      "HP": 70,
+      "Attack": 20,
+      "Defense": 50,
+      "Special Attack": 20,
+      "Special Defense": 50,
+      "Speed": 40
+    }
+  },
+  {
+    "name": "Azumarill",
+    "types": ["Water"],
+    "abilities": ["Thick Fat", "Huge Power"],
+    "base_stats": {
+      "HP": 100,
+      "Attack": 50,
+      "Defense": 80,
+      "Special Attack": 50,
+      "Special Defense": 80,
+      "Speed": 50
+    }
+  },
+  {
     "name": "Geodude",
     "types": ["Rock", "Ground"],
     "abilities": ["Rock Head", "Sturdy"],
@@ -2088,7 +1963,6 @@
     }
   },
   {
-    "pokedex_number": 75,
     "name": "Graveler",
     "types": ["Rock", "Ground"],
     "abilities": ["Rock Head", "Sturdy"],
@@ -2102,7 +1976,6 @@
     }
   },
   {
-    "pokedex_number": 76,
     "name": "Golem",
     "types": ["Rock", "Ground"],
     "abilities": ["Rock Head", "Sturdy"],
@@ -2116,7 +1989,6 @@
     }
   },
   {
-    "pokedex_number": 41,
     "name": "Zubat",
     "types": ["Poison", "Flying"],
     "abilities": ["Inner Focus"],
@@ -2130,7 +2002,6 @@
     }
   },
   {
-    "pokedex_number": 42,
     "name": "Golbat",
     "types": ["Poison", "Flying"],
     "abilities": ["Inner Focus"],
@@ -2144,7 +2015,6 @@
     }
   },
   {
-    "pokedex_number": 169,
     "name": "Crobat",
     "types": ["Poison", "Flying"],
     "abilities": ["Inner Focus"],
@@ -2158,7 +2028,6 @@
     }
   },
   {
-    "pokedex_number": 72,
     "name": "Tentacool",
     "types": ["Water", "Poison"],
     "abilities": ["Clear Body", "Liquid Ooze"],
@@ -2172,7 +2041,6 @@
     }
   },
   {
-    "pokedex_number": 73,
     "name": "Tentacruel",
     "types": ["Water", "Poison"],
     "abilities": ["Clear Body", "Liquid Ooze"],
@@ -2186,7 +2054,6 @@
     }
   },
   {
-    "pokedex_number": 66,
     "name": "Machop",
     "types": ["Fighting"],
     "abilities": ["Guts", "No Guard"],
@@ -2200,7 +2067,6 @@
     }
   },
   {
-    "pokedex_number": 67,
     "name": "Machoke",
     "types": ["Fighting"],
     "abilities": ["Guts", "No Guard"],
@@ -2214,7 +2080,6 @@
     }
   },
   {
-    "pokedex_number": 68,
     "name": "Machamp",
     "types": ["Fighting"],
     "abilities": ["Guts", "No Guard"],
@@ -2228,7 +2093,6 @@
     }
   },
   {
-    "pokedex_number": 81,
     "name": "Magnemite",
     "types": ["Electric", "Steel"],
     "abilities": ["Magnet Pull", "Sturdy"],
@@ -2242,7 +2106,6 @@
     }
   },
   {
-    "pokedex_number": 82,
     "name": "Magneton",
     "types": ["Electric", "Steel"],
     "abilities": ["Magnet Pull", "Sturdy"],
@@ -2256,7 +2119,6 @@
     }
   },
   {
-    "pokedex_number": 100,
     "name": "Voltorb",
     "types": ["Electric"],
     "abilities": ["Soundproof", "Static"],
@@ -2270,7 +2132,6 @@
     }
   },
   {
-    "pokedex_number": 101,
     "name": "Electrode",
     "types": ["Electric"],
     "abilities": ["Soundproof", "Static"],
@@ -2284,7 +2145,6 @@
     }
   },
   {
-    "pokedex_number": 43,
     "name": "Oddish",
     "types": ["Grass", "Poison"],
     "abilities": ["Chlorophyll"],
@@ -2298,7 +2158,6 @@
     }
   },
   {
-    "pokedex_number": 44,
     "name": "Gloom",
     "types": ["Grass", "Poison"],
     "abilities": ["Chlorophyll"],
@@ -2312,7 +2171,6 @@
     }
   },
   {
-    "pokedex_number": 45,
     "name": "Vileplume",
     "types": ["Grass", "Poison"],
     "abilities": ["Chlorophyll"],
@@ -2326,7 +2184,6 @@
     }
   },
   {
-    "pokedex_number": 182,
     "name": "Bellossom",
     "types": ["Grass"],
     "abilities": ["Chlorophyll"],
@@ -2340,7 +2197,6 @@
     }
   },
   {
-    "pokedex_number": 84,
     "name": "Doduo",
     "types": ["Normal", "Flying"],
     "abilities": ["Run Away", "Early Bird"],
@@ -2354,7 +2210,6 @@
     }
   },
   {
-    "pokedex_number": 85,
     "name": "Dodrio",
     "types": ["Normal", "Flying"],
     "abilities": ["Run Away", "Early Bird"],
@@ -2368,7 +2223,6 @@
     }
   },
   {
-    "pokedex_number": 88,
     "name": "Grimer",
     "types": ["Poison"],
     "abilities": ["Stench", "Sticky Hold"],
@@ -2382,7 +2236,6 @@
     }
   },
   {
-    "pokedex_number": 89,
     "name": "Muk",
     "types": ["Poison"],
     "abilities": ["Stench", "Sticky Hold"],
@@ -2396,7 +2249,6 @@
     }
   },
   {
-    "pokedex_number": 109,
     "name": "Koffing",
     "types": ["Poison"],
     "abilities": ["Levitate"],
@@ -2410,7 +2262,6 @@
     }
   },
   {
-    "pokedex_number": 110,
     "name": "Weezing",
     "types": ["Poison"],
     "abilities": ["Levitate"],
@@ -2424,7 +2275,6 @@
     }
   },
   {
-    "pokedex_number": 27,
     "name": "Sandshrew",
     "types": ["Ground"],
     "abilities": ["Sand Veil"],
@@ -2438,7 +2288,6 @@
     }
   },
   {
-    "pokedex_number": 28,
     "name": "Sandslash",
     "types": ["Ground"],
     "abilities": ["Sand Veil"],
@@ -2452,7 +2301,6 @@
     }
   },
   {
-    "pokedex_number": 227,
     "name": "Skarmory",
     "types": ["Steel", "Flying"],
     "abilities": ["Keen Eye", "Sturdy"],
@@ -2466,7 +2314,6 @@
     }
   },
   {
-    "pokedex_number": 174,
     "name": "Igglybuff",
     "types": ["Normal"],
     "abilities": ["Cute Charm"],
@@ -2480,7 +2327,6 @@
     }
   },
   {
-    "pokedex_number": 39,
     "name": "Jigglypuff",
     "types": ["Normal"],
     "abilities": ["Cute Charm"],
@@ -2494,7 +2340,6 @@
     }
   },
   {
-    "pokedex_number": 40,
     "name": "Wigglytuff",
     "types": ["Normal"],
     "abilities": ["Cute Charm"],
@@ -2508,7 +2353,6 @@
     }
   },
   {
-    "pokedex_number": 120,
     "name": "Staryu",
     "types": ["Water"],
     "abilities": ["Illuminate", "Natural Cure"],
@@ -2522,7 +2366,6 @@
     }
   },
   {
-    "pokedex_number": 121,
     "name": "Starmie",
     "types": ["Water", "Psychic"],
     "abilities": ["Illuminate", "Natural Cure"],
@@ -2536,7 +2379,6 @@
     }
   },
   {
-    "pokedex_number": 172,
     "name": "Pichu",
     "types": ["Electric"],
     "abilities": ["Static"],
@@ -2550,7 +2392,6 @@
     }
   },
   {
-    "pokedex_number": 25,
     "name": "Pikachu",
     "types": ["Electric"],
     "abilities": ["Static"],
@@ -2564,7 +2405,6 @@
     }
   },
   {
-    "pokedex_number": 26,
     "name": "Raichu",
     "types": ["Electric"],
     "abilities": ["Static"],
@@ -2578,7 +2418,6 @@
     }
   },
   {
-    "pokedex_number": 54,
     "name": "Psyduck",
     "types": ["Water"],
     "abilities": ["Damp", "Cloud Nine"],
@@ -2592,7 +2431,6 @@
     }
   },
   {
-    "pokedex_number": 55,
     "name": "Golduck",
     "types": ["Water"],
     "abilities": ["Damp", "Cloud Nine"],
@@ -2606,7 +2444,6 @@
     }
   },
   {
-    "pokedex_number": 202,
     "name": "Wobbuffet",
     "types": ["Psychic"],
     "abilities": ["Shadow Tag"],
@@ -2620,10 +2457,9 @@
     }
   },
   {
-    "pokedex_number": 177,
     "name": "Natu",
     "types": ["Psychic", "Flying"],
-    "abilities": ["Synchronize", "Early Bird"],
+    "abilities": ["Early Bird"],
     "base_stats": {
       "HP": 40,
       "Attack": 50,
@@ -2634,10 +2470,9 @@
     }
   },
   {
-    "pokedex_number": 178,
     "name": "Xatu",
     "types": ["Psychic", "Flying"],
-    "abilities": ["Synchronize", "Early Bird"],
+    "abilities": ["Early Bird"],
     "base_stats": {
       "HP": 65,
       "Attack": 75,
@@ -2648,7 +2483,6 @@
     }
   },
   {
-    "pokedex_number": 203,
     "name": "Girafarig",
     "types": ["Normal", "Psychic"],
     "abilities": ["Inner Focus", "Early Bird"],
@@ -2662,7 +2496,6 @@
     }
   },
   {
-    "pokedex_number": 231,
     "name": "Phanpy",
     "types": ["Ground"],
     "abilities": ["Pickup"],
@@ -2676,7 +2509,6 @@
     }
   },
   {
-    "pokedex_number": 232,
     "name": "Donphan",
     "types": ["Ground"],
     "abilities": ["Sturdy"],
@@ -2690,7 +2522,6 @@
     }
   },
   {
-    "pokedex_number": 127,
     "name": "Pinsir",
     "types": ["Bug"],
     "abilities": ["Hyper Cutter", "Mold Breaker"],
@@ -2704,7 +2535,6 @@
     }
   },
   {
-    "pokedex_number": 214,
     "name": "Heracross",
     "types": ["Bug", "Fighting"],
     "abilities": ["Swarm", "Guts"],
@@ -2718,7 +2548,6 @@
     }
   },
   {
-    "pokedex_number": 111,
     "name": "Rhyhorn",
     "types": ["Ground", "Rock"],
     "abilities": ["Lightningrod", "Rock Head"],
@@ -2732,7 +2561,6 @@
     }
   },
   {
-    "pokedex_number": 112,
     "name": "Rhydon",
     "types": ["Ground", "Rock"],
     "abilities": ["Lightningrod", "Rock Head"],
@@ -2746,7 +2574,6 @@
     }
   },
   {
-    "pokedex_number": 170,
     "name": "Chinchou",
     "types": ["Water", "Electric"],
     "abilities": ["Volt Absorb", "Illuminate"],
@@ -2760,7 +2587,6 @@
     }
   },
   {
-    "pokedex_number": 171,
     "name": "Lanturn",
     "types": ["Water", "Electric"],
     "abilities": ["Volt Absorb", "Illuminate"],
@@ -2774,7 +2600,6 @@
     }
   },
   {
-    "pokedex_number": 222,
     "name": "Corsola",
     "types": ["Water", "Rock"],
     "abilities": ["Hustle", "Natural Cure"],
@@ -2788,7 +2613,6 @@
     }
   },
   {
-    "pokedex_number": 116,
     "name": "Horsea",
     "types": ["Water"],
     "abilities": ["Swift Swim", "Sniper"],
@@ -2816,7 +2640,6 @@
     }
   },
   {
-    "pokedex_number": 230,
     "name": "Kingdra",
     "types": ["Water", "Dragon"],
     "abilities": ["Swift Swim", "Sniper"],

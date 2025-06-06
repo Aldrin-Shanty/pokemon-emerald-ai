@@ -1,0 +1,29 @@
+{
+  "natures": [
+    {"id": 1, "name": "Hardy", "increased": "atk", "decreased": "atk"},
+    {"id": 2, "name": "Docile", "increased": "def", "decreased": "def"},
+    {"id": 3, "name": "Serious", "increased": "spd", "decreased": "spd"},
+    {"id": 4, "name": "Bashful", "increased": "spatk", "decreased": "spatk"},
+    {"id": 5, "name": "Quirky", "increased": "spdef", "decreased": "spdef"},
+    {"id": 6, "name": "Lonely", "increased": "atk", "decreased": "def"},
+    {"id": 7, "name": "Brave", "increased": "atk", "decreased": "spd"},
+    {"id": 8, "name": "Adamant", "increased": "atk", "decreased": "spatk"},
+    {"id": 9, "name": "Naughty", "increased": "atk", "decreased": "spdef"},
+    {"id": 10, "name": "Bold", "increased": "def", "decreased": "atk"},
+    {"id": 11, "name": "Relaxed", "increased": "def", "decreased": "spd"},
+    {"id": 12, "name": "Impish", "increased": "def", "decreased": "spatk"},
+    {"id": 13, "name": "Lax", "increased": "def", "decreased": "spdef"},
+    {"id": 14, "name": "Timid", "increased": "spd", "decreased": "atk"},
+    {"id": 15, "name": "Hasty", "increased": "spd", "decreased": "def"},
+    {"id": 16, "name": "Jolly", "increased": "spd", "decreased": "spatk"},
+    {"id": 17, "name": "Naive", "increased": "spd", "decreased": "spdef"},
+    {"id": 18, "name": "Modest", "increased": "spatk", "decreased": "atk"},
+    {"id": 19, "name": "Mild", "increased": "spatk", "decreased": "def"},
+    {"id": 20, "name": "Quiet", "increased": "spatk", "decreased": "spd"},
+    {"id": 21, "name": "Rash", "increased": "spatk", "decreased": "spdef"},
+    {"id": 22, "name": "Calm", "increased": "spdef", "decreased": "atk"},
+    {"id": 23, "name": "Gentle", "increased": "spdef", "decreased": "def"},
+    {"id": 24, "name": "Sassy", "increased": "spdef", "decreased": "spd"},
+    {"id": 25, "name": "Careful", "increased": "spdef", "decreased": "spatk"}
+  ]
+}
