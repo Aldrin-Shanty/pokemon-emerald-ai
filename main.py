@@ -217,7 +217,41 @@ class Trainer:
         #not completed need to develop idea more
 
 class Pokemon:
+    """A class to represent a Pokémon with its attributes and battle-related properties.
+
+    Attributes:
+        species_name (str): The name of the Pokémon species.
+        active (list): List indicating if the Pokémon is active in battle positions [False, False].
+        type (list): List of the Pokémon's types [type1, type2].
+        level (int): The Pokémon's level.
+        effort_values (dict): Dictionary of effort values (EV) for each stat.
+        individual_values (dict): Dictionary of individual values (IV) for each stat.
+        base_stats (dict): Dictionary of base stats for the Pokémon.
+        stats (dict): Calculated stats based on base stats, EVs, IVs, and level.
+        nature (str): The Pokémon's nature, affecting stat growth.
+        ability (str): The Pokémon's ability.
+        held_item (str): The item held by the Pokémon.
+        status (dict): Dictionary tracking primary status conditions (e.g., poison, burn).
+        secondary_status (dict): Dictionary tracking secondary status conditions (e.g., flinch, confused).
+        current_hp (int): The Pokémon's current hit points.
+        move_list (list): List of moves the Pokémon can use.
+    """
     def __init__(self,species_name,type1,type2,level,effort_values,individual_values,base_stats,nature,ability,held_item,move_list):
+        """Initialize a new Pokémon instance.
+
+        Args:
+            species_name (str): The name of the Pokémon species.
+            type1 (str): The Pokémon's primary type.
+            type2 (str): The Pokémon's secondary type (None if monotype).
+            level (int): The Pokémon's level.
+            effort_values (dict): Dictionary of effort values for each stat.
+            individual_values (dict): Dictionary of individual values for each stat.
+            base_stats (dict): Dictionary of base stats for the Pokémon.
+            nature (str): The Pokémon's nature.
+            ability (str): The Pokémon's ability.
+            held_item (str): The item held by the Pokémon.
+            move_list (list): List of move objects the Pokémon can use.
+        """
         self.species_name=species_name
         self.active = [False,False]
         self.type=[type1,type2]
@@ -265,8 +299,14 @@ class Pokemon:
         }
         self.current_hp=self.stats['hp']
         self.move_list=move_list
+
     @property
     def fainted(self):
+        """Check if the Pokémon has fainted.
+
+        Returns:
+            bool: True if the Pokémon's current HP is 0, False otherwise.
+        """
         return False if self.current_hp else True
 class Move:
     def __init__(self,move_name,base_power,power_points,type_of_move,accuracy_of_move, category_of_move, has_contact,user_stat_change,enemy_stat_change,target = 1,recoil=0,priority = 0,no_of_hits=1,crit_chance=0.0625,):
