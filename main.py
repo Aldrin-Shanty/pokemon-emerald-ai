@@ -145,9 +145,9 @@ class Trainer:
         self.usable_items=usable_items
         self.field={'spikes':0,'reflect':0,'lightscreen':0,'trap_turns':0}
         self.switching_out=[False,False]
-        self.using_item=[None,None] # None implies not using item, else item object placed
-        self.attacking=[None,None] # None implies not attack,else move object placed
-        self.attacking_who=0 # 0 implies no one, 1 - first active pokemon, 2 - second active pokemon
+        self.using_item=[None,None]
+        self.attacking=[None,None]
+        self.attacking_who=0
 
     @property
     def is_defeated(self):
@@ -178,7 +178,6 @@ class Trainer:
             pokemon_index (int): Index of the Pokémon in pokemon_list to switch in.
             switch_pos (int, optional): Position (1 or 2) of the active Pokémon to replace. Defaults to 1.
         """
-        # switch pos :-  switching pokemon in position 1 -> 1 , switching pokemon in position 2 -> 2
         self.active_pokemon[switch_pos-1]= self.pokemon_list[pokemon_index]
         self.switching_out[switch_pos-1]=True
         self.active_pokemon[switch_pos-1].status['bdpsn']=1
@@ -209,7 +208,6 @@ class Trainer:
         Note:
             This method is incomplete and requires further development.
         """
-        #use_pos refers to index in pokemon_list not in active_pokemon
         item=self.usable_items[item_key]
         pokemon=self.pokemon_list[use_pos]
         pokemon.current_hp+=item.heal_amount
@@ -323,7 +321,7 @@ class Move:
         self.recoil = recoil
         self.user_stat_change=user_stat_change
         self.enemy_stat_change=enemy_stat_change
-        self.target=target # single(1),double(2),all(3)
+        self.target=target
 
 class Ability:
     def __init__(self,ability_id):
