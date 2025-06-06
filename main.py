@@ -1,13 +1,32 @@
 # import random
 
 class Battle:
+    """A class to manage a Pokémon battle between two trainers.
+
+    Attributes:
+        battle_turn (int): The current turn number of the battle.
+        trainers (list): List of two trainer objects participating in the battle.
+        weather (dict): Dictionary tracking weather effects and their durations.
+        battle_mode (int): The mode of the battle (1 for singles, 2 for doubles).
+    """
     def __init__(self, player1, player2):
+        """Initialize a new Battle instance.
+
+        Args:
+            player1: First trainer object participating in the battle.
+            player2: Second trainer object participating in the battle.
+        """
         self.battle_turn = 0
         self.trainers = [player1,player2]
         self.weather = {'sunny':0,'rainy':0,'hail': 0,'sandstorm': 0}
         self.battle_mode = 1
     @property
     def turn_order(self):
+        """Determine the turn order of Pokémon based on their speed and action priorities.
+
+        Returns:
+            list: Ordered list of Pokémon based on calculated priorities.
+        """
         priority=[[0] * self.battle_mode] * len(self.trainers)
         for trainer in self.trainers:
             for active in range(self.battle_mode):
@@ -29,9 +48,18 @@ class Battle:
         return order
 
     def dmg_calc(self):
+        """Calculate damage for moves used in the battle.
+
+        Note:
+            This method is currently a placeholder and needs implementation.
+        """
         pass
 
     def turn_effects(self):
+        """Apply turn-based effects such as weather, status conditions, and field effects.
+
+        Updates the state of weather, trainer fields, and Pokémon statuses.
+        """
         order=self.turn_order
         for weather,turns in self.weather:
             turns-=1 if turns>0 else 0
@@ -48,6 +76,11 @@ class Battle:
             pokemon.status['frz'] -= 1 if pokemon.status['frz'] else 0
 
     def battle(self):
+        """Manage the main battle loop, handling turn progression and player choices.
+
+        Prints battle status and prompts for player actions such as moves, switches, or item usage.
+        Continues until one trainer is defeated.
+        """
         print(f'{self.trainers[0].trainer_name} vs {self.trainers[1].name} begins...')
         for trainer in self.trainers:
             trainer.active_pokemon[0]=trainer.pokemon_list[0]
@@ -65,12 +98,27 @@ class Battle:
                 print('Hail continues to fall')
             elif self.weather['sandstorm']:
                 print('The sandstorm is raging')
-
-
-
-        # this function going to do all the wierd cases for each ability moves later...
-        pass
-
+            self.battle_turn += 1
+            print('Battle Turn: ', self.battle_turn)
+            order = self.turn_order
+            for pokemon in order:
+                moves = pokemon.move_list
+                switch=None
+                items=None
+                for trainer in self.trainers:
+                    if pokemon in trainer.active_pokemon:
+                        switch=trainer.pokemon_list.copy().remove(pokemon)
+                        if self.battle_mode==2:
+                            switch=switch.remove(trainer.active_pokemon.copy().remove(pokemon)[0])
+                        items=trainer.usable_items
+                choices=[moves,switch,items,'forfeit']
+                print(f'Choose the move(m1-m4):')
+                for move in moves:
+                    print(f'{move.move_name}',end='\t')
+                print(f'Switch Pokemon(p1-p6):')
+                for pokemon_switchable in switch:
+                    print(f'{pokemon_switchable.species_name}(lv:{pokemon_switchable.level})',end='   ')
+                print(f'Items')
 class Trainer:
     def __init__(self,trainer_name,usable_items,pokemon_list):
         self.trainer_name=trainer_name
@@ -114,8 +162,8 @@ class Trainer:
         #not completed need to develop idea more
 
 class Pokemon():
-    def __init__(self,species_id,type1,type2,level,effort_values,individual_values,base_stats,stats,nature,ability,held_item,move_list):
-        self.species_id=species_id
+    def __init__(self,species_name,type1,type2,level,effort_values,individual_values,base_stats,stats,nature,ability,held_item,move_list):
+        self.species_name=species_name
         self.active = [False,False]
         self.type=[type1,type2]
         self.level=level
