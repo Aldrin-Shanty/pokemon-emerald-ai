@@ -1,40 +1,29 @@
 class Trainer:
-    """A class to represent a Pokémon trainer and their actions in a battle.
 
-    Attributes:
-        trainer_name (str): The name of the trainer.
-        pokemon_list (list): List of Pokémon owned by the trainer.
-        usable_items (dict): Dictionary of items the trainer can use, with quantities.
-        field (dict): Dictionary tracking field effects like spikes, reflect, etc.
-        switching_out (list): List indicating if Pokémon in active positions are switching out.
-        using_item (list): List indicating items being used for each active Pokémon position.
-        attacking (list): List of moves being used by Pokémon in active positions.
-        attacking_who (int): Indicates target of attack (0 for none, 1 for first enemy, 2 for second enemy).
-    """
     def __init__(self,trainer_name,usable_items,pokemon_list):
-        """Initialize a new Trainer instance.
 
-        Args:
-            trainer_name (str): The name of the trainer.
-            usable_items (dict): Dictionary of usable items with their quantities.
-            pokemon_list (list): List of Pokémon objects owned by the trainer.
-        """
         self.trainer_name=trainer_name
-        self.pokemon_list = pokemon_list
-        self.usable_items=usable_items
-        self.field={'spikes':0,'reflect':0,'lightscreen':0,'Wish':[0,0],'Future Sight':[[0,None],[0,None]],'Doom Desire':[[0,None],[0,None]]} #[no of turns for pos 1, no of turns for pos 2]
-        self.switching_out=[False,False]
-        self.using_item=[None,None]
-        self.attacking=[None,None]
-        self.attacking_who=0
+        self.pokemon_list = pokemon_list # list of pokemon objects
+        self.usable_items=usable_items # list of usable items
+        self.field={'Spikes':0,'Reflect':0,'Lightscreen':0,'Wish':[0,0],'Future Sight':[[0,None],[0,None]],
+                    'Doom Desire':[[0,None],[0,None]]}
+        #[[no of turns for pos 1,attacking pokemon object], [no of turns for pos 2,attacking pokemon object]]
+        self.choice1={'switching':False,'attacking':False,'using_item':False}
+        self.choice2={'switching':False,'attacking':False,'using_item':False}
+        self.choices=[self.choice1,self.choice2]
+        self.switching1=None #pokemon object to switch to
+        self.switching2=None #pokemon object to switch to
+        self.switchings=[self.switching1,self.switching2]
+        self.using_item1= None #Item object used
+        self.using_item2= None #Item object used
+        self.using_items=[self.using_item1,self.using_item2]
+        self.attacking1=None #Move object
+        self.attacking2=None #Move object
+        self.attackings=[self.attacking1,self.attacking2]
 
     @property
     def is_defeated(self):
-        """Check if the trainer is defeated based on Pokémon fainting.
 
-        Returns:
-            bool: True if all Pokémon in pokemon_list have fainted, False otherwise.
-        """
         no_of_defeated=0
         for pokemon in self.pokemon_list:
             if pokemon.fainted:
@@ -43,53 +32,150 @@ class Trainer:
 
     @property
     def active_pokemon(self):
-        """Get the list of currently active Pokémon.
 
-        Returns:
-            list: List of Pokémon objects that are currently active in battle.
-        """
-        return [pokemon for pokemon in self.pokemon_list if pokemon.active[0]]+[pokemon for pokemon in self.pokemon_list if pokemon.active[1]]
+        active_pokemon_1=[pokemon for pokemon in self.pokemon_list if pokemon.active[0]]
+        active_pokemon_2=[pokemon for pokemon in self.pokemon_list if pokemon.active[1]]
+        return active_pokemon_1+active_pokemon_2
 
-    def switch_pokemon(self,pokemon_index,switch_pos=1):
-        """Switch an active Pokémon with another from the trainer's Pokémon list.
+    @staticmethod
+    def use_heal_item(pokemon, item):
 
-        Args:
-            pokemon_index (int): Index of the Pokémon in pokemon_list to switch in.
-            switch_pos (int, optional): Position (1 or 2) of the active Pokémon to replace. Defaults to 1.
-        """
-        self.active_pokemon[switch_pos-1]= self.pokemon_list[pokemon_index]
-        self.switching_out[switch_pos-1]=True
-        self.active_pokemon[switch_pos-1].status['bdpsn']=1
+        if pokemon.current_hp != pokemon.max_hp:
+            heal_amnt = item.heal \
+                if pokemon.stats['hp'] - pokemon.current_hp > item.heal \
+                else pokemon.stats['hp'] - pokemon.current_hp
 
-    def attack(self,move_slot,user_pos=1,enemy_pos=1):
-        """Execute an attack using a move from an active Pokémon.
+            pokemon.current_hp += heal_amnt
+            print(f'{pokemon.species_name} has healed for {heal_amnt} points')
+        else:
+            print(f'{pokemon.species_name} is already healthy. It cant be healed')
 
-        Args:
-            move_slot (int): Index of the move in the Pokémon's move_list to use.
-            user_pos (int, optional): Position (1 or 2) of the attacking Pokémon. Defaults to 1.
-            enemy_pos (int, optional): Position (1 or 2) of the target enemy Pokémon. Defaults to 1.
+        if not item.status_cure:
+            item.quantity -= 1
+            return True
 
-        Returns:
-            object: The move object used in the attack.
-        """
-        move_used=self.active_pokemon[user_pos-1].move_list[move_slot]
-        self.attacking_who=enemy_pos
-        self.attacking[user_pos]= move_used
-        self.active_pokemon[user_pos-1].selected_move=move_used
-        return move_used
+        return False
 
-    def use_item(self,item_key,use_pos=1):
-        """Use an item on a specified Pokémon.
+    @staticmethod
+    def use_percent_heal_item(pokemon, item):
 
-        Args:
-            item_key: Key identifying the item in usable_items dictionary.
-            use_pos (int, optional): Index in pokemon_list of the Pokémon to apply the item to. Defaults to 1.
+        if pokemon.current_hp != pokemon.max_hp:
 
-        Note:
-            This method is incomplete and requires further development.
-        """
-        item=self.usable_items[item_key]
-        pokemon=self.pokemon_list[use_pos]
-        pokemon.current_hp+=item.heal_amount
-        self.usable_items[item]-=1
-        #not completed need to develop idea more
+            heal_amnt = pokemon.stats['hp'] * item.percent_heal / 100 \
+                if pokemon.stats['hp'] - pokemon.current_hp > pokemon.stats['hp'] * item.percent_heal / 100 \
+                else pokemon.stats['hp'] - pokemon.current_hp
+
+            pokemon.current_hp += heal_amnt
+            print(f'{pokemon.species_name} has healed for {heal_amnt} points')
+        else:
+            print(f'{pokemon.species_name} is already healthy. It cant be healed')
+        if not item.status_cure:
+            item.quantity -= 1
+            return True
+
+        return False
+
+    @staticmethod
+    def use_all_pp_item(pokemon, item):
+
+        pp_needed_moves = []
+
+        for move in pokemon.move_list:
+
+            if move.power_points == pokemon.max_power_points:
+                pp_needed_moves.append(move)
+
+        if len(pp_needed_moves) == 0:
+            print(f'All moves have full pp, {item.item_name} can\'t be used')
+            return False
+
+        for move in pp_needed_moves:
+            used_pp = move.max_power_points - move.power_points
+            move.power_points += item.pp if used_pp > item.pp else used_pp
+            print(f'{move.move_name}\'s power points have been replenished to '
+                  f'({move.power_points}/{move.max_power_points})')
+
+        item.quantity -= 1
+        return True
+
+    @staticmethod
+    def use_pp_item(pokemon, item):
+
+        for move in pokemon.move_list:
+            print(f'{move.move_name}({move.power_points}/{move.max_power_points})', end='\t')
+
+        selected_move_index = int(input('Which move\'s powerpoint to increase(1-4) : '))
+        selected_move = pokemon.move_list[selected_move_index]
+        used_pp = selected_move.max_power_points - selected_move.power_points
+
+        if used_pp > 0:
+            selected_move.power_points += item.pp if used_pp > item.pp else used_pp
+            print(f'{selected_move.move_name}\'s power points have been replenished to '
+                  f'({selected_move.power_points}/{selected_move.max_power_points})')
+            item.quantity -= 1
+            return True
+        else:
+            print(f'{selected_move.move_name} has {selected_move.power_points}/{selected_move.max_power_points}'
+                  f', {item.item_name} can\'t be used')
+            return False
+
+    @staticmethod
+    def use_status_cure_item(pokemon, item):
+
+        for status,turn in pokemon.status:
+
+            if status == item.status_cure or item.status_cure == 'all':
+
+                pokemon.status[status] = 0 if type(turn) == int else False
+                print(f'{pokemon.species_name}\'s {pokemon.status} status has been cured')
+                item.quantity -= 1
+                return True
+        else:
+            print(f'{pokemon.species_name}\'s {pokemon.status} status cannot be cured using {item.item_name}')
+            return False
+
+    def use_item(self,item,pokemon):
+
+        is_item_used=False
+
+        if not pokemon.fainted:
+
+            if item.heal:
+                is_item_used=self.use_heal_item(pokemon,item)
+
+            if item.percent_heal:
+                is_item_used=self.use_percent_heal_item(pokemon,item)
+
+            if item.pp:
+                is_item_used=self.use_pp_item(pokemon,item)
+
+            if item.pp_all:
+                is_item_used=self.use_all_pp_item(pokemon,item)
+
+            if item.status_cure:
+                is_item_used=self.use_status_cure_item(pokemon,item)
+            else:
+                print(f'{item.item_name} cannot be used on a pokemon')
+                is_item_used=False
+
+        else:
+            print(f'{pokemon.species_name} has fainted, {item.item_name} cant\'t be used')
+            is_item_used=False
+
+        if item.quantity == 0:
+            self.usable_items.remove(item)
+
+        return is_item_used
+
+    def switch_pokemon(self,switch_pokemon,sent_pokemon):
+
+        #placeholder: for things that will modify stuff when pokemon switched out
+        if sent_pokemon.status['bdpsn']>1:
+            sent_pokemon.status['bdpsn']=1
+
+        for stat in switch_pokemon.statchanges:
+            switch_pokemon.statchanges[stat]=0
+
+        switch_pokemon.active[self.active_pokemon.index(switch_pokemon)] = False
+        sent_pokemon.active[self.active_pokemon.index(sent_pokemon)] = True
+        self.active_pokemon[self.active_pokemon.index(switch_pokemon)]=sent_pokemon
