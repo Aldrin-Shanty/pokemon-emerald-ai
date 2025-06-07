@@ -1,7 +1,8 @@
 from Trainer import Trainer
 from Pokemon import Pokemon
 from Move import Move
-
+from battle_simulation.Functions.battle_functions.calc_atk_def import calc_atk_def
+from battle_simulation.Functions.battle_functions.stat_mul import screen_calc
 import random
 
 class Battle:
