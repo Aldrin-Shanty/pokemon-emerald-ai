@@ -1,31 +1,37 @@
+from Held_Item import HeldItem
+from Abilities import Ability
+from Move import Move
+
 class Pokemon:
 
-    def __init__(self,species_name,type1,type2,level,ability,move_list,held_item=None,effort_values=None,
-                 individual_values=None,base_stats=None,nature='Hardy',stats=None):
+    def __init__(self,species_name: str,type1: str,type2: str,level: int,ability: Ability,
+                 move_list: list[Move],held_item: HeldItem = None,effort_values: dict[str,int] = None,
+                 individual_values: dict[str,int] = None,base_stats: dict[str,int] = None,
+                 nature: str = 'Hardy',stats: dict[str,int] = None) -> None:
 
-        self.species_name=species_name
-        self.active1=False
-        self.active2=False
-        self.active=[self.active1,self.active2]
-        self.type1=type1
-        self.type2=type2
-        self.type=[self.type1,self.type2]
-        self.level=level
+        self.species_name = species_name
+        self.active1 = False
+        self.active2 = False
+        self.active = [self.active1,self.active2]
+        self.type1 = type1
+        self.type2 = type2
+        self.type = [self.type1,self.type2]
+        self.level = level
 
-        self.effort_values=effort_values \
+        self.effort_values = effort_values \
             if effort_values \
-            else {'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0}
+            else {'atk': 0,'def': 0,'spatk': 0,'spdef': 0,'spd': 0}
 
-        self.individual_values= individual_values \
+        self.individual_values =  individual_values \
             if individual_values \
-            else {'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0}
+            else {'atk': 0,'def': 0,'spatk': 0,'spdef': 0,'spd': 0}
 
-        self.nature = nature
+        self.nature  =  nature
+        self.base_stats = base_stats
+        
+        if base_stats and individual_values and effort_values:
 
-        if base_stats:
-            self.base_stats=base_stats
-
-            self.stats = {
+            self.stats  =  {
             "hp": ((2 * self.base_stats["hp"] + self.individual_values["hp"] + self.effort_values["hp"] // 4) * self.level)
                   // 100 + level + 10,
             "atk": ((2 * self.base_stats["atk"] + self.individual_values["atk"] + self.effort_values["atk"] // 4) * self.level)
@@ -41,15 +47,14 @@ class Pokemon:
             }
             #placeholder: code to use natures.json to buff and nerf stats
         else:
-            self.base_stats=None
-            self.stats = stats
+            self.stats  =  stats
 
-        self.statchanges={'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0,'evs':0,'acc':0}
-        self.ability = ability #Ability object
-        self.held_item = held_item #Held_Item object
-        self.status={'psn':False,'brn':False,'prlz':False,'slp':0,'frz':0,'bdpsn':0}
+        self.statchanges = {'atk': 0,'def': 0,'spatk': 0,'spdef': 0,'spd': 0,'evs': 0,'acc': 0}
+        self.ability  =  ability #Ability object
+        self.held_item  =  held_item #Held_Item object
+        self.status = {'psn': False,'brn': False,'prlz': False,'slp': 0,'frz': 0,'bdpsn': 0}
 
-        self.secondary_status={
+        self.secondary_status = {
         "Flinch": False,
         "Confused": 0,
         "Attracted": False,
@@ -75,11 +80,11 @@ class Pokemon:
         "Substitute": False
         }
 
-        self.current_hp=self.stats['hp']
-        self.move_list=move_list
+        self.current_hp = self.stats['hp']
+        self.move_list = move_list
 
     @property
-    def fainted(self):
+    def fainted(self) -> bool:
 
         return False if self.current_hp else True
 
