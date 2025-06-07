@@ -56,6 +56,32 @@ class Battle:
         Note:
             This method is currently a placeholder and needs implementation.
         """
+        power = move.base_power
+        crit = random.choices(population=[False, True],
+                              weights=[(1-move.crit_chance),
+                                       move.crit_chance])[0]
+        critical = 2 if crit else 1
+
+        screen = screen_calc(self.trainer_of_pokemon(dmg_taken_pokemon),
+                             self.battle_mode, move, crit)
+
+
+        # claculates the atk and defence stat of the pokemon after using stage_mul
+        atk, defence = calc_atk_def(dmg_deal_pokemon, dmg_taken_pokemon, move, crit)
+
+        burn = 1
+
+        if (dmg_deal_pokemon.status.brn and
+            dmg_deal_pokemon.ability != "guts" and
+                move.type == "Physical"):
+            burn = 0.5
+
+        level_based_dmg = (2*dmg_deal_pokemon.level/5)+2
+        stat_based_damage = power*(atk/defence)/50
+        status_eff_damage = burn * screen
+        damage = level_based_dmg * stat_based_damage #placeholder  have to complete these (Targets×Weather×FF+2)×Stockpile×critical×DoubleDmg×Charge×HH×STAB×Type1×Type2×random
+
+
         return 1
 
     def trainer_of_active_pokemon(self,pokemon: Pokemon) -> Trainer:
