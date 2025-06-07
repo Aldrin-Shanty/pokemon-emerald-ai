@@ -47,19 +47,17 @@ class Pokemon:
         self.base_stats=base_stats
         self.nature = nature
         if base_stats:
-            self.base_stats=base_stats
             self.stats = {
-            "hp": ((2 * base_stats["hp"] + individual_values["hp"] + effort_values["hp"] // 4) * level) // 100 + level + 10,
-            "atk": ((2 * base_stats["atk"] + individual_values["atk"] + effort_values["atk"] // 4) * level) // 100 + 5,
-            "def": ((2 * base_stats["def"] + individual_values["def"] + effort_values["def"] // 4) * level) // 100 + 5,
-            "spatk": ((2 * base_stats["spatk"] + individual_values["spatk"] + effort_values["spatk"] // 4) * level) // 100 + 5,
-            "spdef": ((2 * base_stats["spdef"] + individual_values["spdef"] + effort_values["spdef"] // 4) * level) // 100 + 5,
-            "spd": ((2 * base_stats["spd"] + individual_values["spd"] + effort_values["spd"] // 4) * level) // 100 + 5
+            "hp": ((2 * base_stats["hp"] + self.individual_values["hp"] +self.effort_values["hp"] // 4) * level) // 100 + level + 10,
+            "atk": ((2 * base_stats["atk"] + self.individual_values["atk"] +self.effort_values["atk"] // 4) * level) // 100 + 5,
+            "def": ((2 * base_stats["def"] + self.individual_values["def"] + self.effort_values["def"] // 4) * level) // 100 + 5,
+            "spatk": ((2 * base_stats["spatk"] + self.individual_values["spatk"] + self.effort_values["spatk"] // 4) * level) // 100 + 5,
+            "spdef": ((2 * base_stats["spdef"] + self.individual_values["spdef"] + self.effort_values["spdef"] // 4) * level) // 100 + 5,
+            "spd": ((2 * base_stats["spd"] + self.individual_values["spd"] + self.effort_values["spd"] // 4) * level) // 100 + 5
             }
-            #placeholder: code to use natures.json to buff and nerf stats
+            # placeholder: code to use natures.json to buff and nerf stats
         else:
-            self.base_stats=None
-            self.stats = stats
+            self.stats = stats if stats else {'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0}
         self.statchanges={'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0,'evs':0,'acc':0}
         self.ability = ability #Ability object
         self.held_item = held_item #Held_Item object
