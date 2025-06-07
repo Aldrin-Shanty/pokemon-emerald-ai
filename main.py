@@ -47,13 +47,13 @@ class Battle:
         order = sorted(order, key=order.get, reverse=True)
         return order
 
-    def dmg_calc(self,trainer,user_slot,enemy_slot,move):
+    def dmg_calc(self,dmg_taken_pokemon,dmg_deal_pokemon,move):
         """Calculate damage for moves used in the battle.
 
         Note:
             This method is currently a placeholder and needs implementation.
         """
-        pass
+        return 1
 
     def trainer_of_pokemon(self,pokemon):
         owner=None
@@ -130,12 +130,25 @@ class Battle:
             elif pokemon.secondary_status['Partially Trapped']==1:
                 print(f"{self.trainer_of_pokemon(pokemon).trainer_name}'s {pokemon.species_name} was freed from the traps")
                 pokemon.secondary_status['Partially Trapped']-=1
-        for trainer in self.trainers:
-            trainer.switching_out=[False,False]
-            trainer.field['reflect']-=1 if trainer.field['reflect'] else 0
-            trainer.field['lightscreen']-=1 if trainer.field['lightscreen'] else 0
-            trainer.field['trap_turns']-=1 if trainer.field['trap_turns'] else 0
-
+        for pokemon in order:
+            if pokemon.secondary_status['Ingrained']:
+                pokemon.current_hp += (pokemon.stats['hp'] // 16 if pokemon.stats['hp'] // 16 > 1 else 1) if (pokemon.stats['hp']-pokemon.current_hp) < (pokemon.stats['hp'] // 16) else (pokemon.stats['hp']-pokemon.current_hp)
+                print(f"{self.trainer_of_pokemon(pokemon).trainer_name}'s {pokemon.species_name} absorbed nutrients with its roots!")
+            if self.trainer_of_pokemon(pokemon).field['Wish'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)]>1:
+                self.trainer_of_pokemon(pokemon).field['Wish'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)]-=1
+            elif self.trainer_of_pokemon(pokemon).field['Wish'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)]==1:
+                pokemon.current_hp += (pokemon.stats['hp'] // 2 if pokemon.stats['hp'] // 2 > 1 else 1) if (pokemon.stats['hp']-pokemon.current_hp) < (pokemon.stats['hp'] // 2) else (pokemon.stats['hp']-pokemon.current_hp)
+                self.trainer_of_pokemon(pokemon).field['Wish'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)]-=1
+            if self.trainer_of_pokemon(pokemon).field['Future Sight'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)][0]>1:
+                self.trainer_of_pokemon(pokemon).field['Future Sight'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)][0]-=1
+            elif self.trainer_of_pokemon(pokemon).field['Future Sight'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)][0]==1:
+                pokemon.current_hp -= (self.dmg_calc(pokemon,self.trainer_of_pokemon(pokemon).field['Future Sight'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)][1],Move('Future Sight',80,15,'Psychic',90,'Special',False,{'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0},{'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0}))) if (self.dmg_calc(pokemon,self.trainer_of_pokemon(pokemon).field['Future Sight'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)][1],Move('Future Sight',80,15,'Steel',90,'Special',False,{'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0},{'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0})) < pokemon.current_hp) else pokemon.current_hp
+                self.trainer_of_pokemon(pokemon).field['Future Sight'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)][0]-=1
+            if self.trainer_of_pokemon(pokemon).field['Doom Desire'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)][0]>1:
+                self.trainer_of_pokemon(pokemon).field['Doom Desire'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)][0]-=1
+            elif self.trainer_of_pokemon(pokemon).field['Doom Desire'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)][0]==1:
+                pokemon.current_hp -= (self.dmg_calc(pokemon,self.trainer_of_pokemon(pokemon).field['Doom Desire'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)][1],Move('Doom Desire',80,15,'Steel',90,'Special',False,{'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0},{'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0}))) if (self.dmg_calc(pokemon,self.trainer_of_pokemon(pokemon).field['Doom Desire'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)][1],Move('Doom Desire',80,15,'Steel',90,'Special',False,{'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0},{'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0})) < pokemon.current_hp) else pokemon.current_hp
+                self.trainer_of_pokemon(pokemon).field['Doom Desire'][self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)][0]-=1
     def safe_switch(self,fainted_pokemon,switch_pokemon):
         self.trainer_of_pokemon(fainted_pokemon).active_pokemon[self.trainer_of_pokemon(fainted_pokemon).active_pokemon.index(fainted_pokemon)]=switch_pokemon
 
@@ -207,7 +220,7 @@ class Trainer:
         self.trainer_name=trainer_name
         self.pokemon_list = pokemon_list
         self.usable_items=usable_items
-        self.field={'spikes':0,'reflect':0,'lightscreen':0}
+        self.field={'spikes':0,'reflect':0,'lightscreen':0,'Wish':[0,0],'Future Sight':[[0,None],[0,None]],'Doom Desire':[[0,None],[0,None]]} #[no of turns for pos 1, no of turns for pos 2]
         self.switching_out=[False,False]
         self.using_item=[None,None]
         self.attacking=[None,None]
