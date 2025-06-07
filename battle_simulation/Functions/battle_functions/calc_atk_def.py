@@ -28,7 +28,7 @@ def calc_stage_mul(change: int) -> float:
 
 
 def calc_atk_def(dealing_pokemon: Pokemon, taking_pokemon: Pokemon,
-                 move: Move) -> list[int]:
+                 move: Move, crit: bool) -> list[int]:
     """Calculates the effective attack and defense stats for a move, factoring in stat changes and critical hits.
 
     This function computes the effective attack and defense values to be used when `dealing_pokemon` uses `move` 
@@ -43,6 +43,7 @@ def calc_atk_def(dealing_pokemon: Pokemon, taking_pokemon: Pokemon,
         dealing_pokemon (Pokemon): The Pokémon using the move. Its stats and stat stage changes determine the attack value.
         taking_pokemon (Pokemon): The Pokémon targeted by the move. Its stats and stat stage changes determine the defense value.
         move (Move): The move being used. Determines whether the attack is Physical or Special, and specifies the critical hit chance.
+        crit (Bool): whether used move is a crit or not.
 
     Returns:
         list[int]: A list containing two integers:
@@ -54,10 +55,6 @@ def calc_atk_def(dealing_pokemon: Pokemon, taking_pokemon: Pokemon,
         - Stage multipliers are applied via the `calc_stage_mul` function.
         - The returned values are rounded up using `ceil`.
     """
-
-    crit = random.choices(population=[False, True],
-                          weights=[(1-move.crit_chance),
-                          move.crit_chance])
 
     atk = 0
     defence = 0
