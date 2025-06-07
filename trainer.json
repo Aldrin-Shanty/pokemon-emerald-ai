@@ -1,0 +1,1300 @@
+[
+    {
+        "name" : "Roxanne",
+        "pokemons" : [
+            {
+                "name": "Geodude",
+                "level": 12,
+                "move_list": [
+                    "Tackle",
+                    "Rock Throw",
+                    "Rock Tomb",
+                    "Defense Curl"
+                ],
+                "ability" : "Rock Head",
+                "nature" : "Docile",
+                "stats":{   
+                    "hp":33,
+                    "atk": 25,
+                    "def" : 30,
+                    "spatk": 13,
+                    "spdef": 13,
+                    "spd": 11												
+                },
+                "held_item" : None
+            },
+            {
+                "name": "Geodude",
+                "level": 12,
+                "move_list": [
+                    "Tackle",
+                    "Rock Throw",
+                    "Rock Tomb",
+                    "Defense Curl"
+                ],
+                "ability" : "Rock Head",
+                "nature" : "Quiet",
+                "stats":{   
+                    "hp":33,
+                    "atk": 25,
+                    "def" : 30,
+                    "spatk": 14,
+                    "spdef": 13,
+                    "spd": 9												
+                },
+                "held_item" : None
+            },
+            {
+                "name": "Nosepass",
+                "level": 15,
+                "move_list": [
+                    "Tackle",
+                    "Rock Throw",
+                    "Harden",
+                    "Block"
+                ],
+                "ability" : "Sturdy",
+                "nature" : "Lonely",
+                "stats":{   
+                    "hp":37,
+                    "atk": 24,
+                    "def" : 44,
+                    "spatk": 22,
+                    "spdef": 35,
+                    "spd": 17											
+                },
+                "held_item" : "Oran Berry"
+            }],
+        "items" : []
+
+    },
+    {
+        "name" : "Brawly",
+        "pokemons" : [
+            {
+                "name": "Machop",
+                "level": 16,
+                "move_list": [
+                    "Karate Chop",
+                    "Low Kick",
+                    "Seismic Toss",
+                    "Bulk Up"
+                ],
+                "ability" : "Guts",
+                "nature" : "Hardy",
+                "stats":{   
+                    "hp":50,
+                    "atk": 32,
+                    "def" : 22,
+                    "spatk": 18,
+                    "spdef": 18,
+                    "spd": 18
+                },
+                "held_item" : None
+            },
+            {
+                "name": "Meditite",
+                "level": 16,
+                "move_list": [
+                    "Focus Punch",
+                    "Light Screen",
+                    "Reflect",
+                    "Bulk Up"
+                ],
+                "ability" : "Pure Power",
+                "nature" : "Calm",
+                "stats":{
+                    "hp":37,
+                    "atk": 17,
+                    "def" : 24,
+                    "spatk": 19,
+                    "spdef": 26,
+                    "spd": 26												
+                },
+                "held_item" : None
+            },
+            {
+                "name": "Makuhita",
+                "level": 19,
+                "move_list": [
+                    "Arm Thrust",
+                    "Vital Throw",
+                    "Reversal",
+                    "Bulk Up"
+                ],
+                "ability" : "Thick Fat",
+                "nature" : "Lax",
+                "stats":{   
+                    "hp":60,
+                    "atk": 32,
+                    "def" : 22,
+                    "spatk": 17,
+                    "spdef": 18,
+                    "spd": 19
+                },
+                "held_item" : "Sitrus Berry"
+            }],
+        "items" : []
+
+    },
+   {
+        "name" : "Wattson",
+        "pokemons" : [
+            {
+                "name": "Voltorb",
+                "level": 20,
+                "move_list": [
+                    "Rollout",
+                    "Self-Desctruct",
+                    "Spark",
+                    "Sock Wave"
+                ],
+                "ability" : "Soundproof",
+                "nature" : "Docile",
+                "stats":{   
+                    "hp": 50,
+                    "atk": 21,
+                    "def" : 29,
+                    "spatk": 31,
+                    "spdef": 31,
+                    "spd": 49
+                },
+                "held_item" : None
+            },
+            {
+                "name": "Electrike",
+                "level": 20,
+                "move_list": [
+                    "Quick Attack",
+                    "Shock Wave",
+                    "Leer",
+                    "Howl"
+                ],
+                "ability" : "Static",
+                "nature" : "Serious",
+                "stats":{   
+                    "hp": 50,
+                    "atk": 27,
+                    "def" : 25,
+                    "spatk": 35,
+                    "spdef": 25,
+                    "spd": 35												
+                },
+                "held_item" : None
+            },
+            {
+                "name": "Magneton",
+                "level": 22,
+                "move_list": [
+                    "Sonicboom",
+                    "Shock Wave",
+                    "Supersonic",
+                    "Thunder Wave"
+                ],
+                "ability" : "Magnet Pull",
+                "nature" : "Impish",
+                "stats":{
+                    "hp": 59,
+                    "atk": 37,
+                    "def" : 57,
+                    "spatk": 56,
+                    "spdef": 41,
+                    "spd": 41
+                },
+                "held_item" : None
+            },
+            {
+                "name": "Manectric",
+                "level": 24,
+                "move_list": [
+                    "Quick Attack",
+                    "Shock Wave",
+                    "Howl",
+                    "Thunder Wave"
+                ],
+                "ability" : "Static",
+                "nature" : "Brave",
+                "stats":{
+                    "hp": 74,
+                    "atk": 52,
+                    "def" : 41,
+                    "spatk": 62,
+                    "spdef": 41,
+                    "spd": 55 
+                },
+                "held_item" : "Sitrus Berry"
+            }
+        ],
+        "items" : []
+
+    },
+   {
+        "name" : "Flannery",
+        "pokemons" : [
+            {
+                "name": "Numel",
+                "level": 24,
+                "move_list": [
+                    "Magnitude",
+                    "Take Down",
+                    "Overheat",
+                    "Sunny Day"
+                ],
+                "ability" : "Oblivious",
+                "nature" : "Jolly",
+                "stats":{   
+                    "hp": 68,
+                    "atk": 39,
+                    "def" : 29,
+                    "spatk": 36,
+                    "spdef": 32,
+                    "spd": 29
+                },
+                "held_item" : None
+            },
+            {
+                "name": "Slugma",
+                "level": 24,
+                "move_list": [
+                    "Smog",
+                    "Overheat",
+                    "Light Screen",
+                    "Sunny Day"
+                ],
+                "ability" : "Magma Armor",
+                "nature" : "Calm",
+                "stats":{   
+                    "hp": 58,
+                    "atk": 26,
+                    "def" : 29,
+                    "spatk": 44,
+                    "spdef": 31,
+                    "spd": 20
+                },
+                "held_item" : None
+            },
+            {
+                "name": "Camerupt",
+                "level": 26,
+                "move_list": [
+                    "Overheat",
+                    "Tackle",
+                    "Attract",
+                    "Sunny Day"
+                ],
+                "ability" : "Magma Armor",
+                "nature" : "Adamant",
+                "stats":{   
+                    "hp" : 80,
+                    "atk": 70,
+                    "def" : 49,
+                    "spatk": 60,
+                    "spdef": 51,
+                    "spd": 33
+                },
+                "held_item" : None
+            },
+            {
+                "name": "Torkoal",
+                "level": 29,
+                "move_list": [
+                    "Body Slam",
+                    "Overheat",
+                    "Attract",
+                    "Sunny Day"
+                ],
+                "ability" : "White Smoke",
+                "nature" : "Modest",
+                "stats":{   
+                    "hp" : 88,
+                    "atk": 56,
+                    "def" : 94,
+                    "spatk": 69,
+                    "spdef": 54,
+                    "spd": 25
+                },
+                "held_item" : "White Herb"
+            }
+        ],
+        "items" : []
+
+    },
+   {
+        "name" : "Norman",
+        "pokemons" : [
+            {
+                "name": "Spinda",
+                "level": 27,
+                "move_list": [
+                    "Facade",
+                    "Psybeam",
+                    "Teeter Dance",
+                    "Encore"
+                ],
+                "ability" : "Own Tempo",
+                "nature" : "Docile",
+                "stats":{   
+                    "hp": 75,
+                    "atk": 43,
+                    "def" : 43,
+                    "spatk": 43,
+                    "spdef": 43,
+                    "spd": 43
+                },
+                "held_item" : None
+            },
+            {
+                "name": "Vigoroth",
+                "level": 27,
+                "move_list": [
+                    "Slash",
+                    "Facade",
+                    "Faint Attack",
+                    "Encore"
+                ],
+                "ability" : "Vital Spirit",
+                "nature" : "Naive",
+                "stats":{   
+                    "hp": 86,
+                    "atk": 54,
+                    "def" : 54,
+                    "spatk": 41,
+                    "spdef": 36,
+                    "spd": 66
+                },
+                "held_item" : None
+            },
+            {
+                "name": "Linoone",
+                "level": 29,
+                "move_list": [
+                    "Slash",
+                    "Facade",
+                    "Headbutt",
+                    "Belly Drum"
+                ],
+                "ability" : "Pickup",
+                "nature" : "Lonely",
+                "stats":{   
+                    "hp": 91,
+                    "atk": 57,
+                    "def" : 42,
+                    "spatk": 40,
+                    "spdef": 47,
+                    "spd": 69											
+                },
+                "held_item" : None 
+            },
+            {
+                "name": "Slaking",
+                "level": 31,
+                "move_list": [
+                    "Facade",
+                    "Faint Attack",
+                    "Counter",
+                    "Yawn"
+                ],
+                "ability" : "Truant",
+                "nature" : "Sassy",
+                "stats":{   
+                    "hp": 143,
+                    "atk": 113,
+                    "def" : 76,
+                    "spatk": 73,
+                    "spdef": 59,
+                    "spd": 68
+                },
+                "held_item" : "Sitrus Berry"
+            }
+        ],
+        "items" : []
+    },
+    {
+        "name": "Winona",
+        "pokemons": [
+            {
+                "name": "Swablu",
+                "level": 29,
+                "move_list": [
+                    "Aerial Ace",
+                    "Perish Song",
+                    "Mirror Move",
+                    "Safeguard"
+                ],
+                "ability": "Natural Cure",
+                "nature": "Hasty",
+                "stats": {
+                    "hp": 72,
+                    "atk": 35,
+                    "def": 42,
+                    "spatk": 35,
+                    "spdef": 55,
+                    "spd": 45
+                },
+                "held_item": None
+            },
+            {
+                "name": "Tropius",
+                "level": 29,
+                "move_list": [
+                    "Solarbeam",
+                    "Aerial Ace",
+                    "Sunny Day",
+                    "Synthesis"
+                ],
+                "ability": "Chlorophyll",
+                "nature": "Impish",
+                "stats": {
+                    "hp": 103,
+                    "atk": 51,
+                    "def": 66,
+                    "spatk": 48,
+                    "spdef": 62,
+                    "spd": 41
+                },
+                "held_item": None
+            },
+            {
+                "name": "Pelipper",
+                "level": 30,
+                "move_list": [
+                    "Aerial Ace",
+                    "Water Gun",
+                    "Supersonic",
+                    "Protect"
+                ],
+                "ability": "Keen Eye",
+                "nature": "Calm",
+                "stats": {
+                    "hp": 83,
+                    "atk": 37,
+                    "def": 72,
+                    "spatk": 63,
+                    "spdef": 59,
+                    "spd": 51
+                },
+                "held_item": None
+            },
+            {
+                "name": "Skarmory",
+                "level": 31,
+                "move_list": [
+                    "Aerial Ace",
+                    "Steel Wing",
+                    "Fury Attack",
+                    "Sand-Attack"
+                ],
+                "ability": "Keen Eye",
+                "nature": "Calm",
+                "stats": {
+                    "hp": 89,
+                    "atk": 55,
+                    "def": 99,
+                    "spatk": 37,
+                    "spdef": 61,
+                    "spd": 56
+                },
+                "held_item": None
+            },
+            {
+                "name": "Altaria",
+                "level": 33,
+                "move_list": [
+                    "Earthquake",
+                    "Aerial Ace",
+                    "Dragonbreath",
+                    "Dragon Dance"
+                ],
+                "ability": "Natural Cure",
+                "nature": "Docile",
+                "stats": {
+                    "hp": 102,
+                    "atk": 61,
+                    "def": 74,
+                    "spatk": 61,
+                    "spdef": 84,
+                    "spd": 68
+                },
+                "held_item": "Oran Berry"
+            }
+        ],
+        "items": []
+    },
+    {
+        "name": "Tate & Liza",
+        "pokemons": [
+            {
+                "name": "Xatu",
+                "level": 41,
+                "move_list": [
+                    "Psychic",
+                    "Calm Mind",
+                    "Sunny Day",
+                    "Confuse Ray"
+                ],
+                "ability": "Synchronize",
+                "nature": "Docile",
+                "stats": {
+                    "hp": 116,
+                    "atk": 78,
+                    "def": 74,
+                    "spatk": 95,
+                    "spdef": 74,
+                    "spd": 95
+                },
+                "held_item": None
+            },
+            {
+                "name": "Claydol",
+                "level": 41,
+                "move_list": [
+                    "Earthquake",
+                    "Ancientpower",
+                    "Psychic",
+                    "Light Screen"
+                ],
+                "ability": "Levitate",
+                "nature": "Lax",
+                "stats": {
+                    "hp": 112,
+                    "atk": 74,
+                    "def": 113,
+                    "spatk": 74,
+                    "spdef": 103,
+                    "spd": 78
+                },
+                "held_item": None
+            },
+            {
+                "name": "Lunatone",
+                "level": 42,
+                "move_list": [
+                    "Psychic",
+                    "Hypnosis",
+                    "Calm Mind",
+                    "Light Screen"
+                ],
+                "ability": "Levitate",
+                "nature": "Impish",
+                "stats": {
+                    "hp": 123,
+                    "atk": 63,
+                    "def": 79,
+                    "spatk": 87,
+                    "spdef": 89,
+                    "spd": 76
+                },
+                "held_item": "Sitrus Berry"
+            },
+            {
+                "name": "Solrock",
+                "level": 42,
+                "move_list": [
+                    "Solarbeam",
+                    "Psychic",
+                    "Flamethrower",
+                    "Sunny Day"
+                ],
+                "ability": "Levitate",
+                "nature": "Modest",
+                "stats": {
+                    "hp": 123,
+                    "atk": 87,
+                    "def": 89,
+                    "spatk": 69,
+                    "spdef": 72,
+                    "spd": 76
+                },
+                "held_item": "Sitrus Berry"
+            }
+        ],
+        "items": []
+    }, 
+    {
+        "name": "Juan",
+        "pokemons": [
+            {
+                "name": "Luvdisc",
+                "level": 41,
+                "move_list": [
+                    "Water Pulse",
+                    "Flail",
+                    "Sweet Kiss",
+                    "Attract"
+                ],
+                "ability": "Swift Swim",
+                "nature": "Adamant",
+                "stats": {
+                    "hp": 96,
+                    "atk": 42,
+                    "def": 59,
+                    "spatk": 42,
+                    "spdef": 68,
+                    "spd": 94
+                },
+                "held_item": None
+            },
+            {
+                "name": "Kingdra",
+                "level": 46,
+                "move_list": [
+                    "Ice Beam",
+                    "Water Pulse",
+                    "Double Team",
+                    "Rest"
+                ],
+                "ability": "Swift Swim",
+                "nature": "Naive",
+                "stats": {
+                    "hp": 138,
+                    "atk": 106,
+                    "def": 106,
+                    "spatk": 106,
+                    "spdef": 95,
+                    "spd": 106
+                },
+                "held_item": "Chesto Berry"
+            },
+            {
+                "name": "Sealeo",
+                "level": 43,
+                "move_list": [
+                    "Aurora Beam",
+                    "Water Pulse",
+                    "Body Slam",
+                    "Encore"
+                ],
+                "ability": "Thick Fat",
+                "nature": "Naive",
+                "stats": {
+                    "hp": 140,
+                    "atk": 66,
+                    "def": 75,
+                    "spatk": 79,
+                    "spdef": 67,
+                    "spd": 59
+                },
+                "held_item": None
+            },
+            {
+                "name": "Wishcash",
+                "level": 41,
+                "move_list": [
+                    "Water Pulse",
+                    "Earthquake",
+                    "Rain Dance",
+                    "Amnesia"
+                ],
+                "ability": "Oblivious",
+                "nature": "Hasty",
+                "stats": {
+                    "hp": 151,
+                    "atk": 78,
+                    "def": 66,
+                    "spatk": 77,
+                    "spdef": 73,
+                    "spd": 70
+                },
+                "held_item": None
+            },
+            {
+                "name": "Crawdaunt",
+                "level": 43,
+                "move_list": [
+                    "Crabhammer",
+                    "Water Pulse",
+                    "Taunt",
+                    "Leer"
+                ],
+                "ability": "Hyper Cutter",
+                "nature": "Adamant",
+                "stats": {
+                    "hp": 117,
+                    "atk": 129,
+                    "def": 88,
+                    "spatk": 82,
+                    "spdef": 62,
+                    "spd": 62
+                },
+                "held_item": None
+            }
+        ],
+        "items": []
+    },
+    {
+        "name": "Sidney",
+        "pokemons": [
+            {
+                "name": "Mightyena",
+                "level": 46,
+                "move_list": [
+                    "Crunch",
+                    "Double Edge",
+                    "Sand-Attack",
+                    "Roar"
+                ],
+                "ability": "Intimidate",
+                "nature": "Rash",
+                "stats": {
+                    "hp": 134,
+                    "atk": 101,
+                    "def": 83,
+                    "spatk": 81,
+                    "spdef": 66,
+                    "spd": 83
+                },
+                "held_item": None
+            },
+            {
+                "name": "Absol",
+                "level": 49,
+                "move_list": [
+                    "Aerial Ace",
+                    "Rock Slide",
+                    "Slash",
+                    "Swords Dance"
+                ],
+                "ability": "Pressure",
+                "nature": "Bold",
+                "stats": {
+                    "hp": 137,
+                    "atk": 132,
+                    "def": 85,
+                    "spatk": 93,
+                    "spdef": 78,
+                    "spd": 93
+                },
+                "held_item": "Sitrus Berry"
+            },
+            {
+                "name": "Shiftry",
+                "level": 48,
+                "move_list": [
+                    "Extrasensory",
+                    "Double Team",
+                    "Swagger",
+                    "Torment"
+                ],
+                "ability": "Chlorophyll",
+                "nature": "Jolly",
+                "stats": {
+                    "hp": 158,
+                    "atk": 115,
+                    "def": 77,
+                    "spatk": 94,
+                    "spdef": 77,
+                    "spd": 105
+                },
+                "held_item": None
+            },
+            {
+                "name": "Crawdaunt",
+                "level": 48,
+                "move_list": [
+                    "Surf",
+                    "Strength",
+                    "Facade",
+                    "Swords Dance"
+                ],
+                "ability": "Hyper Cutter",
+                "nature": "Naughty",
+                "stats": {
+                    "hp": 132,
+                    "atk": 147,
+                    "def": 101,
+                    "spatk": 105,
+                    "spdef": 64,
+                    "spd": 72
+                },
+                "held_item": None
+            },
+            {
+                "name": "Cacturne",
+                "level": 46,
+                "move_list": [
+                    "Faint Attack",
+                    "Needle Arm",
+                    "Cotton Spore",
+                    "Leech Seed"
+                ],
+                "ability": "Sand Veil",
+                "nature": "Adamant",
+                "stats": {
+                    "hp": 134,
+                    "atk": 136,
+                    "def": 74,
+                    "spatk": 111,
+                    "spdef": 74,
+                    "spd": 69
+                },
+                "held_item": None
+            }
+        ],
+        "items": []
+    },
+    {
+        "name": "Phoebe",
+        "pokemons": [
+            {
+                "name": "Dusclops",
+                "level": 48,
+                "move_list": [
+                    "Shadow Punch",
+                    "Protect",
+                    "Confuse Ray",
+                    "Curse"
+                ],
+                "ability": "Pressure",
+                "nature": "Naughty",
+                "stats": {
+                    "hp": 110,
+                    "atk": 94,
+                    "def": 144,
+                    "spatk": 77,
+                    "spdef": 129,
+                    "spd": 43
+                },
+                "held_item": None
+            },
+            {
+                "name": "Dusclops",
+                "level": 51,
+                "move_list": [
+                    "Ice Beam",
+                    "Shadow Ball",
+                    "Rock Slide",
+                    "Earthquake"
+                ],
+                "ability": "Pressure",
+                "nature": "Careful",
+                "stats": {
+                    "hp": 117,
+                    "atk": 92,
+                    "def": 153,
+                    "spatk": 73,
+                    "spdef": 168,
+                    "spd": 46
+                },
+                "held_item": "Sitrus Berry"
+            },
+            {
+                "name": "Sableye",
+                "level": 50,
+                "move_list": [
+                    "Shadow Ball",
+                    "Night Shade",
+                    "Faint Attack",
+                    "Double Team"
+                ],
+                "ability": "Keen Eye",
+                "nature": "Careful",
+                "stats": {
+                    "hp": 125,
+                    "atk": 95,
+                    "def": 95,
+                    "spatk": 76,
+                    "spdef": 93,
+                    "spd": 70
+                },
+                "held_item": None
+            },
+            {
+                "name": "Banette",
+                "level": 49,
+                "move_list": [
+                    "Shadow Ball",
+                    "Faint Attack",
+                    "Will-o-wisp",
+                    "Grudge"
+                ],
+                "ability": "Insomnia",
+                "nature": "Calm",
+                "stats": {
+                    "hp": 136,
+                    "atk": 118,
+                    "def": 83,
+                    "spatk": 101,
+                    "spdef": 89,
+                    "spd": 83
+                },
+                "held_item": None
+            },
+            {
+                "name": "Banette",
+                "level": 49,
+                "move_list": [
+                    "Shadow Ball",
+                    "Psychic",
+                    "Thunderbolt",
+                    "Facade"
+                ],
+                "ability": "Insomnia",
+                "nature": "Naive",
+                "stats": {
+                    "hp": 136,
+                    "atk": 132,
+                    "def": 83,
+                    "spatk": 101,
+                    "spdef": 72,
+                    "spd": 91
+                },
+                "held_item": None
+            }
+        ],
+        "items": []
+    },
+    {
+        "name": "Glacia",
+        "pokemons": [
+            {
+                "name": "Sealeo",
+                "level": 50,
+                "move_list": [
+                    "Ice Ball",
+                    "Body Slam",
+                    "Hail",
+                    "Encore"
+                ],
+                "ability": "Thick Fat",
+                "nature": "Brave",
+                "stats": {
+                    "hp": 165,
+                    "atk": 88,
+                    "def": 90,
+                    "spatk": 95,
+                    "spdef": 90,
+                    "spd": 58
+                },
+                "held_item": None
+            },
+            {
+                "name": "Glalie",
+                "level": 50,
+                "move_list": [
+                    "Ice Beam",
+                    "Icy Wind",
+                    "Crunch",
+                    "Light Screen"
+                ],
+                "ability": "Inner Focus",
+                "nature": "Bashful",
+                "stats": {
+                    "hp": 155,
+                    "atk": 100,
+                    "def": 100,
+                    "spatk": 100,
+                    "spdef": 100,
+                    "spd": 100
+                },
+                "held_item": None
+            },
+            {
+                "name": "Sealeo",
+                "level": 52,
+                "move_list": [
+                    "Blizzard",
+                    "Double Edge",
+                    "Hail",
+                    "Attract"
+                ],
+                "ability": "Thick Fat",
+                "nature": "Hardy",
+                "stats": {
+                    "hp": 171,
+                    "atk": 83,
+                    "def": 93,
+                    "spatk": 98,
+                    "spdef": 93,
+                    "spd": 67
+                },
+                "held_item": None
+            },
+            {
+                "name": "Glalie",
+                "level": 52,
+                "move_list": [
+                    "Ice Beam",
+                    "Explosion",
+                    "Shadow Ball",
+                    "Hail"
+                ],
+                "ability": "Inner Focus",
+                "nature": "Mild",
+                "stats": {
+                    "hp": 160,
+                    "atk": 103,
+                    "def": 92,
+                    "spatk": 113,
+                    "spdef": 103,
+                    "spd": 103
+                },
+                "held_item": None
+            },
+            {
+                "name": "Walrein",
+                "level": 53,
+                "move_list": [
+                    "Ice Beam",
+                    "Surf",
+                    "Body Slam",
+                    "Sheer Cold"
+                ],
+                "ability": "Thick Fat",
+                "nature": "Naive",
+                "stats": {
+                    "hp": 196,
+                    "atk": 106,
+                    "def": 116,
+                    "spatk": 122,
+                    "spdef": 104,
+                    "spd": 99
+                },
+                "held_item": "Sitrus Berry"
+            }
+        ],
+        "items": []
+    },
+    {
+        "name": "Drake",
+        "pokemons": [
+            {
+                "name": "Shelgon",
+                "level": 52,
+                "move_list": [
+                    "Rock Tomb",
+                    "Double Edge",
+                    "Dragon Claw",
+                    "Protect"
+                ],
+                "ability": "Rock Head",
+                "nature": "Quiet",
+                "stats": {
+                    "hp": 145,
+                    "atk": 119,
+                    "def": 124,
+                    "spatk": 91,
+                    "spdef": 72,
+                    "spd": 64
+                },
+                "held_item": None
+            },
+            {
+                "name": "Altaria",
+                "level": 54,
+                "move_list": [
+                    "Dragonbreath",
+                    "Aerial Ace",
+                    "Double Edge",
+                    "Dragon Dance"
+                ],
+                "ability": "Natural Cure",
+                "nature": "Modest",
+                "stats": {
+                    "hp": 161,
+                    "atk": 86,
+                    "def": 118,
+                    "spatk": 105,
+                    "spdef": 134,
+                    "spd": 107
+                },
+                "held_item": None
+            },
+            {
+                "name": "Flygon",
+                "level": 53,
+                "move_list": [
+                    "Dragonbreath",
+                    "Earthquake",
+                    "Crunch",
+                    "Flamethrower"
+                ],
+                "ability": "Levitate",
+                "nature": "Lax",
+                "stats": {
+                    "hp": 163,
+                    "atk": 126,
+                    "def": 115,
+                    "spatk": 105,
+                    "spdef": 94,
+                    "spd": 126
+                },
+                "held_item": None
+            },
+            {
+                "name": "Salamence",
+                "level": 55,
+                "move_list": [
+                    "Dragon Claw",
+                    "Rock Slide",
+                    "Crunch",
+                    "Flamethrower"
+                ],
+                "ability": "Intimidate",
+                "nature": "Bold",
+                "stats": {
+                    "hp": 186,
+                    "atk": 153,
+                    "def": 121,
+                    "spatk": 143,
+                    "spdef": 110,
+                    "spd": 132
+                },
+                "held_item": "Sitrus Berry"
+            },
+            {
+                "name": "Kingdra",
+                "level": 53,
+                "move_list": [
+                    "Surf",
+                    "Body Slam",
+                    "Dragon Dance",
+                    "Smokescreen"
+                ],
+                "ability": "Swift Swim",
+                "nature": "Hardy",
+                "stats": {
+                    "hp": 158,
+                    "atk": 121,
+                    "def": 121,
+                    "spatk": 121,
+                    "spdef": 121,
+                    "spd": 111
+                },
+                "held_item": None
+            }
+        ],
+        "items": []
+    },
+    {
+        "name": "Wallace",
+        "pokemons": [
+            {
+                "name": "Wailord",
+                "level": 57,
+                "move_list": [
+                    "Blizzard",
+                    "Double Edge",
+                    "Water Spout",
+                    "Rain Dance"
+                ],
+                "ability": "Water Veil",
+                "nature": "Rash",
+                "stats": {
+                    "hp": 278,
+                    "atk": 125,
+                    "def": 73,
+                    "spatk": 137,
+                    "spdef": 65,
+                    "spd": 91
+                },
+                "held_item": None
+            },
+            {
+                "name": "Tentacruel",
+                "level": 55,
+                "move_list": [
+                    "Ice Beam",
+                    "Sludge",
+                    "Hydro Pump",
+                    "Toxic"
+                ],
+                "ability": "Clear Body",
+                "nature": "Sassy",
+                "stats": {
+                    "hp": 170,
+                    "atk": 99,
+                    "def": 93,
+                    "spatk": 110,
+                    "spdef": 169,
+                    "spd": 118
+                },
+                "held_item": None
+            },
+            {
+                "name": "Milotic",
+                "level": 58,
+                "move_list": [
+                    "Ice Beam",
+                    "Surf",
+                    "Toxic",
+                    "Recover"
+                ],
+                "ability": "Marvel Scale",
+                "nature": "Gentle",
+                "stats": {
+                    "hp": 196,
+                    "atk": 92,
+                    "def": 102,
+                    "spatk": 138,
+                    "spdef": 183,
+                    "spd": 116
+                },
+                "held_item": "Sitrus Berry"
+            },
+            {
+                "name": "Gyarados",
+                "level": 56,
+                "move_list": [
+                    "Surf",
+                    "Hyper Beam",
+                    "Earthquake",
+                    "Dragon Dance"
+                ],
+                "ability": "Intimidate",
+                "nature": "Rash",
+                "stats": {
+                    "hp": 189,
+                    "atk": 162,
+                    "def": 110,
+                    "spatk": 97,
+                    "spdef": 120,
+                    "spd": 113
+                },
+                "held_item": None
+            },
+            {
+                "name": "Ludicolo",
+                "level": 56,
+                "move_list": [
+                    "Giga Drain",
+                    "Surf",
+                    "Double Team",
+                    "Leech Seed"
+                ],
+                "ability": "Swift Swim",
+                "nature": "Hardy",
+                "stats": {
+                    "hp": 172,
+                    "atk": 100,
+                    "def": 100,
+                    "spatk": 123,
+                    "spdef": 134,
+                    "spd": 100
+                },
+                "held_item": None
+            },
+            {
+                "name": "Wishcash",
+                "level": 56,
+                "move_list": [
+                    "Surf",
+                    "Hyper Beam",
+                    "Earthquake",
+                    "Amnesia"
+                ],
+                "ability": "Oblivious",
+                "nature": "Sassy",
+                "stats": {
+                    "hp": 206,
+                    "atk": 109,
+                    "def": 104,
+                    "spatk": 107,
+                    "spdef": 111,
+                    "spd": 80
+                },
+                "held_item": None
+            }
+        ],
+        "items": []
+    }
+]

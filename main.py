@@ -1,5 +1,6 @@
 import random
 
+
 class Battle:
     """A class to manage a Pokémon battle between two trainers.
 
@@ -9,6 +10,7 @@ class Battle:
         weather (dict): Dictionary tracking weather effects and their durations.
         battle_mode (int): The mode of the battle (1 for singles, 2 for doubles).
     """
+
     def __init__(self, player1, player2):
         """Initialize a new Battle instance.
 
@@ -17,33 +19,35 @@ class Battle:
             player2: Second trainer object participating in the battle.
         """
         self.battle_turn = 0
-        self.trainers = [player1,player2]
-        self.weather = {'sunny':0,'rainy':0,'hail': 0,'sandstorm': 0}
-        self.battle_mode = 1
+        self.trainers = [player1, player2]
+        self.weather = {'sunny': 0, 'rainy': 0, 'hail': 0, 'sandstorm': 0}
+        self.battle_mode = 1  # 1:single battle, 2: double battle
+
     @property
     def turn_order(self):
-        """Determine the turn order of Pokémon based on their speed and action priorities.
+        """Determine the turn order of Pokémon based on their speed and action
+        priorities.
 
         Returns:
             list: Ordered list of Pokémon based on calculated priorities.
         """
-        priority=[[0] * self.battle_mode] * len(self.trainers)
+        priority = [[0] * self.battle_mode] * len(self.trainers)
         for trainer in self.trainers:
             for active in range(self.battle_mode):
                 if self.trainers[trainer].switching_out[active]:
-                    priority[trainer][active]+=40
+                    priority[trainer][active] += 40
                 if self.trainers[trainer].using_item[active]:
                     priority[trainer][active] += 30
-        pokemons=[[pokemon for pokemon in trainer.active_pokemon] for trainer in self.trainers]
-        pokemons_temp=pokemons.copy()
-        pokemons_temp=[pokemon for trainer in pokemons_temp for pokemon in trainer]
+        pokemons = [[pokemon for pokemon in trainer.active_pokemon] for trainer in self.trainers]
+        pokemons_temp = pokemons.copy()
+        pokemons_temp = [pokemon for trainer in pokemons_temp for pokemon in trainer]
         pokemons_temp.sort(key=lambda pokemon: pokemon.stats['spd'])
-        for i,trainer in enumerate(pokemons):
-            for j,pokemon in enumerate(trainer):
+        for i, trainer in enumerate(pokemons):
+            for j, pokemon in enumerate(trainer):
                 if pokemon.selected_move is not None:
                     priority[i][j] += self.trainer_of_pokemon(pokemon).attacking[self.trainer_of_pokemon(pokemon).active_pokemon.index(pokemon)].priority
-                priority[i][j]+= pokemons_temp.index(pokemon)/(len(pokemons_temp)-1)
-        order=dict(zip([pokemon for trainer in pokemons for pokemon in trainer], [active_prio for trainer in priority for active_prio in trainer ]))
+                priority[i][j] += pokemons_temp.index(pokemon)/(len(pokemons_temp)-1)
+        order = dict(zip([pokemon for trainer in pokemons for pokemon in trainer], [active_prio for trainer in priority for active_prio in trainer ]))
         order = sorted(order, key=order.get, reverse=True)
         return order
 
@@ -56,10 +60,10 @@ class Battle:
         pass
 
     def trainer_of_pokemon(self,pokemon):
-        owner=None
+        owner = None
         for trainer in self.trainers:
             if pokemon in trainer.active_pokemon:
-                owner=trainer
+                owner = trainer
         return owner
 
     def turn_effects(self):
@@ -68,7 +72,7 @@ class Battle:
         Updates the state of weather, trainer fields, and Pokémon statuses.
         """
         order = self.turn_order
-        for weather,turns in self.weather:
+        for weather, turns in self.weather:
             if turns>1:
                 if weather=='sunny':
                     print('The sunlight is strong')
