@@ -18,7 +18,7 @@ class Pokemon:
         current_hp (int): The Pokémon's current hit points.
         move_list (list): List of moves the Pokémon can use.
     """
-    def __init__(self,species_name,type1,type2,level,effort_values,individual_values,base_stats,nature,ability,held_item,move_list):
+    def __init__(self,species_name,type1,type2,level,ability,move_list,held_item=None,effort_values=None,individual_values=None,base_stats=None,nature='Hardy',stats=None):
         """Initialize a new Pokémon instance.
 
         Args:
@@ -30,34 +30,45 @@ class Pokemon:
             individual_values (dict): Dictionary of individual values for each stat.
             base_stats (dict): Dictionary of base stats for the Pokémon.
             nature (str): The Pokémon's nature.
-            ability (str): The Pokémon's ability.
-            held_item (str): The item held by the Pokémon.
+            ability (Abiltiy object): The Pokémon's ability.
+            held_item (Held_Item object): The item held by the Pokémon.
             move_list (list): List of move objects the Pokémon can use.
         """
         self.species_name=species_name
-        self.active = [False,False]
-        self.type=[type1,type2]
+        self.active1=False
+        self.active2=False
+        self.active=[self.active1,self.active2]
+        self.type1=type1
+        self.type2=type2
+        self.type=[self.type1,self.type2]
         self.level=level
-        self.effort_values=effort_values
-        self.individual_values=individual_values
+        self.effort_values=effort_values if effort_values else {'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0}
+        self.individual_values= individual_values if individual_values else {'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0}
         self.base_stats=base_stats
-        self.stats = {
-        "hp": ((2 * base_stats["hp"] + individual_values["hp"] + effort_values["hp"] // 4) * level) // 100 + level + 10,
-        "atk": ((2 * base_stats["atk"] + individual_values["atk"] + effort_values["atk"] // 4) * level) // 100 + 5,
-        "def": ((2 * base_stats["def"] + individual_values["def"] + effort_values["def"] // 4) * level) // 100 + 5,
-        "spatk": ((2 * base_stats["spatk"] + individual_values["spatk"] + effort_values["spatk"] // 4) * level) // 100 + 5,
-        "spdef": ((2 * base_stats["spdef"] + individual_values["spdef"] + effort_values["spdef"] // 4) * level) // 100 + 5,
-        "spd": ((2 * base_stats["spd"] + individual_values["spd"] + effort_values["spd"] // 4) * level) // 100 + 5
-        }
         self.nature = nature
-        self.ability = ability
-        self.held_item = held_item
+        if base_stats:
+            self.base_stats=base_stats
+            self.stats = {
+            "hp": ((2 * base_stats["hp"] + individual_values["hp"] + effort_values["hp"] // 4) * level) // 100 + level + 10,
+            "atk": ((2 * base_stats["atk"] + individual_values["atk"] + effort_values["atk"] // 4) * level) // 100 + 5,
+            "def": ((2 * base_stats["def"] + individual_values["def"] + effort_values["def"] // 4) * level) // 100 + 5,
+            "spatk": ((2 * base_stats["spatk"] + individual_values["spatk"] + effort_values["spatk"] // 4) * level) // 100 + 5,
+            "spdef": ((2 * base_stats["spdef"] + individual_values["spdef"] + effort_values["spdef"] // 4) * level) // 100 + 5,
+            "spd": ((2 * base_stats["spd"] + individual_values["spd"] + effort_values["spd"] // 4) * level) // 100 + 5
+            }
+            #placeholder: code to use natures.json to buff and nerf stats
+        else:
+            self.base_stats=None
+            self.stats = stats
+        self.statchanges={'atk':0,'def':0,'spatk':0,'spdef':0,'spd':0,'evs':0,'acc':0}
+        self.ability = ability #Ability object
+        self.held_item = held_item #Held_Item object
         self.status={'psn':False,'brn':False,'prlz':False,'slp':0,'frz':0,'bdpsn':0}
         self.secondary_status={
         "Flinch": False,
         "Confused": 0,
         "Attracted": False,
-        "Leech Seeded": [False,0], # Integer refers to which side of enemy gets the health regenf
+        "Leech Seeded": [False,0], # Integer refers to which side of enemy gets the health regen in case of double battle
         "Trapped": False,
         "Partially Trapped": 0,
         "Taunted": False,
@@ -80,7 +91,6 @@ class Pokemon:
         }
         self.current_hp=self.stats['hp']
         self.move_list=move_list
-        self.selected_move=None
 
     @property
     def fainted(self):
