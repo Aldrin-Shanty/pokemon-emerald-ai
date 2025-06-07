@@ -2056,7 +2056,7 @@
   {
     "name": "Machop",
     "types": ["Fighting"],
-    "abilities": ["Guts", "No Guard"],
+    "abilities": ["Guts"],
     "base_stats": {
       "HP": 70,
       "Attack": 80,
@@ -2069,7 +2069,7 @@
   {
     "name": "Machoke",
     "types": ["Fighting"],
-    "abilities": ["Guts", "No Guard"],
+    "abilities": ["Guts"],
     "base_stats": {
       "HP": 80,
       "Attack": 100,
@@ -2082,7 +2082,7 @@
   {
     "name": "Machamp",
     "types": ["Fighting"],
-    "abilities": ["Guts", "No Guard"],
+    "abilities": ["Guts"],
     "base_stats": {
       "HP": 90,
       "Attack": 130,
@@ -2524,7 +2524,7 @@
   {
     "name": "Pinsir",
     "types": ["Bug"],
-    "abilities": ["Hyper Cutter", "Mold Breaker"],
+    "abilities": ["Hyper Cutter"],
     "base_stats": {
       "HP": 65,
       "Attack": 125,
@@ -2615,7 +2615,7 @@
   {
     "name": "Horsea",
     "types": ["Water"],
-    "abilities": ["Swift Swim", "Sniper"],
+    "abilities": ["Swift Swim"],
     "base_stats": {
       "HP": 30,
       "Attack": 40,
@@ -2626,10 +2626,9 @@
     }
   },
   {
-    "podex_number": 117,
     "name": "Seadra",
     "types": ["Water"],
-    "abilities": ["Poison Point", "Sniper"],
+    "abilities": ["Poison Point"],
     "base_stats": {
       "HP": 55,
       "Attack": 65,
@@ -2642,7 +2641,7 @@
   {
     "name": "Kingdra",
     "types": ["Water", "Dragon"],
-    "abilities": ["Swift Swim", "Sniper"],
+    "abilities": ["Swift Swim"],
     "base_stats": {
       "HP": 75,
       "Attack": 95,
