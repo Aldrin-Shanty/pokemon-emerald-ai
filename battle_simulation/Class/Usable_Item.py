@@ -1,5 +1,6 @@
 class UsableItem:
 
+
     def __init__(self, item_name : str, heal : int = 0,status_cure : str = None, pp : int = 0,
                  quantity : int = 1,pp_all : int = 0,percent_heal : int = 0) -> None:
 

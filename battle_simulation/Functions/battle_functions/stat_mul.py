@@ -1,4 +1,3 @@
-
 from battle_simulation.Class.Move import Move
 from battle_simulation.Class.Trainer import Trainer
 

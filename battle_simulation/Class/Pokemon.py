@@ -2,12 +2,13 @@ from Held_Item import HeldItem
 from Abilities import Ability
 from Move import Move
 
+
 class Pokemon:
 
     def __init__(self,species_name: str,type1: str,type2: str,level: int,ability: Ability,
                  move_list: list[Move],held_item: HeldItem = None,effort_values: dict[str,int] = None,
                  individual_values: dict[str,int] = None,base_stats: dict[str,int] = None,
-                 nature: str = 'Hardy',stats: dict[str,int] = None) -> None:
+                 nature: str = 'Hardy',stats: dict[str,int] = None,friendship: int = 255) -> None:
 
         self.species_name = species_name
         self.active1 = False
@@ -17,6 +18,7 @@ class Pokemon:
         self.type2 = type2
         self.type = [self.type1,self.type2]
         self.level = level
+        self.friendship = friendship
 
         self.effort_values = effort_values \
             if effort_values \
@@ -77,7 +79,9 @@ class Pokemon:
         "Perish Song": 0,
         "Identified": False,
         "Minimized": False,
-        "Substitute": False
+        "Substitute": False,
+        "Stockpile": 0,
+        "Helping Handed": False
         }
 
         self.current_hp = self.stats['hp']

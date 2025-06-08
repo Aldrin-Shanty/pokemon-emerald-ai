@@ -1,7 +1,8 @@
+from math import floor
+
 from Pokemon import Pokemon
 from Usable_Item import UsableItem
 
-from math import floor
 
 class Trainer:
 
@@ -12,8 +13,8 @@ class Trainer:
         self.usable_items = usable_items # list of usable items
 
         self.field = {'Spikes':0,'Reflect':0,'Lightscreen':0,'Wish':[0,0],
-                    'Future Sight':[[0,None],[0,None]],'Doom Desire':[[0,None],[0,None]]}
-        #[[no of turns for pos 1,attacking pokemon object], [no of turns for pos 2,attacking pokemon object]]
+                      'Future Sight': [{'attacker': None,'attacked_pos': 0,'turns': 0 },{'attacker': None,'attacked_pos': 0,'turns': 0 }],
+                      'Doom Desire': [{'attacker': None,'attacked_pos': 0,'turns': 0 },{'attacker': None,'attacked_pos': 0,'turns': 0 }]}
 
         self.choice1 = {'switching':False,'attacking':False,'using_item':False}
         self.choice2 = {'switching':False,'attacking':False,'using_item':False}
