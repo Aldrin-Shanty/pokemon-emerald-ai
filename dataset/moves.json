@@ -1,0 +1,6152 @@
+[
+  {
+    "name": "Absorb",
+    "type": "Grass",
+    "power": 20,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "User recovers 50% of the damage dealt."
+  },
+  {
+    "name": "Acid",
+    "type": "Poison",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 30,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to lower the foe(s) Defense by 1."
+  },
+  {
+    "name": "Bide",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "metronome": 1,
+      "nosleeptalk": 1,
+      "failinstruct": 1
+    },
+    "desc": "Waits 2 turns; deals double the damage taken."
+  },
+  {
+    "name": "Blizzard",
+    "type": "Ice",
+    "power": 120,
+    "accuracy": 70,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "wind": 1
+    },
+    "desc": "10% chance to freeze foe(s)."
+  },
+  {
+    "name": "Conversion",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "metronome": 1
+    },
+    "desc": "Changes user's type to match a known move."
+  },
+  {
+    "name": "Counter",
+    "type": "Fighting",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": -5,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "failmefirst": 1,
+      "noassist": 1,
+      "failcopycat": 1
+    },
+    "desc": "If hit by physical attack, returns double damage."
+  },
+  {
+    "name": "Dig",
+    "type": "Ground",
+    "power": 60,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "charge": 1,
+      "protect": 1,
+      "mirror": 1,
+      "nonsky": 1,
+      "metronome": 1,
+      "nosleeptalk": 1
+    },
+    "desc": "Digs underground turn 1, strikes turn 2."
+  },
+  {
+    "name": "Disable",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 55,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "For 2-5 turns, disables the target's last move."
+  },
+  {
+    "name": "Flash",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 70,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the target's accuracy by 1."
+  },
+  {
+    "name": "Fly",
+    "type": "Flying",
+    "power": 70,
+    "accuracy": 95,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "charge": 1,
+      "protect": 1,
+      "mirror": 1,
+      "gravity": 1,
+      "distance": 1,
+      "metronome": 1
+    },
+    "desc": "Flies up on first turn, then strikes the next turn."
+  },
+  {
+    "name": "Glare",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 75,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Paralyzes the target."
+  },
+  {
+    "name": "High Jump Kick",
+    "type": "Fighting",
+    "power": 85,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "gravity": 1,
+      "metronome": 1
+    },
+    "desc": "If miss, user takes 1/2 damage it would've dealt."
+  },
+  {
+    "name": "Hypnosis",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": 60,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Causes the target to fall asleep."
+  },
+  {
+    "name": "Jump Kick",
+    "type": "Fighting",
+    "power": 70,
+    "accuracy": 95,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 25,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "gravity": 1,
+      "metronome": 1
+    },
+    "desc": "If miss, user takes 1/2 damage it would've dealt."
+  },
+  {
+    "name": "Mega Drain",
+    "type": "Grass",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "User recovers 50% of the damage dealt."
+  },
+  {
+    "name": "Mimic",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "bypasssub": 1,
+      "allyanim": 1,
+      "failencore": 1,
+      "noassist": 1,
+      "failmimic": 1
+    },
+    "desc": "The last move the target used replaces this one."
+  },
+  {
+    "name": "Mirror Move",
+    "type": "Flying",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "metronome": 1,
+      "failencore": 1,
+      "nosleeptalk": 1,
+      "noassist": 1
+    },
+    "desc": "User uses the target's last used move against it."
+  },
+  {
+    "name": "Petal Dance",
+    "type": "Grass",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "dance": 1,
+      "metronome": 1,
+      "failinstruct": 1
+    },
+    "desc": "Lasts 2-3 turns. Confuses the user afterwards."
+  },
+  {
+    "name": "Recover",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "snatch": 1,
+      "heal": 1,
+      "metronome": 1
+    },
+    "desc": "Heals the user by 50% of its max HP."
+  },
+  {
+    "name": "Struggle",
+    "type": "Normal",
+    "power": 50,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 1,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "noassist": 1,
+      "failencore": 1,
+      "failmimic": 1,
+      "nosketch": 1
+    },
+    "desc": "User loses 1/4 the HP lost by the target."
+  },
+  {
+    "name": "Surf",
+    "type": "Water",
+    "power": 95,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "Hits foes. Power doubles against Dive."
+  },
+  {
+    "name": "Vine Whip",
+    "type": "Grass",
+    "power": 35,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Waterfall",
+    "type": "Water",
+    "power": 80,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Bind",
+    "type": "Normal",
+    "power": 15,
+    "accuracy": 75,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Traps and damages the target for 2-5 turns."
+  },
+  {
+    "name": "Clamp",
+    "type": "Water",
+    "power": 35,
+    "accuracy": 75,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Traps and damages the target for 2-5 turns."
+  },
+  {
+    "name": "Crabhammer",
+    "type": "Water",
+    "power": 90,
+    "accuracy": 85,
+    "critRatio": 2,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "High critical hit ratio."
+  },
+  {
+    "name": "Double-Edge",
+    "type": "Normal",
+    "power": 120,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Has 1/3 recoil."
+  },
+  {
+    "name": "Dream Eater",
+    "type": "Psychic",
+    "power": 100,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "User gains 1/2 HP inflicted. Sleeping target only."
+  },
+  {
+    "name": "Fire Spin",
+    "type": "Fire",
+    "power": 15,
+    "accuracy": 70,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Traps and damages the target for 2-5 turns."
+  },
+  {
+    "name": "Growth",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Sp. Atk by 1."
+  },
+  {
+    "name": "Leech Seed",
+    "type": "Grass",
+    "power": 0,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "1/8 of target's HP is restored to user every turn."
+  },
+  {
+    "name": "Light Screen",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "For 5 turns, special damage to allies is halved."
+  },
+  {
+    "name": "Metronome",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "noassist": 1,
+      "failcopycat": 1,
+      "nosleeptalk": 1,
+      "failmimic": 1
+    },
+    "desc": "Picks a random move."
+  },
+  {
+    "name": "Minimize",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's evasiveness by 1."
+  },
+  {
+    "name": "Mist",
+    "type": "Ice",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "For 5 turns, protects user's party from stat drops."
+  },
+  {
+    "name": "Pay Day",
+    "type": "Normal",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Scatters coins."
+  },
+  {
+    "name": "Poison Gas",
+    "type": "Poison",
+    "power": 0,
+    "accuracy": 55,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Poisons the foe(s)."
+  },
+  {
+    "name": "Reflect",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "For 5 turns, physical damage to allies is halved."
+  },
+  {
+    "name": "Roar",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": -6,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "sound": 1,
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "Forces the target to switch to a random ally."
+  },
+  {
+    "name": "Substitute",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "snatch": 1,
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "User takes 1/4 its max HP to put in a substitute."
+  },
+  {
+    "name": "Tackle",
+    "type": "Normal",
+    "power": 35,
+    "accuracy": 95,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 35,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Thrash",
+    "type": "Normal",
+    "power": 90,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "failinstruct": 1
+    },
+    "desc": "Lasts 2-3 turns. Confuses the user afterwards."
+  },
+  {
+    "name": "Toxic",
+    "type": "Poison",
+    "power": 0,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Badly poisons the target."
+  },
+  {
+    "name": "Transform",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "bypasssub": 1,
+      "metronome": 1,
+      "failencore": 1
+    },
+    "desc": "Copies target's stats, moves, types, and Ability."
+  },
+  {
+    "name": "Whirlwind",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": -6,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "Forces the target to switch to a random ally."
+  },
+  {
+    "name": "Wrap",
+    "type": "Normal",
+    "power": 15,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Traps and damages the target for 2-5 turns."
+  },
+  {
+    "name": "Acid Armor",
+    "type": "Poison",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Defense by 2."
+  },
+  {
+    "name": "Barrier",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Defense by 2."
+  },
+  {
+    "name": "Bubble",
+    "type": "Water",
+    "power": 20,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 30,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to lower the foe(s) Speed by 1."
+  },
+  {
+    "name": "Fire Blast",
+    "type": "Fire",
+    "power": 120,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to burn the target."
+  },
+  {
+    "name": "Flamethrower",
+    "type": "Fire",
+    "power": 95,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to burn the target."
+  },
+  {
+    "name": "Growl",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "sound": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the foe(s) Attack by 1."
+  },
+  {
+    "name": "Hydro Pump",
+    "type": "Water",
+    "power": 120,
+    "accuracy": 80,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Ice Beam",
+    "type": "Ice",
+    "power": 95,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to freeze the target."
+  },
+  {
+    "name": "Leech Life",
+    "type": "Bug",
+    "power": 20,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "User recovers 50% of the damage dealt."
+  },
+  {
+    "name": "Lick",
+    "type": "Ghost",
+    "power": 20,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 30,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to paralyze the target."
+  },
+  {
+    "name": "Pin Missile",
+    "type": "Bug",
+    "power": 14,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 2-5 times in one turn."
+  },
+  {
+    "name": "Poison Powder",
+    "type": "Poison",
+    "power": 0,
+    "accuracy": 75,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 35,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "powder": 1
+    },
+    "desc": "Poisons the target."
+  },
+  {
+    "name": "Psywave",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": 80,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Random damage equal to 0.5x-1.5x user's level."
+  },
+  {
+    "name": "Screech",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "sound": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the target's Defense by 2."
+  },
+  {
+    "name": "Sing",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 55,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "sound": 1,
+      "metronome": 1
+    },
+    "desc": "Causes the target to fall asleep."
+  },
+  {
+    "name": "Skull Bash",
+    "type": "Normal",
+    "power": 100,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "charge": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "nosleeptalk": 1,
+      "failinstruct": 1
+    },
+    "desc": "Raises user's Defense by 1 on turn 1. Hits turn 2."
+  },
+  {
+    "name": "Sleep Powder",
+    "type": "Grass",
+    "power": 0,
+    "accuracy": 75,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "powder": 1
+    },
+    "desc": "Causes the target to fall asleep."
+  },
+  {
+    "name": "Smog",
+    "type": "Poison",
+    "power": 20,
+    "accuracy": 70,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "40% chance to poison the target."
+  },
+  {
+    "name": "Spore",
+    "type": "Grass",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "powder": 1
+    },
+    "desc": "Causes the target to fall asleep."
+  },
+  {
+    "name": "String Shot",
+    "type": "Bug",
+    "power": 0,
+    "accuracy": 95,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the foe(s) Speed by 1."
+  },
+  {
+    "name": "Stun Spore",
+    "type": "Grass",
+    "power": 0,
+    "accuracy": 75,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "powder": 1
+    },
+    "desc": "Paralyzes the target."
+  },
+  {
+    "name": "Submission",
+    "type": "Fighting",
+    "power": 80,
+    "accuracy": 80,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 25,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Has 1/4 recoil."
+  },
+  {
+    "name": "Supersonic",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 55,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "sound": 1,
+      "metronome": 1
+    },
+    "desc": "Causes the target to become confused."
+  },
+  {
+    "name": "Swords Dance",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "snatch": 1,
+      "dance": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Attack by 2."
+  },
+  {
+    "name": "Thunder",
+    "type": "Electric",
+    "power": 120,
+    "accuracy": 70,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to paralyze. Can't miss in rain."
+  },
+  {
+    "name": "Thunderbolt",
+    "type": "Electric",
+    "power": 95,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to paralyze the target."
+  },
+  {
+    "name": "Thunder Wave",
+    "type": "Electric",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Paralyzes the target."
+  },
+  {
+    "name": "Barrage",
+    "type": "Normal",
+    "power": 15,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "bullet": 1
+    },
+    "desc": "Hits 2-5 times in one turn."
+  },
+  {
+    "name": "Bone Club",
+    "type": "Ground",
+    "power": 65,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to make the target flinch."
+  },
+  {
+    "name": "Comet Punch",
+    "type": "Normal",
+    "power": 18,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 2-5 times in one turn."
+  },
+  {
+    "name": "Constrict",
+    "type": "Normal",
+    "power": 10,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 35,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to lower the target's Speed by 1."
+  },
+  {
+    "name": "Dizzy Punch",
+    "type": "Normal",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1,
+      "metronome": 1
+    },
+    "desc": "20% chance to confuse the target."
+  },
+  {
+    "name": "Double Slap",
+    "type": "Normal",
+    "power": 15,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 2-5 times in one turn."
+  },
+  {
+    "name": "Dragon Rage",
+    "type": "Dragon",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Deals 40 HP of damage to the target."
+  },
+  {
+    "name": "Egg Bomb",
+    "type": "Normal",
+    "power": 100,
+    "accuracy": 75,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "bullet": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Hyper Fang",
+    "type": "Normal",
+    "power": 80,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "bite": 1
+    },
+    "desc": "10% chance to make the target flinch."
+  },
+  {
+    "name": "Karate Chop",
+    "type": "Fighting",
+    "power": 50,
+    "accuracy": 100,
+    "critRatio": 2,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 25,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "High critical hit ratio."
+  },
+  {
+    "name": "Low Kick",
+    "type": "Fighting",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "More power the heavier the target."
+  },
+  {
+    "name": "Meditate",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Attack by 1."
+  },
+  {
+    "name": "Rage",
+    "type": "Normal",
+    "power": 20,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Attack by 1 if hit during use."
+  },
+  {
+    "name": "Razor Wind",
+    "type": "Normal",
+    "power": 80,
+    "accuracy": 100,
+    "critRatio": 2,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "charge": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "nosleeptalk": 1,
+      "failinstruct": 1
+    },
+    "desc": "Charges, then hits foe(s) turn 2."
+  },
+  {
+    "name": "Rolling Kick",
+    "type": "Fighting",
+    "power": 60,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to make the target flinch."
+  },
+  {
+    "name": "Sharpen",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Attack by 1."
+  },
+  {
+    "name": "Sonic Boom",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Always does 20 HP of damage."
+  },
+  {
+    "name": "Spike Cannon",
+    "type": "Normal",
+    "power": 20,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 2-5 times in one turn."
+  },
+  {
+    "name": "Teleport",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "metronome": 1
+    },
+    "desc": "Fails when used."
+  },
+  {
+    "name": "Twineedle",
+    "type": "Bug",
+    "power": 25,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 2 times. Each hit has 20% chance to poison."
+  },
+  {
+    "name": "Bonemerang",
+    "type": "Ground",
+    "power": 50,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 2 times in one turn."
+  },
+  {
+    "name": "Cut",
+    "type": "Normal",
+    "power": 50,
+    "accuracy": 95,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 30,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "slicing": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Kinesis",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": 80,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the target's accuracy by 1."
+  },
+  {
+    "name": "Lovely Kiss",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 75,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Causes the target to fall asleep."
+  },
+  {
+    "name": "Rest",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "snatch": 1,
+      "heal": 1,
+      "metronome": 1
+    },
+    "desc": "User sleeps 2 turns and restores HP and status."
+  },
+  {
+    "name": "Soft-Boiled",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "snatch": 1,
+      "heal": 1,
+      "metronome": 1
+    },
+    "desc": "Heals the user by 50% of its max HP."
+  },
+  {
+    "name": "Agility",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Speed by 2."
+  },
+  {
+    "name": "Amnesia",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Sp. Def by 2."
+  },
+  {
+    "name": "Aurora Beam",
+    "type": "Ice",
+    "power": 65,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to lower the target's Attack by 1."
+  },
+  {
+    "name": "Bite",
+    "type": "Dark",
+    "power": 60,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 25,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "bite": 1
+    },
+    "desc": "30% chance to make the target flinch."
+  },
+  {
+    "name": "Body Slam",
+    "type": "Normal",
+    "power": 85,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to paralyze the target."
+  },
+  {
+    "name": "Bubble Beam",
+    "type": "Water",
+    "power": 65,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to lower the target's Speed by 1."
+  },
+  {
+    "name": "Confuse Ray",
+    "type": "Ghost",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Confuses the target."
+  },
+  {
+    "name": "Confusion",
+    "type": "Psychic",
+    "power": 50,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 25,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to confuse the target."
+  },
+  {
+    "name": "Defense Curl",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Defense by 1."
+  },
+  {
+    "name": "Double Kick",
+    "type": "Fighting",
+    "power": 30,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 30,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 2 times in one turn."
+  },
+  {
+    "name": "Double Team",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's evasiveness by 1."
+  },
+  {
+    "name": "Drill Peck",
+    "type": "Flying",
+    "power": 80,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "distance": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Earthquake",
+    "type": "Ground",
+    "power": 100,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "Hits adjacent Pokemon. Power doubles on Dig."
+  },
+  {
+    "name": "Ember",
+    "type": "Fire",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 25,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to burn the target."
+  },
+  {
+    "name": "Explosion",
+    "type": "Normal",
+    "power": 250,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "noparentalbond": 1
+    },
+    "desc": "Target's Def halved during damage. User faints."
+  },
+  {
+    "name": "Fire Punch",
+    "type": "Fire",
+    "power": 75,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to burn the target."
+  },
+  {
+    "name": "Fissure",
+    "type": "Ground",
+    "power": 0,
+    "accuracy": 30,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "OHKOs the target. Fails if user is a lower level."
+  },
+  {
+    "name": "Focus Energy",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's critical hit ratio by 2."
+  },
+  {
+    "name": "Fury Attack",
+    "type": "Normal",
+    "power": 15,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 2-5 times in one turn."
+  },
+  {
+    "name": "Fury Swipes",
+    "type": "Normal",
+    "power": 18,
+    "accuracy": 80,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 2-5 times in one turn."
+  },
+  {
+    "name": "Guillotine",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 30,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "OHKOs the target. Fails if user is a lower level."
+  },
+  {
+    "name": "Gust",
+    "type": "Flying",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 35,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "distance": 1,
+      "metronome": 1,
+      "wind": 1
+    },
+    "desc": "Power doubles during Bounce and Fly."
+  },
+  {
+    "name": "Harden",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Defense by 1."
+  },
+  {
+    "name": "Haze",
+    "type": "Ice",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "Eliminates all stat changes."
+  },
+  {
+    "name": "Headbutt",
+    "type": "Normal",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to make the target flinch."
+  },
+  {
+    "name": "Horn Attack",
+    "type": "Normal",
+    "power": 65,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 25,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Horn Drill",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 30,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "OHKOs the target. Fails if user is a lower level."
+  },
+  {
+    "name": "Hyper Beam",
+    "type": "Normal",
+    "power": 150,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "recharge": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "User cannot move next turn."
+  },
+  {
+    "name": "Ice Punch",
+    "type": "Ice",
+    "power": 75,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to freeze the target."
+  },
+  {
+    "name": "Leer",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the foe(s) Defense by 1."
+  },
+  {
+    "name": "Mega Kick",
+    "type": "Normal",
+    "power": 120,
+    "accuracy": 75,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Mega Punch",
+    "type": "Normal",
+    "power": 80,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Night Shade",
+    "type": "Ghost",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Does damage equal to the user's level."
+  },
+  {
+    "name": "Peck",
+    "type": "Flying",
+    "power": 35,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 35,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "distance": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Poison Sting",
+    "type": "Poison",
+    "power": 15,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 35,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to poison the target."
+  },
+  {
+    "name": "Pound",
+    "type": "Normal",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 35,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Psybeam",
+    "type": "Psychic",
+    "power": 65,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to confuse the target."
+  },
+  {
+    "name": "Psychic",
+    "type": "Psychic",
+    "power": 90,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to lower the target's Sp. Def by 1."
+  },
+  {
+    "name": "Quick Attack",
+    "type": "Normal",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 1,
+    "category": "Physical",
+    "pp": 30,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Usually goes first."
+  },
+  {
+    "name": "Razor Leaf",
+    "type": "Grass",
+    "power": 55,
+    "accuracy": 95,
+    "critRatio": 2,
+    "priority": 0,
+    "category": "Special",
+    "pp": 25,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "slicing": 1
+    },
+    "desc": "High critical hit ratio. Hits adjacent foes."
+  },
+  {
+    "name": "Rock Slide",
+    "type": "Rock",
+    "power": 75,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to make the foe(s) flinch."
+  },
+  {
+    "name": "Rock Throw",
+    "type": "Rock",
+    "power": 50,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Sand Attack",
+    "type": "Ground",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the target's accuracy by 1."
+  },
+  {
+    "name": "Scratch",
+    "type": "Normal",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 35,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Seismic Toss",
+    "type": "Fighting",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "Does damage equal to the user's level."
+  },
+  {
+    "name": "Self-Destruct",
+    "type": "Normal",
+    "power": 200,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "noparentalbond": 1
+    },
+    "desc": "Target's Def halved during damage. User faints."
+  },
+  {
+    "name": "Sky Attack",
+    "type": "Flying",
+    "power": 140,
+    "accuracy": 90,
+    "critRatio": 2,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "charge": 1,
+      "protect": 1,
+      "mirror": 1,
+      "distance": 1,
+      "metronome": 1,
+      "nosleeptalk": 1,
+      "failinstruct": 1
+    },
+    "desc": "Charges, then hits turn 2. 30% flinch. High crit."
+  },
+  {
+    "name": "Slam",
+    "type": "Normal",
+    "power": 80,
+    "accuracy": 75,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Slash",
+    "type": "Normal",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 2,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "slicing": 1
+    },
+    "desc": "High critical hit ratio."
+  },
+  {
+    "name": "Sludge",
+    "type": "Poison",
+    "power": 65,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to poison the target."
+  },
+  {
+    "name": "Smokescreen",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the target's accuracy by 1."
+  },
+  {
+    "name": "Solar Beam",
+    "type": "Grass",
+    "power": 120,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "charge": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "nosleeptalk": 1,
+      "failinstruct": 1
+    },
+    "desc": "Charges turn 1. Hits turn 2. No charge in sunlight."
+  },
+  {
+    "name": "Splash",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "gravity": 1,
+      "metronome": 1
+    },
+    "desc": "No competitive use."
+  },
+  {
+    "name": "Stomp",
+    "type": "Normal",
+    "power": 65,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to make the target flinch."
+  },
+  {
+    "name": "Strength",
+    "type": "Normal",
+    "power": 80,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Super Fang",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Does damage equal to 1/2 target's current HP."
+  },
+  {
+    "name": "Swift",
+    "type": "Normal",
+    "power": 60,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "This move does not check accuracy. Hits foes."
+  },
+  {
+    "name": "Tail Whip",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the foe(s) Defense by 1."
+  },
+  {
+    "name": "Take Down",
+    "type": "Normal",
+    "power": 90,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Has 1/4 recoil."
+  },
+  {
+    "name": "Thunder Punch",
+    "type": "Electric",
+    "power": 75,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to paralyze the target."
+  },
+  {
+    "name": "Thunder Shock",
+    "type": "Electric",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 30,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to paralyze the target."
+  },
+  {
+    "name": "Tri Attack",
+    "type": "Normal",
+    "power": 80,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "20% chance to paralyze or burn or freeze target."
+  },
+  {
+    "name": "Vise Grip",
+    "type": "Normal",
+    "power": 55,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 30,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Water Gun",
+    "type": "Water",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 25,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Wing Attack",
+    "type": "Flying",
+    "power": 60,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 35,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "distance": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Withdraw",
+    "type": "Water",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Defense by 1."
+  },
+  {
+    "name": "Ancient Power",
+    "type": "Rock",
+    "power": 60,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to raise all stats by 1 (not acc/eva)."
+  },
+  {
+    "name": "Beat Up",
+    "type": "Dark",
+    "power": 10,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "allyanim": 1,
+      "metronome": 1
+    },
+    "desc": "All healthy allies aid in damaging the target."
+  },
+  {
+    "name": "Crunch",
+    "type": "Dark",
+    "power": 80,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "bite": 1
+    },
+    "desc": "20% chance to lower the target's Sp. Def by 1."
+  },
+  {
+    "name": "Encore",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "bypasssub": 1,
+      "metronome": 1,
+      "failencore": 1
+    },
+    "desc": "The target repeats its last move for 3-6 turns."
+  },
+  {
+    "name": "Feint Attack",
+    "type": "Dark",
+    "power": 60,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "This move does not check accuracy."
+  },
+  {
+    "name": "Flail",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "More power the less HP the user has left."
+  },
+  {
+    "name": "Foresight",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "Fighting, Normal hit Ghost. Evasiveness ignored."
+  },
+  {
+    "name": "Fury Cutter",
+    "type": "Bug",
+    "power": 10,
+    "accuracy": 95,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "slicing": 1
+    },
+    "desc": "Power doubles with each hit, up to 160."
+  },
+  {
+    "name": "Giga Drain",
+    "type": "Grass",
+    "power": 60,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "User recovers 50% of the damage dealt."
+  },
+  {
+    "name": "Hidden Power",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Varies in power and type based on the user's IVs."
+  },
+  {
+    "name": "Lock-On",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "User's next move will not miss the target."
+  },
+  {
+    "name": "Mind Reader",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "User's next move will not miss the target."
+  },
+  {
+    "name": "Mirror Coat",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": -5,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "failmefirst": 1,
+      "noassist": 1,
+      "failcopycat": 1
+    },
+    "desc": "If hit by special attack, returns double damage."
+  },
+  {
+    "name": "Nightmare",
+    "type": "Ghost",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "A sleeping target is hurt by 1/4 max HP per turn."
+  },
+  {
+    "name": "Outrage",
+    "type": "Dragon",
+    "power": 90,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "failinstruct": 1
+    },
+    "desc": "Lasts 2-3 turns. Confuses the user afterwards."
+  },
+  {
+    "name": "Reversal",
+    "type": "Fighting",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "More power the less HP the user has left."
+  },
+  {
+    "name": "Rock Smash",
+    "type": "Fighting",
+    "power": 20,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "50% chance to lower the target's Defense by 1."
+  },
+  {
+    "name": "Sketch",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 1,
+    "flags": {
+      "bypasssub": 1,
+      "failencore": 1,
+      "noassist": 1,
+      "failmimic": 1,
+      "nosketch": 1
+    },
+    "desc": "Permanently copies the last move target used."
+  },
+  {
+    "name": "Sleep Talk",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "nosleeptalk": 1,
+      "noassist": 1,
+      "failcopycat": 1
+    },
+    "desc": "User must be asleep. Uses another known move."
+  },
+  {
+    "name": "Spite",
+    "type": "Ghost",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the PP of the target's last move by 2-5."
+  },
+  {
+    "name": "Zap Cannon",
+    "type": "Electric",
+    "power": 100,
+    "accuracy": 50,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "bullet": 1
+    },
+    "desc": "100% chance to paralyze the target."
+  },
+  {
+    "name": "Bone Rush",
+    "type": "Ground",
+    "power": 25,
+    "accuracy": 80,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 2-5 times in one turn."
+  },
+  {
+    "name": "Cotton Spore",
+    "type": "Grass",
+    "power": 0,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "powder": 1
+    },
+    "desc": "Lowers the target's Speed by 2."
+  },
+  {
+    "name": "Curse",
+    "type": "???",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "metronome": 1
+    },
+    "desc": "Curses if Ghost, else -1 Spe, +1 Atk, +1 Def."
+  },
+  {
+    "name": "Detect",
+    "type": "Fighting",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 3,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "noassist": 1,
+      "failcopycat": 1
+    },
+    "desc": "Prevents moves from affecting the user this turn."
+  },
+  {
+    "name": "Extreme Speed",
+    "type": "Normal",
+    "power": 80,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 1,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Usually goes first."
+  },
+  {
+    "name": "Future Sight",
+    "type": "Psychic",
+    "power": 80,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "metronome": 1,
+      "futuremove": 1
+    },
+    "desc": "Hits two turns after being used."
+  },
+  {
+    "name": "Heal Bell",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "snatch": 1,
+      "sound": 1,
+      "metronome": 1
+    },
+    "desc": "Cures the user's party of all status conditions."
+  },
+  {
+    "name": "Moonlight",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "snatch": 1,
+      "heal": 1,
+      "metronome": 1
+    },
+    "desc": "Heals the user by a weather-dependent amount."
+  },
+  {
+    "name": "Morning Sun",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "snatch": 1,
+      "heal": 1,
+      "metronome": 1
+    },
+    "desc": "Heals the user by a weather-dependent amount."
+  },
+  {
+    "name": "Perish Song",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "sound": 1,
+      "distance": 1,
+      "metronome": 1
+    },
+    "desc": "All active Pokemon will faint in 3 turns."
+  },
+  {
+    "name": "Protect",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 3,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "noassist": 1,
+      "failcopycat": 1
+    },
+    "desc": "Prevents moves from affecting the user this turn."
+  },
+  {
+    "name": "Psych Up",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "snatch": 1,
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "Copies the target's current stat stages."
+  },
+  {
+    "name": "Pursuit",
+    "type": "Dark",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Power doubles if the targeted foe is switching out."
+  },
+  {
+    "name": "Rapid Spin",
+    "type": "Normal",
+    "power": 20,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 40,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Frees user from hazards, binding, Leech Seed."
+  },
+  {
+    "name": "Safeguard",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 25,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "For 5 turns, protects user's party from status."
+  },
+  {
+    "name": "Scary Face",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "allyanim": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the target's Speed by 2."
+  },
+  {
+    "name": "Snore",
+    "type": "Normal",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "sound": 1,
+      "metronome": 1
+    },
+    "desc": "User must be asleep. 30% chance to flinch target."
+  },
+  {
+    "name": "Spikes",
+    "type": "Ground",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "metronome": 1,
+      "mustpressure": 1
+    },
+    "desc": "Hurts grounded foes on switch-in. Max 3 layers."
+  },
+  {
+    "name": "Synthesis",
+    "type": "Grass",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "snatch": 1,
+      "heal": 1,
+      "metronome": 1
+    },
+    "desc": "Heals the user by a weather-dependent amount."
+  },
+  {
+    "name": "Whirlpool",
+    "type": "Water",
+    "power": 15,
+    "accuracy": 70,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Traps and damages the target for 2-5 turns."
+  },
+  {
+    "name": "Charm",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "allyanim": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the target's Attack by 2."
+  },
+  {
+    "name": "Hidden Power Bug",
+    "type": "Bug",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Dark",
+    "type": "Dark",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Dragon",
+    "type": "Dragon",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Electric",
+    "type": "Electric",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Fighting",
+    "type": "Fighting",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Fire",
+    "type": "Fire",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Flying",
+    "type": "Flying",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Ghost",
+    "type": "Ghost",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Grass",
+    "type": "Grass",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Ground",
+    "type": "Ground",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Ice",
+    "type": "Ice",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Poison",
+    "type": "Poison",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Psychic",
+    "type": "Psychic",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Rock",
+    "type": "Rock",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Steel",
+    "type": "Steel",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Hidden Power Water",
+    "type": "Water",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "desc": ""
+  },
+  {
+    "name": "Mean Look",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Prevents the target from switching out."
+  },
+  {
+    "name": "Sweet Kiss",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 75,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Causes the target to become confused."
+  },
+  {
+    "name": "Sweet Scent",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the foe(s) evasiveness by 1."
+  },
+  {
+    "name": "Thief",
+    "type": "Dark",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "failmefirst": 1,
+      "noassist": 1,
+      "failcopycat": 1
+    },
+    "desc": "If the user has no item, it steals the target's."
+  },
+  {
+    "name": "Destiny Bond",
+    "type": "Ghost",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "bypasssub": 1,
+      "noassist": 1,
+      "failcopycat": 1
+    },
+    "desc": "If an opponent knocks out the user, it also faints."
+  },
+  {
+    "name": "Swagger",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "allyanim": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the target's Attack by 2 and confuses it."
+  },
+  {
+    "name": "Frustration",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Max 102 power at minimum Happiness."
+  },
+  {
+    "name": "Magnitude",
+    "type": "Ground",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 30,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "Hits adjacent Pokemon. Power varies; 2x on Dig."
+  },
+  {
+    "name": "Return",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Max 102 power at maximum Happiness."
+  },
+  {
+    "name": "Spider Web",
+    "type": "Bug",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Prevents the target from switching out."
+  },
+  {
+    "name": "Milk Drink",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "snatch": 1,
+      "heal": 1,
+      "metronome": 1
+    },
+    "desc": "Heals the user by 50% of its max HP."
+  },
+  {
+    "name": "Octazooka",
+    "type": "Water",
+    "power": 65,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "bullet": 1
+    },
+    "desc": "50% chance to lower the target's accuracy by 1."
+  },
+  {
+    "name": "Vital Throw",
+    "type": "Fighting",
+    "power": 70,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": -1,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "This move does not check accuracy. Goes last."
+  },
+  {
+    "name": "Aeroblast",
+    "type": "Flying",
+    "power": 100,
+    "accuracy": 95,
+    "critRatio": 2,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "distance": 1,
+      "metronome": 1,
+      "wind": 1
+    },
+    "desc": "High critical hit ratio."
+  },
+  {
+    "name": "Attract",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "A target of the opposite gender gets infatuated."
+  },
+  {
+    "name": "Baton Pass",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "metronome": 1
+    },
+    "desc": "User switches, passing stat changes and more."
+  },
+  {
+    "name": "Belly Drum",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "User loses 50% max HP. Maximizes Attack."
+  },
+  {
+    "name": "Conversion 2",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 30,
+    "flags": {
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "User's type changes to resist last move against it."
+  },
+  {
+    "name": "Cross Chop",
+    "type": "Fighting",
+    "power": 100,
+    "accuracy": 80,
+    "critRatio": 2,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "High critical hit ratio."
+  },
+  {
+    "name": "Dragon Breath",
+    "type": "Dragon",
+    "power": 60,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to paralyze the target."
+  },
+  {
+    "name": "Dynamic Punch",
+    "type": "Fighting",
+    "power": 100,
+    "accuracy": 50,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1,
+      "metronome": 1
+    },
+    "desc": "100% chance to confuse the target."
+  },
+  {
+    "name": "Endure",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 4,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "noassist": 1,
+      "failcopycat": 1
+    },
+    "desc": "User survives attacks this turn with at least 1 HP."
+  },
+  {
+    "name": "False Swipe",
+    "type": "Normal",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 40,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Always leaves the target with at least 1 HP."
+  },
+  {
+    "name": "Flame Wheel",
+    "type": "Fire",
+    "power": 60,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 25,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "defrost": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to burn the target. Thaws user."
+  },
+  {
+    "name": "Icy Wind",
+    "type": "Ice",
+    "power": 55,
+    "accuracy": 95,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "wind": 1
+    },
+    "desc": "100% chance to lower the foe(s) Speed by 1."
+  },
+  {
+    "name": "Iron Tail",
+    "type": "Steel",
+    "power": 100,
+    "accuracy": 75,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to lower the target's Defense by 1."
+  },
+  {
+    "name": "Mach Punch",
+    "type": "Fighting",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 1,
+    "category": "Physical",
+    "pp": 30,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1,
+      "metronome": 1
+    },
+    "desc": "Usually goes first."
+  },
+  {
+    "name": "Megahorn",
+    "type": "Bug",
+    "power": 120,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Metal Claw",
+    "type": "Steel",
+    "power": 50,
+    "accuracy": 95,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 35,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to raise the user's Attack by 1."
+  },
+  {
+    "name": "Mud-Slap",
+    "type": "Ground",
+    "power": 20,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "100% chance to lower the target's accuracy by 1."
+  },
+  {
+    "name": "Pain Split",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "allyanim": 1,
+      "metronome": 1
+    },
+    "desc": "Shares HP of user and target equally."
+  },
+  {
+    "name": "Powder Snow",
+    "type": "Ice",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 25,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to freeze the foe(s)."
+  },
+  {
+    "name": "Present",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "40, 80, 120 power, or heals target 1/4 max HP."
+  },
+  {
+    "name": "Rain Dance",
+    "type": "Water",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "metronome": 1
+    },
+    "desc": "For 5 turns, heavy rain powers Water moves."
+  },
+  {
+    "name": "Rollout",
+    "type": "Rock",
+    "power": 30,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "failinstruct": 1,
+      "noparentalbond": 1
+    },
+    "desc": "Power doubles with each hit. Repeats for 5 turns."
+  },
+  {
+    "name": "Sacred Fire",
+    "type": "Fire",
+    "power": 100,
+    "accuracy": 95,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "defrost": 1,
+      "metronome": 1
+    },
+    "desc": "50% chance to burn the target. Thaws user."
+  },
+  {
+    "name": "Sandstorm",
+    "type": "Rock",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "metronome": 1,
+      "wind": 1
+    },
+    "desc": "For 5 turns, a sandstorm rages."
+  },
+  {
+    "name": "Shadow Ball",
+    "type": "Ghost",
+    "power": 80,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "bullet": 1
+    },
+    "desc": "20% chance to lower the target's Sp. Def by 1."
+  },
+  {
+    "name": "Sludge Bomb",
+    "type": "Poison",
+    "power": 90,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "bullet": 1
+    },
+    "desc": "30% chance to poison the target."
+  },
+  {
+    "name": "Spark",
+    "type": "Electric",
+    "power": 65,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to paralyze the target."
+  },
+  {
+    "name": "Steel Wing",
+    "type": "Steel",
+    "power": 70,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 25,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to raise the user's Defense by 1."
+  },
+  {
+    "name": "Sunny Day",
+    "type": "Fire",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "metronome": 1
+    },
+    "desc": "For 5 turns, intense sunlight powers Fire moves."
+  },
+  {
+    "name": "Triple Kick",
+    "type": "Fighting",
+    "power": 10,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 3 times. Each hit can miss, but power rises."
+  },
+  {
+    "name": "Twister",
+    "type": "Dragon",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "wind": 1
+    },
+    "desc": "20% chance to make the foe(s) flinch."
+  },
+  {
+    "name": "Assist",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "metronome": 1,
+      "noassist": 1,
+      "nosleeptalk": 1
+    },
+    "desc": "Uses a random move known by a team member."
+  },
+  {
+    "name": "Astonish",
+    "type": "Ghost",
+    "power": 30,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to make the target flinch."
+  },
+  {
+    "name": "Brick Break",
+    "type": "Fighting",
+    "power": 75,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Destroys screens, even if the target is immune."
+  },
+  {
+    "name": "Charge",
+    "type": "Electric",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "The user's Electric attack next turn has 2x power."
+  },
+  {
+    "name": "Covet",
+    "type": "Normal",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 40,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "noassist": 1
+    },
+    "desc": "If the user has no item, it steals the target's."
+  },
+  {
+    "name": "Dive",
+    "type": "Water",
+    "power": 60,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "charge": 1,
+      "protect": 1,
+      "mirror": 1,
+      "nonsky": 1,
+      "metronome": 1,
+      "nosleeptalk": 1
+    },
+    "desc": "Dives underwater turn 1, strikes turn 2."
+  },
+  {
+    "name": "Doom Desire",
+    "type": "Steel",
+    "power": 120,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "metronome": 1,
+      "futuremove": 1
+    },
+    "desc": "Hits two turns after being used."
+  },
+  {
+    "name": "Extrasensory",
+    "type": "Psychic",
+    "power": 80,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 30,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to make the target flinch."
+  },
+  {
+    "name": "Fake Out",
+    "type": "Normal",
+    "power": 40,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 1,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits first. First turn out only. 100% flinch chance."
+  },
+  {
+    "name": "Follow Me",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 3,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "noassist": 1,
+      "failcopycat": 1
+    },
+    "desc": "The foes' moves target the user on the turn used."
+  },
+  {
+    "name": "Leaf Blade",
+    "type": "Grass",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 2,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "slicing": 1
+    },
+    "desc": "High critical hit ratio."
+  },
+  {
+    "name": "Memento",
+    "type": "Dark",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers target's Attack, Sp. Atk by 2. User faints."
+  },
+  {
+    "name": "Nature Power",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 95,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "metronome": 1
+    },
+    "desc": "Attack changes based on terrain. (Swift)"
+  },
+  {
+    "name": "Needle Arm",
+    "type": "Grass",
+    "power": 60,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to make the target flinch."
+  },
+  {
+    "name": "Odor Sleuth",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "Fighting, Normal hit Ghost. Evasiveness ignored."
+  },
+  {
+    "name": "Overheat",
+    "type": "Fire",
+    "power": 140,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the user's Sp. Atk by 2."
+  },
+  {
+    "name": "Stockpile",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises user's Stockpile count by 1. Max 3 uses."
+  },
+  {
+    "name": "Taunt",
+    "type": "Dark",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "For 2 turns, the target can't use status moves."
+  },
+  {
+    "name": "Teeter Dance",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "metronome": 1
+    },
+    "desc": "Confuses adjacent Pokemon."
+  },
+  {
+    "name": "Tickle",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the target's Attack and Defense by 1."
+  },
+  {
+    "name": "Uproar",
+    "type": "Normal",
+    "power": 50,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "sound": 1,
+      "metronome": 1,
+      "nosleeptalk": 1
+    },
+    "desc": "Lasts 2-5 turns. Active Pokemon cannot sleep."
+  },
+  {
+    "name": "Volt Tackle",
+    "type": "Electric",
+    "power": 120,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Has 1/3 recoil."
+  },
+  {
+    "name": "Weather Ball",
+    "type": "Normal",
+    "power": 50,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "bullet": 1
+    },
+    "desc": "Damage doubles and type varies during weather."
+  },
+  {
+    "name": "Aromatherapy",
+    "type": "Grass",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "snatch": 1,
+      "distance": 1,
+      "metronome": 1
+    },
+    "desc": "Cures the user's party of all status conditions."
+  },
+  {
+    "name": "Bullet Seed",
+    "type": "Grass",
+    "power": 10,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 30,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "bullet": 1
+    },
+    "desc": "Hits 2-5 times in one turn."
+  },
+  {
+    "name": "Camouflage",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Changes user's type based on terrain. (Normal)"
+  },
+  {
+    "name": "Endeavor",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "noparentalbond": 1
+    },
+    "desc": "Lowers the target's HP to the user's HP."
+  },
+  {
+    "name": "Focus Punch",
+    "type": "Fighting",
+    "power": 150,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": -3,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "punch": 1,
+      "failmefirst": 1,
+      "nosleeptalk": 1,
+      "noassist": 1,
+      "failcopycat": 1,
+      "failinstruct": 1
+    },
+    "desc": "Fails if the user takes damage before it hits."
+  },
+  {
+    "name": "Icicle Spear",
+    "type": "Ice",
+    "power": 10,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 30,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 2-5 times in one turn."
+  },
+  {
+    "name": "Imprison",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "No foe can use any move known by the user."
+  },
+  {
+    "name": "Ingrain",
+    "type": "Grass",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "snatch": 1,
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "User recovers 1/16 max HP per turn. Traps user."
+  },
+  {
+    "name": "Knock Off",
+    "type": "Dark",
+    "power": 20,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Target's item is lost and it cannot obtain another."
+  },
+  {
+    "name": "Magic Coat",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 4,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "metronome": 1
+    },
+    "desc": "Bounces back certain non-damaging moves."
+  },
+  {
+    "name": "Mud Sport",
+    "type": "Ground",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "Weakens Electric-type attacks to 1/2 their power."
+  },
+  {
+    "name": "Recycle",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "metronome": 1
+    },
+    "desc": "Restores the item the user last used."
+  },
+  {
+    "name": "Rock Blast",
+    "type": "Rock",
+    "power": 25,
+    "accuracy": 80,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 2-5 times in one turn."
+  },
+  {
+    "name": "Role Play",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "bypasssub": 1,
+      "allyanim": 1,
+      "metronome": 1
+    },
+    "desc": "User replaces its Ability with the target's."
+  },
+  {
+    "name": "Sand Tomb",
+    "type": "Ground",
+    "power": 15,
+    "accuracy": 70,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Traps and damages the target for 2-5 turns."
+  },
+  {
+    "name": "Secret Power",
+    "type": "Normal",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Effect varies with terrain. (30% paralysis chance)"
+  },
+  {
+    "name": "Skill Swap",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "bypasssub": 1,
+      "allyanim": 1,
+      "metronome": 1
+    },
+    "desc": "The user and the target trade Abilities."
+  },
+  {
+    "name": "Snatch",
+    "type": "Dark",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 4,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "bypasssub": 1,
+      "noassist": 1,
+      "failcopycat": 1
+    },
+    "desc": "User steals certain support moves to use itself."
+  },
+  {
+    "name": "Swallow",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "snatch": 1,
+      "heal": 1,
+      "metronome": 1
+    },
+    "desc": "Heals the user based on uses of Stockpile."
+  },
+  {
+    "name": "Tail Glow",
+    "type": "Bug",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Sp. Atk by 2."
+  },
+  {
+    "name": "Torment",
+    "type": "Dark",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "Target can't select the same move twice in a row."
+  },
+  {
+    "name": "Trick",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "allyanim": 1,
+      "noassist": 1,
+      "failcopycat": 1
+    },
+    "desc": "User switches its held item with the target's."
+  },
+  {
+    "name": "Water Sport",
+    "type": "Water",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "Weakens Fire-type attacks to 1/2 their power."
+  },
+  {
+    "name": "Wish",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "heal": 1,
+      "metronome": 1
+    },
+    "desc": "Next turn, heals 50% of the recipient's max HP."
+  },
+  {
+    "name": "Yawn",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Puts the target to sleep after 1 turn."
+  },
+  {
+    "name": "Air Cutter",
+    "type": "Flying",
+    "power": 55,
+    "accuracy": 95,
+    "critRatio": 2,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 25,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "slicing": 1,
+      "wind": 1
+    },
+    "desc": "High critical hit ratio. Hits adjacent foes."
+  },
+  {
+    "name": "Block",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Prevents the target from switching out."
+  },
+  {
+    "name": "Bounce",
+    "type": "Flying",
+    "power": 85,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "contact": 1,
+      "charge": 1,
+      "protect": 1,
+      "mirror": 1,
+      "gravity": 1,
+      "distance": 1,
+      "metronome": 1,
+      "nosleeptalk": 1
+    },
+    "desc": "Bounces turn 1. Hits turn 2. 30% paralyze."
+  },
+  {
+    "name": "Grass Whistle",
+    "type": "Grass",
+    "power": 0,
+    "accuracy": 55,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "sound": 1,
+      "metronome": 1
+    },
+    "desc": "Causes the target to fall asleep."
+  },
+  {
+    "name": "Heat Wave",
+    "type": "Fire",
+    "power": 100,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "wind": 1
+    },
+    "desc": "10% chance to burn the foe(s)."
+  },
+  {
+    "name": "Hyper Voice",
+    "type": "Normal",
+    "power": 90,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "sound": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect. Hits adjacent foes."
+  },
+  {
+    "name": "Metal Sound",
+    "type": "Steel",
+    "power": 0,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "sound": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the target's Sp. Def by 2."
+  },
+  {
+    "name": "Meteor Mash",
+    "type": "Steel",
+    "power": 100,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1,
+      "metronome": 1
+    },
+    "desc": "20% chance to raise the user's Attack by 1."
+  },
+  {
+    "name": "Muddy Water",
+    "type": "Water",
+    "power": 95,
+    "accuracy": 85,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "30% chance to lower the foe(s) accuracy by 1."
+  },
+  {
+    "name": "Poison Fang",
+    "type": "Poison",
+    "power": 50,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "bite": 1
+    },
+    "desc": "30% chance to badly poison the target."
+  },
+  {
+    "name": "Rock Tomb",
+    "type": "Rock",
+    "power": 50,
+    "accuracy": 80,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "100% chance to lower the target's Speed by 1."
+  },
+  {
+    "name": "Smelling Salts",
+    "type": "Normal",
+    "power": 60,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Damage doubles if target is paralyzed; cures it."
+  },
+  {
+    "name": "Will-O-Wisp",
+    "type": "Fire",
+    "power": 0,
+    "accuracy": 75,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Burns the target."
+  },
+  {
+    "name": "Sheer Cold",
+    "type": "Ice",
+    "power": 0,
+    "accuracy": 30,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "OHKOs the target. Fails if user is a lower level."
+  },
+  {
+    "name": "Howl",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 40,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Attack by 1."
+  },
+  {
+    "name": "Ice Ball",
+    "type": "Ice",
+    "power": 30,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "failinstruct": 1,
+      "bullet": 1,
+      "noparentalbond": 1
+    },
+    "desc": "Power doubles with each hit. Repeats for 5 turns."
+  },
+  {
+    "name": "Psycho Boost",
+    "type": "Psychic",
+    "power": 140,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the user's Sp. Atk by 2."
+  },
+  {
+    "name": "Refresh",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "User cures its burn, poison, or paralysis."
+  },
+  {
+    "name": "Signal Beam",
+    "type": "Bug",
+    "power": 75,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to confuse the target."
+  },
+  {
+    "name": "Silver Wind",
+    "type": "Bug",
+    "power": 60,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "10% chance to raise all stats by 1 (not acc/eva)."
+  },
+  {
+    "name": "Sky Uppercut",
+    "type": "Fighting",
+    "power": 85,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1,
+      "metronome": 1
+    },
+    "desc": "Can hit Pokemon using Bounce or Fly."
+  },
+  {
+    "name": "Grudge",
+    "type": "Ghost",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 5,
+    "flags": {
+      "bypasssub": 1,
+      "metronome": 1
+    },
+    "desc": "If the user faints, the attack used loses all its PP."
+  },
+  {
+    "name": "Hail",
+    "type": "Ice",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "metronome": 1
+    },
+    "desc": "For 5 turns, hail crashes down."
+  },
+  {
+    "name": "Luster Purge",
+    "type": "Psychic",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "50% chance to lower the target's Sp. Def by 1."
+  },
+  {
+    "name": "Mist Ball",
+    "type": "Psychic",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1,
+      "bullet": 1
+    },
+    "desc": "50% chance to lower the target's Sp. Atk by 1."
+  },
+  {
+    "name": "Revenge",
+    "type": "Fighting",
+    "power": 60,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": -4,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Damage doubles if user is hit by the target."
+  },
+  {
+    "name": "Slack Off",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 10,
+    "flags": {
+      "snatch": 1,
+      "heal": 1,
+      "metronome": 1
+    },
+    "desc": "Heals the user by 50% of its max HP."
+  },
+  {
+    "name": "Aerial Ace",
+    "type": "Flying",
+    "power": 60,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "distance": 1,
+      "metronome": 1,
+      "slicing": 1
+    },
+    "desc": "This move does not check accuracy."
+  },
+  {
+    "name": "Arm Thrust",
+    "type": "Fighting",
+    "power": 15,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Hits 2-5 times in one turn."
+  },
+  {
+    "name": "Blast Burn",
+    "type": "Fire",
+    "power": 150,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "recharge": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "User cannot move next turn."
+  },
+  {
+    "name": "Blaze Kick",
+    "type": "Fire",
+    "power": 85,
+    "accuracy": 90,
+    "critRatio": 2,
+    "priority": 0,
+    "category": "Special",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "High critical hit ratio. 10% chance to burn."
+  },
+  {
+    "name": "Bulk Up",
+    "type": "Fighting",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Attack and Defense by 1."
+  },
+  {
+    "name": "Calm Mind",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Sp. Atk and Sp. Def by 1."
+  },
+  {
+    "name": "Cosmic Power",
+    "type": "Psychic",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Defense and Sp. Def by 1."
+  },
+  {
+    "name": "Crush Claw",
+    "type": "Normal",
+    "power": 75,
+    "accuracy": 95,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "50% chance to lower the target's Defense by 1."
+  },
+  {
+    "name": "Dragon Claw",
+    "type": "Dragon",
+    "power": 80,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 15,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "No additional effect."
+  },
+  {
+    "name": "Dragon Dance",
+    "type": "Dragon",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "snatch": 1,
+      "dance": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Attack and Speed by 1."
+  },
+  {
+    "name": "Eruption",
+    "type": "Fire",
+    "power": 150,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Less power as user's HP decreases. Hits foe(s)."
+  },
+  {
+    "name": "Facade",
+    "type": "Normal",
+    "power": 70,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Power doubles if user is burn/poison/paralyzed."
+  },
+  {
+    "name": "Fake Tears",
+    "type": "Dark",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "allyanim": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the target's Sp. Def by 2."
+  },
+  {
+    "name": "Feather Dance",
+    "type": "Flying",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "dance": 1,
+      "allyanim": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the target's Attack by 2."
+  },
+  {
+    "name": "Flatter",
+    "type": "Dark",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "allyanim": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the target's Sp. Atk by 1 and confuses it."
+  },
+  {
+    "name": "Frenzy Plant",
+    "type": "Grass",
+    "power": 150,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "recharge": 1,
+      "protect": 1,
+      "mirror": 1,
+      "nonsky": 1,
+      "metronome": 1
+    },
+    "desc": "User cannot move next turn."
+  },
+  {
+    "name": "Helping Hand",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 5,
+    "category": "Status",
+    "pp": 20,
+    "flags": {
+      "bypasssub": 1,
+      "noassist": 1,
+      "failcopycat": 1
+    },
+    "desc": "One adjacent ally's move power is 1.5x this turn."
+  },
+  {
+    "name": "Hydro Cannon",
+    "type": "Water",
+    "power": 150,
+    "accuracy": 90,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "recharge": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "User cannot move next turn."
+  },
+  {
+    "name": "Iron Defense",
+    "type": "Steel",
+    "power": 0,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Status",
+    "pp": 15,
+    "flags": {
+      "snatch": 1,
+      "metronome": 1
+    },
+    "desc": "Raises the user's Defense by 2."
+  },
+  {
+    "name": "Magical Leaf",
+    "type": "Grass",
+    "power": 60,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "This move does not check accuracy."
+  },
+  {
+    "name": "Mud Shot",
+    "type": "Ground",
+    "power": 55,
+    "accuracy": 95,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 15,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "100% chance to lower the target's Speed by 1."
+  },
+  {
+    "name": "Poison Tail",
+    "type": "Poison",
+    "power": 50,
+    "accuracy": 100,
+    "critRatio": 2,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 25,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "High critical hit ratio. 10% chance to poison."
+  },
+  {
+    "name": "Shadow Punch",
+    "type": "Ghost",
+    "power": 60,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 20,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1,
+      "metronome": 1
+    },
+    "desc": "This move does not check accuracy."
+  },
+  {
+    "name": "Shock Wave",
+    "type": "Electric",
+    "power": 60,
+    "accuracy": true,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "This move does not check accuracy."
+  },
+  {
+    "name": "Spit Up",
+    "type": "Normal",
+    "power": 0,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 10,
+    "flags": {
+      "protect": 1,
+      "metronome": 1
+    },
+    "desc": "More power with more uses of Stockpile."
+  },
+  {
+    "name": "Superpower",
+    "type": "Fighting",
+    "power": 120,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Physical",
+    "pp": 5,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Lowers the user's Attack and Defense by 1."
+  },
+  {
+    "name": "Water Pulse",
+    "type": "Water",
+    "power": 60,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 20,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "distance": 1,
+      "metronome": 1,
+      "pulse": 1
+    },
+    "desc": "20% chance to confuse the target."
+  },
+  {
+    "name": "Water Spout",
+    "type": "Water",
+    "power": 150,
+    "accuracy": 100,
+    "critRatio": 1,
+    "priority": 0,
+    "category": "Special",
+    "pp": 5,
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "metronome": 1
+    },
+    "desc": "Less power as user's HP decreases. Hits foe(s)."
+  }
+]

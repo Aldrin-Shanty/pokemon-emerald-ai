@@ -1,11 +1,11 @@
+import random
+
 from Trainer import Trainer
 from Pokemon import Pokemon
 from Move import Move
 from battle_simulation.Functions.battle_functions.calc_atk_def import calc_atk_def
 from battle_simulation.Functions.battle_functions.stat_mul import screen_calc
-from battle_simulation.Functions.move_functions.move_object_fn import future_sight
-
-import random
+from battle_simulation.Functions.battle_functions.stat_mul import weather_mul
 
 
 class Battle:
@@ -14,7 +14,7 @@ class Battle:
 
         self.battle_turn = 0
         self.trainers = [player1,player2]
-        self.weather = weather # Rainy Sunny Hail Sandstorm
+        self.weather = weather # Rainy Sunny Hail Sandstorm or None
         self.weather_turn = weather_turn
         self.battle_mode = battle_mode# 1- singles # 2- doubles
 
@@ -55,30 +55,46 @@ class Battle:
         return priority
 
     def dmg_calc(self,dmg_taken_pokemon: Pokemon,dmg_deal_pokemon: Pokemon,move: Move) -> int:
-        power = move.base_power
+        """Calculate damage for moves used in the battle.
+
+        Note:
+            This method is currently a placeholder and needs implementation.
+        """
         crit = random.choices(population=[False, True],
                               weights=[(1-move.crit_chance),
                                        move.crit_chance])[0]
-        critical = 2 if crit else 1
+        power = move.base_power
 
-        screen = screen_calc(self.trainer_of_active_pokemon(dmg_taken_pokemon),
-                             self.battle_mode, move, crit)
-
-
-        # claculates the atk and defence stat of the pokemon after using stage_mul
         atk, defence = calc_atk_def(dmg_deal_pokemon, dmg_taken_pokemon, move, crit)
 
         burn = 1
-
-        if (dmg_deal_pokemon.status.brn and
+        if (dmg_deal_pokemon.status['brn'] and
             dmg_deal_pokemon.ability != "guts" and
                 move.type == "Physical"):
             burn = 0.5
 
+        screen = screen_calc(self.trainer_of_active_pokemon(dmg_taken_pokemon),
+                             self.battle_mode, move, crit)
+
+        weather = weather_mul(move, self.weather) if self.weather_turn != 0 else 1
+
+        critical = 2 if crit else 1
+
+        target = 1
+        if self.battle_mode == 2:
+            if move.no_of_targets == 1:
+                target = 1
+            else:
+                trainer = self.trainer_of_active_pokemon(dmg_taken_pokemon)
+                if len(trainer.active_pokemon) > 1:
+                    target = 0.5
+
         level_based_dmg = (2*dmg_deal_pokemon.level/5)+2
         stat_based_damage = power*(atk/defence)/50
-        status_eff_damage = burn * screen
-        damage = level_based_dmg * stat_based_damage #placeholder  have to complete these (Targets×Weather×FF+2)×Stockpile×critical×DoubleDmg×Charge×HH×STAB×Type1×Type2×random
+        status_eff_damage = burn * screen * target * weather
+
+        damage = level_based_dmg * stat_based_damage * status_eff_damage * critical
+        #placeholder have to complete these (FF+2)×Stockpile×critical×DoubleDmg×Charge×HH×STAB×Type1×Type2×random
 
         return 1
 
@@ -267,7 +283,7 @@ class Battle:
             elif fut_sight_turns == 1:
                 dmg_deal_pokemon=trainer.field['Future Sight'][pokemon_pos]['attacker']
                 damage=self.dmg_calc(pokemon,dmg_deal_pokemon,future_sight())
-                chance_of_hit=future_sight().accuracy / 100 * 
+                chance_of_hit=future_sight().accuracy / 100 *
                 is_hitting=random.random(0,1)
                 if future_sight().accuracy / 100
                 pokemon.current_hp -= damage

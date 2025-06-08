@@ -40,3 +40,20 @@ def screen_calc(trainer: Trainer, battle_mode: int, move: Move, crit: bool) -> f
             screen = 2/3
 
     return screen
+
+
+def weather_mul(move: Move, weather: str) -> float:
+    weather_mul = 1
+    if weather == 'Sunny':
+        if move.type == 'Fire':
+            weather_mul = 1.5
+        elif move.type == 'Water':
+            weather_mul = 0.5
+    if weather == 'Rainy':
+        if move.type == 'Fire':
+            weather_mul = 0.5
+        elif move.type == 'Weater':
+            weather_mul = 1.5
+    if move.move_name == 'SolarBeam' and weather != 'Sunny':
+        weather_mul = 0.5
+    return weather_mul
