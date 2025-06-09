@@ -1,5 +1,5 @@
 class Ability:
 
-    def __init__(self,ability_name : str) -> None:
+    def __init__(self,name : str) -> None:
 
-        self.ability_name = ability_name
+        self.name = name
