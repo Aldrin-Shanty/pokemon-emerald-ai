@@ -2,7 +2,6 @@ import json
 from pathlib import Path
 from typing import List
 
-from battle_simulation.Class.Abilities import Ability
 from battle_simulation.Class.Move import Move
 from battle_simulation.Class.Pokemon import Pokemon
 from battle_simulation.Class.Trainer import Trainer
