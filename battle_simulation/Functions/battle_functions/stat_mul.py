@@ -1,5 +1,15 @@
+import json
+from pathlib import Path
+from typing import List
+
 from battle_simulation.Class.Move import Move
+from battle_simulation.Class.Pokemon import Pokemon
 from battle_simulation.Class.Trainer import Trainer
+
+
+project_root = Path(__file__).resolve().parent.parent.parent
+
+type_chart_path = project_root / 'data' / 'type_chart.json'
 
 
 def screen_calc(trainer: Trainer, battle_mode: int, move: Move, crit: bool) -> float:
@@ -54,6 +64,62 @@ def weather_mul(move: Move, weather: str) -> float:
             weather_mul = 0.5
         elif move.type == 'Weater':
             weather_mul = 1.5
-    if move.move_name == 'SolarBeam' and weather != 'Sunny':
+    if move.name == 'SolarBeam' and weather != 'Sunny':
         weather_mul = 0.5
     return weather_mul
+
+
+def targets_mul(battle_mode: int, targets: int, trainer: Trainer) -> float:
+    target = 1
+    if battle_mode == 2:
+        if targets == 1:
+            target = 1
+        else:
+            if len(trainer.active_pokemon) > 1:
+                target = 0.5
+    return target
+
+
+def stab_mul(move_type: str, pokemon_type: List[str]) -> float:
+    stab = 1
+    if move_type in pokemon_type:
+        stab = 1.5
+    return stab
+
+
+def burn_mul(pokemon:Pokemon, move_category: str) -> float:
+    burn = 1
+    if (pokemon.status['brn'] and
+        pokemon.ability != "guts" and
+            move_category == "Physical"):
+        burn = 0.5
+    return burn
+
+
+def crit_mul(ability: str, move: str, crit: bool) -> int:
+    crit_mul = 1
+    crit_ignore_abilities = ["Battle Armor", "Sheel Armor"]
+    crit_ignore_moves = ["Doom Desire", "Future Sight", "Spit Up"]
+    if crit and move not in crit_ignore_moves and ability not in crit_ignore_abilities:
+        crit_mul = 2
+    return crit_mul
+
+
+def type_mul(attack_type: str, defend_type: str, move: str) -> float:
+
+    type_negate = ["Struggle", "Future Sight", "Beat Up", "Doom Desire"]
+    type_mul = 1
+
+    if move in type_negate:
+        return type_mul
+
+    type_chart = None
+    with open('type_chart_path', 'r') as file:
+        type_chart = json.load(file)
+
+    type_mul = type_chart[attack_type][defend_type]
+    return type_mul
+
+
+
+
