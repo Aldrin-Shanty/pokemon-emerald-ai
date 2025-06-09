@@ -4,8 +4,11 @@ from Trainer import Trainer
 from Pokemon import Pokemon
 from Move import Move
 from battle_simulation.Functions.battle_functions.calc_atk_def import calc_atk_def
-from battle_simulation.Functions.battle_functions.stat_mul import screen_calc
+from battle_simulation.Functions.battle_functions.stat_mul import burn_mul, crit_mul, screen_calc, type_mul
+from battle_simulation.Functions.battle_functions.stat_mul import targets_mul
+from battle_simulation.Functions.battle_functions.stat_mul import stab_mul
 from battle_simulation.Functions.battle_functions.stat_mul import weather_mul
+from battle_simulation.Functions.battle_functions.stat_mul import type_mul
 
 
 class Battle:
@@ -54,12 +57,13 @@ class Battle:
         priority = [prio[0] for prio in priority]
         return priority
 
-    def dmg_calc(self,dmg_taken_pokemon: Pokemon,dmg_deal_pokemon: Pokemon,move: Move) -> int:
+    def dmg_calc(self, dmg_taken_pokemon: Pokemon, dmg_deal_pokemon: Pokemon, move: Move) -> int:
         """Calculate damage for moves used in the battle.
 
         Note:
             This method is currently a placeholder and needs implementation.
         """
+
         crit = random.choices(population=[False, True],
                               weights=[(1-move.crit_chance),
                                        move.crit_chance])[0]
@@ -67,34 +71,33 @@ class Battle:
 
         atk, defence = calc_atk_def(dmg_deal_pokemon, dmg_taken_pokemon, move, crit)
 
-        burn = 1
-        if (dmg_deal_pokemon.status['brn'] and
-            dmg_deal_pokemon.ability != "guts" and
-                move.type == "Physical"):
-            burn = 0.5
+        burn = burn_mul(dmg_deal_pokemon, move.category)
 
         screen = screen_calc(self.trainer_of_active_pokemon(dmg_taken_pokemon),
                              self.battle_mode, move, crit)
 
         weather = weather_mul(move, self.weather) if self.weather_turn != 0 else 1
 
-        critical = 2 if crit else 1
+        critical = crit_mul(dmg_taken_pokemon.ability.name, move.name, crit)
 
-        target = 1
-        if self.battle_mode == 2:
-            if move.no_of_targets == 1:
-                target = 1
-            else:
-                trainer = self.trainer_of_active_pokemon(dmg_taken_pokemon)
-                if len(trainer.active_pokemon) > 1:
-                    target = 0.5
+        trainer = self.trainer_of_active_pokemon(dmg_taken_pokemon)
+        target = targets_mul(self.battle_mode, move.targets, trainer)
+
+        stab = stab_mul(move.type, dmg_deal_pokemon.type)
+
+        type1 = type_mul(move.type, dmg_taken_pokemon.type[0], move.name)
+
+        type2 = 1
+        if len(dmg_taken_pokemon.type) > 1:
+            type2 = type_mul(move.type, dmg_taken_pokemon.type[1], move.name)
 
         level_based_dmg = (2*dmg_deal_pokemon.level/5)+2
         stat_based_damage = power*(atk/defence)/50
         status_eff_damage = burn * screen * target * weather
+        misc_damage = critical * stab * type1 * type2
+        damage = level_based_dmg * stat_based_damage * status_eff_damage * misc_damage
 
-        damage = level_based_dmg * stat_based_damage * status_eff_damage * critical
-        #placeholder have to complete these (FF+2)×Stockpile×critical×DoubleDmg×Charge×HH×STAB×Type1×Type2×random
+        #placeholder have to complete these (FF+2)×Stockpile×DoubleDmg×Charge×HH×random
 
         return 1
 
